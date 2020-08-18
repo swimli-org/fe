@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { Drawer, Button } from 'antd';
+import menu from '../assets/menu.svg'
 
 
 export default function Navbar() {
@@ -13,9 +14,8 @@ export default function Navbar() {
     return (
         <div className='navbar'>
            <h1>Swimli</h1>
-           <Button className='menu-btn' type="primary" onClick={showDrawer}>
-          Menu
-        </Button>
+          <img src={menu} className='menu-btn' onClick={showDrawer}></img>
+        
         <Drawer
           title="Categories"
           placement="right"
