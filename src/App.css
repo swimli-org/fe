@@ -15,12 +15,8 @@
   margin: 0;
 }
 .menu-btn{
-margin-left: auto;
-background-color: white;
-border: white;
-color: #273B67;
-}
-.menu-btn:focus, .menu-btn:hover{
-  background-color: white;
-  color: #273B67;
+  display: block;
+  cursor: pointer;
+margin-left: auto !important;
+
 }
