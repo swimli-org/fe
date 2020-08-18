@@ -20,3 +20,12 @@
 margin-left: auto !important;
 
 }
+.avatar{
+  margin-right: 10px;
+}
+.cart{
+  cursor: pointer;
+margin-bottom: -10px;
+  padding-top: 4px;
+  padding-right: 8px;
+}

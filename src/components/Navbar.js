@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
-import { Drawer, Button } from 'antd';
+import { Drawer, Divider,Avatar, Badge} from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 import menu from '../assets/menu.svg'
 
 
@@ -10,6 +11,7 @@ export default function Navbar() {
     const onClose = () => setVisible(false);
     const showChildrenDrawer = () => setChildDraw(true);
     const onChildrenDrawerClose = () => setChildDraw(false);
+    const[count, setCount]=useState(1)
 
     return (
         <div className='navbar'>
@@ -17,12 +19,14 @@ export default function Navbar() {
           <img src={menu} className='menu-btn' onClick={showDrawer}></img>
         
         <Drawer
-          title="Categories"
+          title={<span><Avatar size="small" className='avatar' icon={<UserOutlined />} />Guest</span>}
           placement="right"
           closable={false}
           onClose={onClose}
           visible={visible}
         >
+          <Badge count={count}><p className='cart' onClick={()=>setCount(count + 1)}>Cart</p></Badge>
+          <Divider plain>Categories</Divider>
         <p>Toys</p>
         <p>Floats</p>
         <p>Outdoor Furniture</p>
