@@ -18,7 +18,7 @@ export default function Navbar() {
         </Button>
         <Drawer
           title="Categories"
-          width={520}
+          placement="right"
           closable={false}
           onClose={onClose}
           visible={visible}
