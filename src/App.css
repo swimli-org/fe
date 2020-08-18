@@ -1,0 +1,26 @@
+@import '~antd/dist/antd.css';
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  background-color: #273B67;
+}
+.navbar h1{
+  color: white;
+  font-size: 40px;
+  margin: 0;
+}
+.menu-btn{
+margin-left: auto;
+background-color: white;
+border: white;
+color: #273B67;
+}
+.menu-btn:focus, .menu-btn:hover{
+  background-color: white;
+  color: #273B67;
+}
