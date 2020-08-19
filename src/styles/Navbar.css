@@ -32,3 +32,8 @@
     padding-top: 4px;
     padding-right: 8px;
   }
+  .search-bar{
+    margin-left: auto;
+    width: 40%;
+    max-width: 450px;
+  }
