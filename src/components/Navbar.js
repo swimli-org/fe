@@ -25,7 +25,6 @@ export default function Navbar() {
       placeholder="Search Swimli"
     onChange={(e)=>setSearchTerm(e.target.value)}
     onSearch={() =>alert(`You searched for ${searchTerm}`)}
-      style={{ width: 200 }}
     />
           <img src={menu} className='menu-btn' onClick={showDrawer}></img>
         

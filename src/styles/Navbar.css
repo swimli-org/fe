@@ -34,4 +34,6 @@
   }
   .search-bar{
     margin-left: auto;
+    width: 40%;
+    max-width: 450px;
   }
