@@ -2,6 +2,8 @@ import React,{useState} from 'react'
 import { Drawer, Divider,Avatar, Badge} from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import menu from '../assets/menu.svg'
+import '../styles/Navbar.css'
+import {Link} from 'react-router-dom'
 
 
 export default function Navbar() {
@@ -9,8 +11,6 @@ export default function Navbar() {
     const[childDraw, setChildDraw]=useState(false)
     const showDrawer = () => setVisible(true);
     const onClose = () => setVisible(false);
-    const showChildrenDrawer = () => setChildDraw(true);
-    const onChildrenDrawerClose = () => setChildDraw(false);
     const[count, setCount]=useState(1)
 
     return (
@@ -19,20 +19,25 @@ export default function Navbar() {
           <img src={menu} className='menu-btn' onClick={showDrawer}></img>
         
         <Drawer
-          title={<span><Avatar size="small" className='avatar' icon={<UserOutlined />} />Guest</span>}
+          title={<span className='avatar-container'><Avatar size="small" className='avatar' icon={<UserOutlined />} /><p className='username'>Guest</p></span>}
           placement="right"
           closable={false}
+          onClick={(e) => {
+            if(e.target.tagName.toLowerCase() === 'a'){
+              onClose()
+            }
+          }}
           onClose={onClose}
           visible={visible}
         >
           <Badge count={count}><p className='cart' onClick={()=>setCount(count + 1)}>Cart</p></Badge>
           <Divider plain>Categories</Divider>
-        <p>Toys</p>
-        <p>Floats</p>
-        <p>Outdoor Furniture</p>
-        <p>Chemicals</p>
-        <p>Equipment</p>
-        <p>Covers</p>
+        <p><Link to='/toys'>Toys</Link></p>
+        <p><Link to='/floats'>Floats</Link></p>
+        <p><Link to='/furniture'>Outdoor Furniture</Link></p>
+        <p><Link to='/chemicals'>Chemicals</Link></p>
+        <p><Link to='/equipment'>Equipment</Link></p>
+        <p><Link to='/covers'>Covers</Link></p>
 
           {/* <Button type="primary" onClick={showChildrenDrawer}>
             Two-level drawer
