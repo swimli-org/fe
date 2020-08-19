@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { Drawer, Divider,Avatar, Badge} from 'antd';
+import { Drawer, Divider,Avatar, Badge, Input} from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import menu from '../assets/menu.svg'
 import '../styles/Navbar.css'
@@ -7,15 +7,26 @@ import {Link} from 'react-router-dom'
 
 
 export default function Navbar() {
+  const { Search } = Input;
     const[visible, setVisible]=useState(false)
     const[childDraw, setChildDraw]=useState(false)
     const showDrawer = () => setVisible(true);
     const onClose = () => setVisible(false);
     const[count, setCount]=useState(1)
 
+    const[searchTerm, setSearchTerm]=useState()
     return (
         <div className='navbar'>
            <h1>Swimli</h1>
+           {console.log(searchTerm)}
+           <Search
+           value={searchTerm}
+           className='search-bar'
+      placeholder="Search Swimli"
+    onChange={(e)=>setSearchTerm(e.target.value)}
+    onSearch={() =>alert(`You searched for ${searchTerm}`)}
+      style={{ width: 200 }}
+    />
           <img src={menu} className='menu-btn' onClick={showDrawer}></img>
         
         <Drawer
