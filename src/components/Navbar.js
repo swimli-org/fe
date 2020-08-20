@@ -4,10 +4,11 @@ import { UserOutlined } from '@ant-design/icons';
 import menu from '../assets/menu.svg'
 import logo from '../assets/logo.png'
 import '../styles/Navbar.css'
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 
 
 export default function Navbar() {
+  const history = useHistory();
   const { Search } = Input;
     const[visible, setVisible]=useState(false)
     const[childDraw, setChildDraw]=useState(false)
@@ -18,15 +19,15 @@ export default function Navbar() {
    
     return (
         <div className='navbar'>
-            <img src={logo} className='logo'></img>
+            <img src={logo} onClick={()=>history.push('/')}className='logo'></img>
            <Search
            value={searchTerm}
            className='search-bar'
       placeholder="Search Swimli"
     onChange={(e)=>setSearchTerm(e.target.value)}
     onSearch={() =>{
-      const search = new Promise(()=>alert(`You searched for ${searchTerm}`))
-      search.then(setSearchTerm(""))
+      history.push(`/results/${searchTerm}`)
+      
     }}
     />
           <img src={menu} className='menu-btn' onClick={showDrawer}></img>
@@ -51,19 +52,6 @@ export default function Navbar() {
         <p><Link to='/chemicals'>Chemicals</Link></p>
         <p><Link to='/equipment'>Equipment</Link></p>
         <p><Link to='/covers'>Covers</Link></p>
-
-          {/* <Button type="primary" onClick={showChildrenDrawer}>
-            Two-level drawer
-          </Button>
-          <Drawer
-            title="Two-level Drawer"
-            width={320}
-            closable={false}
-            onClose={onChildrenDrawerClose}
-            visible={childDraw}
-          >
-            This is two-level drawer
-          </Drawer> */}
         </Drawer>
         </div>
     )
