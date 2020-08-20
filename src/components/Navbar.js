@@ -19,7 +19,7 @@ export default function Navbar() {
    
     return (
         <div className='navbar'>
-            <img src={logo} className='logo'></img>
+            <img src={logo} onClick={()=>history.push('/')}className='logo'></img>
            <Search
            value={searchTerm}
            className='search-bar'
