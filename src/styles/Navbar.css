@@ -45,3 +45,9 @@
     -moz-border-radius: 8px;
     border-radius: 8px;
   }
+  .register-link{
+    margin-left: auto;
+    color: darkgrey;
+    font-size: 14px;
+    font-style: italic;
+  }
