@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import { Drawer, Divider,Avatar, Badge, Input} from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import menu from '../assets/menu.svg'
+import logo from '../assets/logo.png'
 import '../styles/Navbar.css'
 import {Link} from 'react-router-dom'
 
@@ -12,24 +13,26 @@ export default function Navbar() {
     const[childDraw, setChildDraw]=useState(false)
     const showDrawer = () => setVisible(true);
     const onClose = () => setVisible(false);
-    const[count, setCount]=useState(1)
 
     const[searchTerm, setSearchTerm]=useState()
+   
     return (
         <div className='navbar'>
-           <h1>Swimli</h1>
-           {console.log(searchTerm)}
+            <img src={logo} className='logo'></img>
            <Search
            value={searchTerm}
            className='search-bar'
       placeholder="Search Swimli"
     onChange={(e)=>setSearchTerm(e.target.value)}
-    onSearch={() =>alert(`You searched for ${searchTerm}`)}
+    onSearch={() =>{
+      const search = new Promise(()=>alert(`You searched for ${searchTerm}`))
+      search.then(setSearchTerm(""))
+    }}
     />
           <img src={menu} className='menu-btn' onClick={showDrawer}></img>
-        
+
         <Drawer
-          title={<span className='avatar-container'><Avatar size="small" className='avatar' icon={<UserOutlined />} /><p className='username'>Guest</p></span>}
+          title={<span className='avatar-container'><Avatar size="small" className='avatar' icon={<UserOutlined />} /><p className='username'>Guest</p><Link className='register-link'to='/register'>Login</Link></span>}
           placement="right"
           closable={false}
           onClick={(e) => {
@@ -40,7 +43,7 @@ export default function Navbar() {
           onClose={onClose}
           visible={visible}
         >
-          <Badge count={count}><p className='cart' onClick={()=>setCount(count + 1)}>Cart</p></Badge>
+          <Badge count={1}><p className='cart'><Link to='/cart'>Cart</Link></p></Badge>
           <Divider plain>Categories</Divider>
         <p><Link to='/toys'>Toys</Link></p>
         <p><Link to='/floats'>Floats</Link></p>

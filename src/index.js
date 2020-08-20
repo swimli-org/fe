@@ -18,10 +18,12 @@ import Floats from './views/Floats'
 import Chemicals from './views/Chemicals'
 import Equipment from './views/Equipment'
 import Covers from './views/Covers'
+import Cart from './views/Cart'
+import Register from './views/Register'
 
 ReactDOM.render(
   <React.StrictMode>
-       
+
   <Router>
   <Navbar/>
   <Switch>
@@ -42,6 +44,12 @@ ReactDOM.render(
       </Route>
       <Route path="/covers">
             <Covers />
+      </Route>
+      <Route path="/cart">
+            <Cart />
+      </Route>
+      <Route path="/register">
+            <Register />
       </Route>
       <Route exact path="/">
             <App />
