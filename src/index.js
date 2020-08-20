@@ -21,7 +21,7 @@ import Covers from './views/Covers'
 
 ReactDOM.render(
   <React.StrictMode>
-       
+
   <Router>
   <Navbar/>
   <Switch>
