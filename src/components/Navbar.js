@@ -26,7 +26,10 @@ export default function Navbar() {
       placeholder="Search Swimli"
     onChange={(e)=>setSearchTerm(e.target.value)}
     onSearch={() =>{
-      history.push(`/results/${searchTerm}`)
+      const prom = new Promise(()=>history.push(`/results/${searchTerm}`))
+      prom.then(setSearchTerm(""))
+      
+      
       
     }}
     />
