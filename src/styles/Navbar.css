@@ -1,19 +1,18 @@
-.navbar{
+  .navbar{
     display: flex;
     padding: .25rem 1rem;
     align-items: center;
-    background-color: #273B67;
+    background-color: #2f89fc;
   }
-  .navbar h1{
-    color: white;
-    font-size: 40px;
-    margin: 0;
+  .logo{
+    height: 30px;
   }
   .menu-btn{
+    height: 45px;
     display: block;
     cursor: pointer;
     margin-left: auto !important;
-  
+
   }
   .avatar-container{
       display: flex;
@@ -32,8 +31,17 @@
     padding-top: 4px;
     padding-right: 8px;
   }
+  .cartCount{
+    background: green;
+    margin-right: 100px !important;
+  }
   .search-bar{
     margin-left: auto;
     width: 40%;
     max-width: 450px;
+    outline: 0;
+    border: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
   }

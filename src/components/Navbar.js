@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import { Drawer, Divider,Avatar, Badge, Input} from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import menu from '../assets/menu.svg'
+import logo from '../assets/logo.png'
 import '../styles/Navbar.css'
 import {Link} from 'react-router-dom'
 
@@ -17,7 +18,7 @@ export default function Navbar() {
     const[searchTerm, setSearchTerm]=useState()
     return (
         <div className='navbar'>
-           <h1>Swimli</h1>
+            <img src={logo} className='logo'></img>
            {console.log(searchTerm)}
            <Search
            value={searchTerm}
@@ -27,7 +28,7 @@ export default function Navbar() {
     onSearch={() =>alert(`You searched for ${searchTerm}`)}
     />
           <img src={menu} className='menu-btn' onClick={showDrawer}></img>
-        
+
         <Drawer
           title={<span className='avatar-container'><Avatar size="small" className='avatar' icon={<UserOutlined />} /><p className='username'>Guest</p></span>}
           placement="right"
