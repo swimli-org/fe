@@ -18,51 +18,56 @@ export default function Navbar() {
     const[searchTerm, setSearchTerm]=useState()
     return (
         <div className='navbar'>
-            <img src={logo} className='logo'></img>
-           {console.log(searchTerm)}
-           <Search
-           value={searchTerm}
-           className='search-bar'
-      placeholder="Search Swimli"
-    onChange={(e)=>setSearchTerm(e.target.value)}
-    onSearch={() =>alert(`You searched for ${searchTerm}`)}
-    />
-          <img src={menu} className='menu-btn' onClick={showDrawer}></img>
+          <div className="navbarContainer">
+            <a href="http://localhost:3000/"><img src={logo} className='logo'></img></a>
 
-        <Drawer
-          title={<span className='avatar-container'><Avatar size="small" className='avatar' icon={<UserOutlined />} /><p className='username'>Guest</p></span>}
-          placement="right"
-          closable={false}
-          onClick={(e) => {
-            if(e.target.tagName.toLowerCase() === 'a'){
-              onClose()
-            }
-          }}
-          onClose={onClose}
-          visible={visible}
-        >
-          <Badge count={count}><p className='cart' onClick={()=>setCount(count + 1)}>Cart</p></Badge>
-          <Divider plain>Categories</Divider>
-        <p><Link to='/toys'>Toys</Link></p>
-        <p><Link to='/floats'>Floats</Link></p>
-        <p><Link to='/furniture'>Outdoor Furniture</Link></p>
-        <p><Link to='/chemicals'>Chemicals</Link></p>
-        <p><Link to='/equipment'>Equipment</Link></p>
-        <p><Link to='/covers'>Covers</Link></p>
+            {console.log(searchTerm)}
+            <Search
+              value={searchTerm}
+              className='search-bar'
+              placeholder="Search Swimli"
+              onChange={(e)=>setSearchTerm(e.target.value)}
+              onSearch={() =>alert(`You searched for ${searchTerm}`)}
+            />
 
-          {/* <Button type="primary" onClick={showChildrenDrawer}>
-            Two-level drawer
-          </Button>
-          <Drawer
-            title="Two-level Drawer"
-            width={320}
-            closable={false}
-            onClose={onChildrenDrawerClose}
-            visible={childDraw}
-          >
-            This is two-level drawer
-          </Drawer> */}
-        </Drawer>
+            <img src={menu} className='menu-btn' onClick={showDrawer}></img>
+
+            <Drawer
+              title={<span className='avatar-container'><Avatar size="small" className='avatar' icon={<UserOutlined />} /><p className='username'>Guest</p></span>}
+              placement="right"
+              closable={false}
+              onClick={(e) => {
+                if(e.target.tagName.toLowerCase() === 'a'){
+                  onClose()
+                }
+              }}
+              onClose={onClose}
+              visible={visible}
+            >
+            <Badge count={count}><p className='cart' onClick={()=>setCount(count + 1)}>Cart</p></Badge>
+            <Divider plain>Categories</Divider>
+            <p><Link to='/toys'>Toys</Link></p>
+            <p><Link to='/floats'>Floats</Link></p>
+            <p><Link to='/furniture'>Outdoor Furniture</Link></p>
+            <p><Link to='/chemicals'>Chemicals</Link></p>
+            <p><Link to='/equipment'>Equipment</Link></p>
+            <p><Link to='/covers'>Covers</Link></p>
+
+              {/* <Button type="primary" onClick={showChildrenDrawer}>
+                Two-level drawer
+              </Button>
+              <Drawer
+                title="Two-level Drawer"
+                width={320}
+                closable={false}
+                onClose={onChildrenDrawerClose}
+                visible={childDraw}
+              >
+                This is two-level drawer
+              </Drawer> */}
+
+            </Drawer>
+          </div>
         </div>
-    )
+      )
 }
