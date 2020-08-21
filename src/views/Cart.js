@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Furniture() {
+export default function Cart() {
     return (
       <div className="container">
-        <h1>Future Furniture Page</h1>
+        <h1>Cart Page</h1>
+
       </div>
     )
 }

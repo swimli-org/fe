@@ -18,6 +18,9 @@ import Floats from './views/Floats'
 import Chemicals from './views/Chemicals'
 import Equipment from './views/Equipment'
 import Covers from './views/Covers'
+import Cart from './views/Cart'
+import Register from './views/Register'
+import SearchResults from './views/SearchResults'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -42,6 +45,15 @@ ReactDOM.render(
       </Route>
       <Route path="/covers">
             <Covers />
+      </Route>
+      <Route path="/cart">
+            <Cart />
+      </Route>
+      <Route path="/register">
+            <Register />
+      </Route>
+      <Route path="/results/:term">
+            <SearchResults />
       </Route>
       <Route exact path="/">
             <App />
