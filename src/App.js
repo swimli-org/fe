@@ -7,32 +7,32 @@ function App() {
     <h1>Categories</h1>
       <div className="categoryContainer">
         <div className="categoryBoxContainer">
-          <a href="http://localhost:3000/toys">
+          <a href="/toys">
             <div className="category">Toys</div>
           </a>
         </div>
         <div className="categoryBoxContainer">
-          <a href="http://localhost:3000/floats">
+          <a href="/floats">
             <div className="category">Floats</div>
           </a>
         </div>
         <div className="categoryBoxContainer">
-          <a href="http://localhost:3000/chemicals">
+          <a href="/chemicals">
             <div className="category">Chemicals</div>
           </a>
         </div>
         <div className="categoryBoxContainer">
-          <a href="http://localhost:3000/furniture">
+          <a href="/furniture">
             <div className="category">Furniture</div>
           </a>
         </div>
         <div className="categoryBoxContainer">
-          <a href="http://localhost:3000/equipment">
+          <a href="/equipment">
             <div className="category">Equipment</div>
           </a>
         </div>
         <div className="categoryBoxContainer">
-          <a href="http://localhost:3000/covers">
+          <a href="/covers">
             <div className="category">Covers</div>
           </a>
         </div>

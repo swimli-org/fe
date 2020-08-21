@@ -21,6 +21,7 @@ import Covers from './views/Covers'
 import Cart from './views/Cart'
 import Register from './views/Register'
 import SearchResults from './views/SearchResults'
+import Landing from './views/Landing'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -54,6 +55,9 @@ ReactDOM.render(
       </Route>
       <Route path="/results/:term">
             <SearchResults />
+      </Route>
+      <Route path="/landing">
+            <Landing />
       </Route>
       <Route exact path="/">
             <App />
