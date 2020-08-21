@@ -1,5 +1,7 @@
 import React from 'react'
 import { Formik } from 'formik';
+import '../styles/User.css'
+
   
 
 const RegisterForm = (props) => (
@@ -37,6 +39,7 @@ const RegisterForm = (props) => (
               <input
               type="text"
               name="fName"
+              className="registerFormInput"
               placeholder="First Name"
               onChange={handleChange}
               onBlur={handleBlur}
@@ -46,6 +49,7 @@ const RegisterForm = (props) => (
             <input
               type="text"
               name="lName"
+              className="registerFormInput"
               placeholder="Last Name"
               onChange={handleChange}
               onBlur={handleBlur}
@@ -55,6 +59,7 @@ const RegisterForm = (props) => (
             <input
               type="email"
               name="email"
+              className="registerFormInput"
               placeholder="Email"
               onChange={handleChange}
               onBlur={handleBlur}
@@ -65,12 +70,17 @@ const RegisterForm = (props) => (
               placeholder='Password'
               type="password"
               name="password"
+              className="registerFormInput"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.password}
             />
             {errors.password && touched.password && errors.password}
-            <button type="submit" disabled={isSubmitting}>
+            <button 
+              type="submit"
+              className="registerFormButton"
+              disabled={isSubmitting}
+            >
               Create your Swimli account
             </button>
           </form>
