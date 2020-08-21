@@ -49,7 +49,7 @@ const RegisterForm = (props) => (
               placeholder="Last Name"
               onChange={handleChange}
               onBlur={handleBlur}
-              value={values.fName}
+              value={values.lName}
             />
             {errors.lName && touched.lName && errors.lName}
             <input
