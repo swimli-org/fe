@@ -5,12 +5,13 @@
   padding: 0;
 }
 h1{margin: 0;}
+
 .container{
   width: auto;
   max-width: 1080px;
   height: 1000px;
   margin: 53px auto;
-  padding: 0 10px;
+  padding: 10px;
 }
 .categoryContainer{
   width: 100%;
