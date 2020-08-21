@@ -12,8 +12,9 @@ import {
 export default function Register(props) {
     const history = useHistory();
     return (
-        <div>
+        <div className="container">
           <RegisterForm history={history}/>
+
         </div>
     )
 }

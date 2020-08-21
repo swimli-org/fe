@@ -10,8 +10,9 @@ import {
 export default function SearchResults(props) {
     const {term} =useParams()
     return (
-        <div>
+        <div className="container">
             You searched for <b>{term}</b>
         </div>
+
     )
 }
