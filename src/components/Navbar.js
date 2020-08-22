@@ -3,6 +3,7 @@ import { Drawer, Divider,Avatar, Badge, Input} from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import menu from '../assets/menu.svg'
 import logo from '../assets/logo.png'
+import cart from '../assets/cart.svg'
 import '../styles/Navbar.css'
 import {Link, useHistory} from 'react-router-dom'
 
@@ -19,23 +20,13 @@ export default function Navbar() {
     return (
       <div className='navbar__container'>
         <div className='navbar'>
-    
-            <img src={logo} onClick={()=>history.push('/')}className='logo'></img>
-            <Search
-            value={searchTerm}
-            className='search-bar'
-            placeholder="Search Swimli"
-            onChange={(e)=>setSearchTerm(e.target.value)}
-            onSearch={() =>{
-              const prom = new Promise(()=>history.push(`/results/${searchTerm}`))
-              prom.then(setSearchTerm(""))
-            }}
-          />
           <img src={menu} className='menu-btn' onClick={showDrawer}></img>
+          <img src={logo} onClick={()=>history.push('/')} className='logo'></img>
+          <img src={cart} className='cart-btn' onClick={()=>history.push('/cart')}></img>
 
           <Drawer
             title={<span className='avatar-container'><Avatar size="small" className='avatar' icon={<UserOutlined />} /><p className='username'>Guest</p><Link className='login-link'to='/login'>Login</Link></span>}
-            placement="right"
+            placement="left"
             closable={false}
             onClick={(e) => {
               if(e.target.tagName.toLowerCase() === 'a'){
@@ -55,7 +46,20 @@ export default function Navbar() {
             <p><Link to='/covers'>Covers</Link></p>
             </Drawer>
           </div>
+
+          <div className='searchbar'>
+            <Search
+              value={searchTerm}
+              className='search-bar'
+              placeholder="Search Swimli"
+              onChange={(e)=>setSearchTerm(e.target.value)}
+              onSearch={() =>{
+              const prom = new Promise(()=>history.push(`/results/${searchTerm}`))
+                prom.then(setSearchTerm(""))
+              }}
+            />
           </div>
+        </div>
   
       )
 }
