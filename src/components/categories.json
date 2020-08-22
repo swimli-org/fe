@@ -1,0 +1,26 @@
+[
+    {
+        "category":"Toys",
+        "backgroundColor":"red"
+    },
+    {
+        "category":"Floats",
+        "backgroundColor":"blue"
+    },
+    {
+        "category":"Chemicals",
+        "backgroundColor":"green"
+    },
+    {
+        "category":"Furniture",
+        "backgroundColor":"black"
+    },
+    {
+        "category":"Equipment",
+        "backgroundColor":"grey"
+    },
+    {
+        "category":"Covers",
+        "backgroundColor":"pink"
+    }
+]

@@ -1,46 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './styles/App.css';
 import Footer from './components/Footer'
+import categoriesList from './components/categories.json'
+import CategoryCard from './components/CategoryCard'
+
 
 function App() {
+  const[categories, setCategories]=useState(categoriesList)
   return (
     <>
     <div className="container">
     <h1>Categories</h1>
-      <div className="category-container">
-        <div className="category-box-container">
-          <a href="http://localhost:3000/toys">
-            <div className="category">Toys</div>
-          </a>
-        </div>
-        <div className="category-box-container">
-          <a href="http://localhost:3000/floats">
-            <div className="category">Floats</div>
-          </a>
-        </div>
-        <div className="category-box-container">
-          <a href="http://localhost:3000/chemicals">
-            <div className="category">Chemicals</div>
-          </a>
-        </div>
-        <div className="category-box-container">
-          <a href="http://localhost:3000/furniture">
-            <div className="category">Furniture</div>
-          </a>
-        </div>
-        <div className="category-box-container">
-          <a href="http://localhost:3000/equipment">
-            <div className="category">Equipment</div>
-          </a>
-        </div>
-        <div className="category-box-container">
-          <a href="http://localhost:3000/covers">
-
-            <div className="category">Covers</div>
-          </a>
-        </div>
-      </div>
-      
+    <div className='category-container'>
+      {categories && categories.map(category=>{
+        return(
+          <CategoryCard key={category.category} category={category.category} bgColor={category.backgroundColor}/>
+        )
+      })}
+    </div>
     </div>
     </>
   );
