@@ -1,0 +1,11 @@
+.checkout-btn{
+    display: block;
+    margin: 0 auto;
+    background-color: #2f89fc;
+    border: none;
+    color: white;
+}
+.checkout-btn:hover{
+    background-color: #2f89fc;
+    color: white;
+}
