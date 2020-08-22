@@ -11,7 +11,7 @@ export default function SearchResults(props) {
     const {term} =useParams()
     return (
         <div className="container">
-            You searched for <b>{term}</b>
+            Showing results for <b>{term}</b>
         </div>
 
     )
