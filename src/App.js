@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/App.css';
+import {Link, useHistory} from 'react-router-dom'
 import Footer from './components/Footer'
 
 function App() {
@@ -9,35 +10,34 @@ function App() {
     <h1>Categories</h1>
       <div className="category-container">
         <div className="category-box-container">
-          <a href="http://localhost:3000/toys">
+          <Link to='/toys'>
             <div className="category">Toys</div>
-          </a>
+          </Link>
         </div>
         <div className="category-box-container">
-          <a href="http://localhost:3000/floats">
+          <Link to='/floats'>
             <div className="category">Floats</div>
-          </a>
+          </Link>
         </div>
         <div className="category-box-container">
-          <a href="http://localhost:3000/chemicals">
+          <Link to='/chemicals'>
             <div className="category">Chemicals</div>
-          </a>
+          </Link>
         </div>
         <div className="category-box-container">
-          <a href="http://localhost:3000/furniture">
+          <Link to='/furniture'>
             <div className="category">Furniture</div>
-          </a>
+          </Link>
         </div>
         <div className="category-box-container">
-          <a href="http://localhost:3000/equipment">
+          <Link to='/equipment'>
             <div className="category">Equipment</div>
-          </a>
+          </Link>
         </div>
         <div className="category-box-container">
-          <a href="http://localhost:3000/covers">
-
+          <Link to='/covers'>
             <div className="category">Covers</div>
-          </a>
+          </Link>
         </div>
       </div>
       
