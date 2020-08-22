@@ -15,7 +15,7 @@ export default function Register(props) {
         <div className="container">
           <h1>Create an Account</h1>
           <RegisterForm history={history}/>
-          <a href="login">Sign in instead</a>
+          Already have an account? <a href="login">Sign in</a>
         </div>
     )
 }
