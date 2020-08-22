@@ -13,6 +13,7 @@ export default function Register(props) {
     const history = useHistory();
     return (
         <div className="container">
+          <h1>Create an Account</h1>
           <RegisterForm history={history}/>
 
         </div>
