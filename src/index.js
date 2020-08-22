@@ -29,8 +29,8 @@ import Landing from './views/Landing'
 
 ReactDOM.render(
   <React.StrictMode>
-
   <Router>
+        <div className='App'>
   <Navbar/>
   <Switch>
       <Route path="/toys">
@@ -68,7 +68,8 @@ ReactDOM.render(
 
       </Route>
     </Switch>
-    
+    <Footer/>
+    </div>
 
    </Router>
   </React.StrictMode>,
