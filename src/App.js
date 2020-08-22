@@ -35,6 +35,7 @@ function App() {
         </div>
         <div className="category-box-container">
           <a href="http://localhost:3000/covers">
+
             <div className="category">Covers</div>
           </a>
         </div>
