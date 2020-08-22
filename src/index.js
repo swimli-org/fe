@@ -21,7 +21,11 @@ import Covers from './views/Covers'
 import Cart from './views/Cart'
 import Register from './views/Register'
 import SearchResults from './views/SearchResults'
+
+import Footer from './components/Footer'
+
 import Landing from './views/Landing'
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -61,8 +65,10 @@ ReactDOM.render(
       </Route>
       <Route exact path="/">
             <App />
+
       </Route>
     </Switch>
+    
 
    </Router>
   </React.StrictMode>,
