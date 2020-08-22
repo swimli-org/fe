@@ -21,6 +21,7 @@ import Covers from './views/Covers'
 import Cart from './views/Cart'
 import Register from './views/Register'
 import SearchResults from './views/SearchResults'
+import Checkout from './views/Checkout'
 
 import Footer from './components/Footer'
 
@@ -65,6 +66,10 @@ ReactDOM.render(
       </Route>
       <Route exact path="/">
             <App />
+
+      </Route>
+      <Route exact path="/checkout">
+            <Checkout />
 
       </Route>
     </Switch>
