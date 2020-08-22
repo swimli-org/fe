@@ -20,6 +20,7 @@ import Equipment from './views/Equipment'
 import Covers from './views/Covers'
 import Cart from './views/Cart'
 import Register from './views/Register'
+import Login from './views/Login'
 import SearchResults from './views/SearchResults'
 import Checkout from './views/Checkout'
 
@@ -57,6 +58,9 @@ ReactDOM.render(
       </Route>
       <Route path="/register">
             <Register />
+      </Route>
+      <Route path="/login">
+            <Login />
       </Route>
       <Route path="/results/:term">
             <SearchResults />

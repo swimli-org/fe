@@ -34,7 +34,7 @@ export default function Navbar() {
           <img src={menu} className='menu-btn' onClick={showDrawer}></img>
 
           <Drawer
-            title={<span className='avatar-container'><Avatar size="small" className='avatar' icon={<UserOutlined />} /><p className='username'>Guest</p><Link className='register-link'to='/register'>Login</Link></span>}
+            title={<span className='avatar-container'><Avatar size="small" className='avatar' icon={<UserOutlined />} /><p className='username'>Guest</p><Link className='login-link'to='/login'>Login</Link></span>}
             placement="right"
             closable={false}
             onClick={(e) => {
