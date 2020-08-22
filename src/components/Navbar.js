@@ -11,15 +11,15 @@ export default function Navbar() {
   const history = useHistory();
   const { Search } = Input;
     const[visible, setVisible]=useState(false)
-    const[childDraw, setChildDraw]=useState(false)
     const showDrawer = () => setVisible(true);
     const onClose = () => setVisible(false);
 
     const[searchTerm, setSearchTerm]=useState()
 
     return (
+      <div className='navbar__container'>
         <div className='navbar'>
-          <div className='navbarContainer'>
+    
             <img src={logo} onClick={()=>history.push('/')}className='logo'></img>
             <Search
             value={searchTerm}
@@ -55,6 +55,7 @@ export default function Navbar() {
             <p><Link to='/covers'>Covers</Link></p>
             </Drawer>
           </div>
-        </div>
+          </div>
+  
       )
 }
