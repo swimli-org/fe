@@ -32,3 +32,46 @@
     position: flex;
     outline: none;
 }
+
+/*User Settings*/
+.user-tabs-container{
+    width: 20%;
+    margin-right: 3%;
+    padding-bottom: 10px;
+    background: #EEEEEE;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    float: left;
+}
+.user-tabs-title{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+}
+.user-tabs-active{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #DDDDDD;
+    border-left: 3px solid #2f89fc;
+    cursor: pointer;
+}
+.user-tabs{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.user-tabs:hover{
+    background: #CCCCCC;
+}
+.user-tabs-content-container{
+    width: 77%;
+    min-height: 600px;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    float: left;
+}

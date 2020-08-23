@@ -25,7 +25,17 @@ export default function Navbar() {
           <img src={cart} className='cart-btn' onClick={()=>history.push('/cart')}></img>
 
           <Drawer
-            title={<span className='avatar-container'><Avatar size="small" className='avatar' icon={<UserOutlined />} /><p className='username'>Guest</p><Link className='login-link'to='/login'>Login</Link></span>}
+            title={
+              <span className='avatar-container'>
+                <Link className='user-container' to='/account'>
+                  <Avatar size="small" className='avatar' icon={<UserOutlined />} />
+                  Guest
+                </Link>
+                <Link className='login-link'to='/login'>
+                  Login
+                </Link>
+              </span>
+            }
             placement="left"
             closable={false}
             onClick={(e) => {
