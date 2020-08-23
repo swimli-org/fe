@@ -12,7 +12,7 @@ function App() {
 console.log(auth)
   return (
     <>
-    <div className="container">
+    <div className="container"jk>
     <h1>Categories</h1>
     <div className='category-container'>
       {categories && categories.map(category=>{
