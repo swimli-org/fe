@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './styles/App.css';
+import {Link, useHistory} from 'react-router-dom'
 import Footer from './components/Footer'
 import categoriesList from './components/categories.json'
 import CategoryCard from './components/CategoryCard'
@@ -18,6 +19,7 @@ function App() {
         )
       })}
     </div>
+
     </div>
     </>
   );
