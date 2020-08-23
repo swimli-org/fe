@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
 import App from './App';
-
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
+import allReducers from './reducers'
 import * as serviceWorker from './serviceWorker';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  useRouteMatch,
-  useParams
+  Route
 } from "react-router-dom";
 import Navbar from './components/Navbar'
 import Toys from './views/Toys'
@@ -23,14 +23,14 @@ import Register from './views/Register'
 import Login from './views/Login'
 import SearchResults from './views/SearchResults'
 import Checkout from './views/Checkout'
-
 import Footer from './components/Footer'
-
 import Landing from './views/Landing'
 
+const store = createStore(allReducers,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render(
   <React.StrictMode>
+        <Provider store={store}>
   <Router>
         <div className='App'>
   <Navbar/>
@@ -81,6 +81,7 @@ ReactDOM.render(
     </div>
 
    </Router>
+   </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
