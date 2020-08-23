@@ -29,8 +29,13 @@
     margin-left: auto !important;
   }
   .avatar-container{
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
+  }
+  .user-container{
+    display: flex;
+    align-items: center;
+    color: #333333;
   }
   .avatar{
     margin-right: 10px !important;

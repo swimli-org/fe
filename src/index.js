@@ -21,6 +21,7 @@ import Covers from './views/Covers'
 import Cart from './views/Cart'
 import Register from './views/Register'
 import Login from './views/Login'
+import Account from './views/Account'
 import SearchResults from './views/SearchResults'
 import Checkout from './views/Checkout'
 
@@ -61,6 +62,9 @@ ReactDOM.render(
       </Route>
       <Route path="/login">
             <Login />
+      </Route>
+      <Route path="/account">
+            <Account />
       </Route>
       <Route path="/results/:term">
             <SearchResults />
