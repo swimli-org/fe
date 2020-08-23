@@ -13,7 +13,7 @@ export default function User() {
                 <div className="user-tabs">My Pool</div>
             </div>
             <div className="user-tabs-content-container">
-                Account
+                My Account
             </div>
         </div>
     )

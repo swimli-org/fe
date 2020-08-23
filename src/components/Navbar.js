@@ -22,7 +22,11 @@ export default function Navbar() {
         <div className='navbar'>
           <img src={menu} className='menu-btn' onClick={showDrawer}></img>
           <img src={logo} onClick={()=>history.push('/')} className='logo'></img>
-          <img src={cart} className='cart-btn' onClick={()=>history.push('/cart')}></img>
+
+          <Badge count={100} showZero={true} overflowCount={9} offset={[-40, 10]} style={{ backgroundColor: '#2f89fc' }}>
+            <img src={cart} className='cart-btn' onClick={()=>history.push('/cart')}></img>
+          </Badge>
+          
 
           <Drawer
             title={
@@ -46,7 +50,7 @@ export default function Navbar() {
             onClose={onClose}
             visible={visible}
           >
-            <Badge count={1}><p className='cart'><Link to='/cart'>Cart</Link></p></Badge>
+            <Badge count={1}  style={{ backgroundColor: '#2f89fc' }} offset={[10, 10]}><p className='cart'><Link to='/cart'>Cart</Link></p></Badge>
             <Divider plain>Categories</Divider>
             <p><Link to='/toys'>Toys</Link></p>
             <p><Link to='/floats'>Floats</Link></p>
