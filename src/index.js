@@ -22,6 +22,11 @@ import Cart from './views/Cart'
 import Register from './views/Register'
 import Login from './views/Login'
 import Account from './views/Account'
+import Orders from './views/Orders'
+import Autoship from './views/Autoship'
+import Addresses from './views/Addresses'
+import Payment_methods from './views/Payment_methods'
+import My_pool from './views/My_pool'
 import SearchResults from './views/SearchResults'
 import Checkout from './views/Checkout'
 
@@ -65,6 +70,21 @@ ReactDOM.render(
       </Route>
       <Route path="/account">
             <Account />
+      </Route>
+      <Route path="/orders">
+            <Orders />
+      </Route>
+      <Route path="/autoship">
+            <Autoship />
+      </Route>
+      <Route path="/addresses">
+            <Addresses />
+      </Route>
+      <Route path="/payment_methods">
+            <Payment_methods />
+      </Route>
+      <Route path="/my_pool">
+            <My_pool />
       </Route>
       <Route path="/results/:term">
             <SearchResults />
