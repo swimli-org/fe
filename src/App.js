@@ -1,13 +1,16 @@
 import React, {useState} from 'react';
 import './styles/App.css';
+/* Commented out for now
 import {Link, useHistory} from 'react-router-dom'
 import Footer from './components/Footer'
+*/
+
 import categoriesList from './components/categories.json'
 import CategoryCard from './components/CategoryCard'
-import {useSelector, useDispatch} from 'react-redux'
+import {useSelector} from 'react-redux'
 
 function App() {
-  const[categories, setCategories]=useState(categoriesList)
+  const[categories]=useState(categoriesList)
   const auth = useSelector(state=>state.authReducer)
 console.log(auth)
   return (

@@ -20,11 +20,11 @@ export default function Navbar() {
     return (
       <div className='navbar__container'>
         <div className='navbar'>
-          <img src={menu} className='menu-btn' onClick={showDrawer}></img>
-          <img src={logo} onClick={()=>history.push('/')} className='logo'></img>
+          <img src={menu} className='menu-btn' alt='Menu Button' onClick={showDrawer}></img>
+          <img src={logo} className='logo' alt='Logo' onClick={()=>history.push('/')}></img>
 
           <Badge count={100} showZero={true} overflowCount={9} offset={[-40, 10]} style={{ backgroundColor: '#2f89fc' }}>
-            <img src={cart} className='cart-btn' onClick={()=>history.push('/cart')}></img>
+            <img src={cart} className='cart-btn' alt='Logo' onClick={()=>history.push('/cart')}></img>
           </Badge>
           
 
