@@ -1,8 +1,8 @@
 import React from 'react'
 import { Formik } from 'formik';
-/*import '../styles/User.css'*/
+import '../styles/User.css'
 
-
+  
 
 const RegisterForm = (props) => (
     <>
@@ -76,7 +76,7 @@ const RegisterForm = (props) => (
               value={values.password}
             />
             {errors.password && touched.password && errors.password}
-            <button
+            <button 
               type="submit"
               className="registerFormButton"
               disabled={isSubmitting}
@@ -89,3 +89,4 @@ const RegisterForm = (props) => (
       </>
   );
   export default RegisterForm
+  
