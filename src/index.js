@@ -25,8 +25,8 @@ import Account from './views/Account'
 import Orders from './views/Orders'
 import Autoship from './views/Autoship'
 import Addresses from './views/Addresses'
-import Payment_methods from './views/Payment_methods'
-import My_pool from './views/My_pool'
+import PaymentMethods from './views/PaymentMethods'
+import MyPool from './views/MyPool'
 import SearchResults from './views/SearchResults'
 import Checkout from './views/Checkout'
 import Footer from './components/Footer'
@@ -80,11 +80,11 @@ ReactDOM.render(
       <Route path="/addresses">
             <Addresses />
       </Route>
-      <Route path="/payment_methods">
-            <Payment_methods />
+      <Route path="/paymentMethods">
+            <PaymentMethods />
       </Route>
-      <Route path="/my_pool">
-            <My_pool />
+      <Route path="/myPool">
+            <MyPool />
       </Route>
       <Route path="/results/:term">
             <SearchResults />
