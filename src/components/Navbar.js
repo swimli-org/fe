@@ -94,7 +94,7 @@ export default function Navbar() {
             />
           </div>
           <div className='alert-header'>
-            <Link to='/register'>
+            <Link to='/autoship'>
               <img src={autoship} className='autoship' alt='Autoship Icon' onClick={()=>history.push('/')}></img>
               Save today on your first autoship order!
             </Link>
