@@ -28,7 +28,7 @@ export default function Navbar() {
             <Search
               value={searchTerm}
               className='search-bar'
-              placeholder="Search Swimli"
+              placeholder="Search Swimli..."
               onChange={(e)=>setSearchTerm(e.target.value)}
               onSearch={() =>{
               const prom = new Promise(()=>history.push(`/results/${searchTerm}`))
@@ -37,7 +37,11 @@ export default function Navbar() {
             />
           </div>
 
-          <div className="desktop-links">Account | Cart</div>
+          <div className="desktop-links">
+            <div className='desktop-links-tab'><Link to='/account'>Account</Link></div>
+            <div className='desktop-links-tab'><Link to='/returns'>Returns</Link></div>
+            <div className='desktop-links-tab'><Link to='/cart'>Cart</Link></div>
+          </div>
 
           <Badge count={100} className='cart-button-badge' showZero={true} overflowCount={9} offset={[-40, 10]} style={{ backgroundColor: '#2f89fc' }}>
             <img src={cart} className='cart-button' alt='Logo' onClick={()=>history.push('/cart')}></img>
@@ -81,7 +85,7 @@ export default function Navbar() {
             <Search
               value={searchTerm}
               className='search-bar'
-              placeholder="Search Swimli"
+              placeholder="Search Swimli..."
               onChange={(e)=>setSearchTerm(e.target.value)}
               onSearch={() =>{
               const prom = new Promise(()=>history.push(`/results/${searchTerm}`))
@@ -90,8 +94,10 @@ export default function Navbar() {
             />
           </div>
           <div className='alert-header'>
-            <img src={autoship} className='autoship' alt='Autoship Icon' onClick={()=>history.push('/')}></img>
-            Save today when you use autoship!
+            <Link to='/register'>
+              <img src={autoship} className='autoship' alt='Autoship Icon' onClick={()=>history.push('/')}></img>
+              Save today on your first autoship order!
+            </Link>
           </div>
         </div>
   
