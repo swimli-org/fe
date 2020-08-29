@@ -74,11 +74,25 @@ body{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
   }
+  .category{
+    height: 100px;
+    line-height: 100px;
+  }
+  .slider{
+    height: 270px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .category-container{
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto;
+  }
+  .category{
+    height: 50px;
+    line-height: 50px;
+  }
+  .slider{
+    height: 220px;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -95,6 +109,3 @@ body{
     transform: scale(1.05);
   }
 }
-
-
-
