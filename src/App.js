@@ -9,24 +9,24 @@ import categoriesList from './components/categories.json'
 import CategoryCard from './components/CategoryCard'
 import {useSelector} from 'react-redux'
 
+
 function App() {
   const[categories]=useState(categoriesList)
   const auth = useSelector(state=>state.authReducer)
 console.log(auth)
   return (
-    <>
-    <div className="container"jk>
-    <h1>Categories</h1>
-    <div className='category-container'>
-      {categories && categories.map(category=>{
-        return(
-          <CategoryCard key={category.category} category={category.category} bgColor={category.backgroundColor}/>
-        )
-      })}
-    </div>
+    <div className='container'>
+      <div className='slider'>Slider</div>
+      <h1>Categories</h1>
+      <div className='category-container'>
+        {categories && categories.map(category=>{
+          return(
+            <CategoryCard key={category.category} category={category.category} bgColor={category.backgroundColor}/>
+          )
+        })}
+      </div>
 
     </div>
-    </>
   );
 }
 
