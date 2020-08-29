@@ -15,6 +15,7 @@
     height: 20px;
     display: block;
     cursor: pointer;
+    margin-right: auto !important;
   }
   .logo{
     height: 25px;
