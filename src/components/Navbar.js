@@ -4,6 +4,7 @@ import { UserOutlined } from '@ant-design/icons';
 import menu from '../assets/menu.svg'
 import logo from '../assets/logo.png'
 import cart from '../assets/cart.svg'
+import autoship from '../assets/autoship.svg'
 import '../styles/Navbar.css'
 import {Link, useHistory} from 'react-router-dom'
 
@@ -23,8 +24,23 @@ export default function Navbar() {
           <img src={menu} className='menu-btn' alt='Menu Button' onClick={showDrawer}></img>
           <img src={logo} className='logo' alt='Logo' onClick={()=>history.push('/')}></img>
 
-          <Badge count={100} showZero={true} overflowCount={9} offset={[-40, 10]} style={{ backgroundColor: '#2f89fc' }}>
-            <img src={cart} className='cart-btn' alt='Logo' onClick={()=>history.push('/cart')}></img>
+          <div className='desktop-search'>
+            <Search
+              value={searchTerm}
+              className='search-bar'
+              placeholder="Search Swimli"
+              onChange={(e)=>setSearchTerm(e.target.value)}
+              onSearch={() =>{
+              const prom = new Promise(()=>history.push(`/results/${searchTerm}`))
+                prom.then(setSearchTerm(""))
+              }}
+            />
+          </div>
+
+          <div className="desktop-links">Account | Cart</div>
+
+          <Badge count={100} className='cart-button-badge' showZero={true} overflowCount={9} offset={[-40, 10]} style={{ backgroundColor: '#2f89fc' }}>
+            <img src={cart} className='cart-button' alt='Logo' onClick={()=>history.push('/cart')}></img>
           </Badge>
           
 
@@ -61,7 +77,7 @@ export default function Navbar() {
             </Drawer>
           </div>
 
-          <div className='searchbar'>
+          <div className='mobile-search'>
             <Search
               value={searchTerm}
               className='search-bar'
@@ -72,6 +88,10 @@ export default function Navbar() {
                 prom.then(setSearchTerm(""))
               }}
             />
+          </div>
+          <div className='alert-header'>
+            <img src={autoship} className='autoship' alt='Autoship Icon' onClick={()=>history.push('/')}></img>
+            Save today when you use autoship!
           </div>
         </div>
   
