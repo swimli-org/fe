@@ -35,13 +35,35 @@
     align-items: center;
   }
   .desktop-links{
-    width: 142px;
+    width: auto;
     height: 30px;
     line-height: 30px;
+    font-size: 18px;
+    font-weight: 500;
     display: block;
     color: white;
     text-align: right;
+
   }
+  .desktop-links-tab{
+    display: inline;
+    margin-left: 20px;
+  }
+  .desktop-links-tab:first-child{
+    margin-left: 0px;
+  }
+  .desktop-links-tab a{
+    color: inherit;
+  }
+
+
+
+
+
+
+
+
+
   .search-bar{
     width: 100%;
     outline: 0;
@@ -94,9 +116,13 @@
     color: white;
     background: #2877DE;
   }
+  .alert-header a{
+    color: #FFFFFF;
+  }
   .autoship{
     height: 18px;
     padding-right: 5px;
+
   }
 
 
