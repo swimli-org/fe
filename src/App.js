@@ -4,6 +4,7 @@ import './styles/App.css';
 import {Link, useHistory} from 'react-router-dom'
 import Footer from './components/Footer'
 */
+import CarouselSlider from './components/Carousel'
 
 import categoriesList from './components/categories.json'
 import CategoryCard from './components/CategoryCard'
@@ -16,7 +17,7 @@ function App() {
 console.log(auth)
   return (
     <div className='container'>
-      <div className='slider'>Slider</div>
+      <CarouselSlider/>
       <h1>Categories</h1>
       <div className='category-container'>
         {categories && categories.map(category=>{
