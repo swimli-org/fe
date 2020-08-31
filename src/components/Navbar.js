@@ -42,14 +42,16 @@ export default function Navbar() {
             <div className='desktop-links-tab'>
               <Link to='/cart'>
                 Cart
-                <div className='desktop-cart-badge'>0</div>
+                <div className='cart-badge'>0</div>
               </Link>
             </div>
           </div>
-
-          <Badge count={100} className='cart-button-badge' showZero={true} overflowCount={9} offset={[-40, 10]} style={{ backgroundColor: '#2f89fc' }}>
-            <img src={cart} className='cart-button' alt='Logo' onClick={()=>history.push('/cart')}></img>
-          </Badge>
+          <div className='mobile-cart-link'>
+          <Link to='/cart'>
+            <div className='cart-badge'>10,000,000</div>
+            <img src={cart} className='cart-button' alt='Cart'></img>
+          </Link>
+          </div>
           
 
           <Drawer
