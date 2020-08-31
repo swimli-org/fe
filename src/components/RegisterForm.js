@@ -1,5 +1,6 @@
 import React from 'react'
 import { Formik } from 'formik';
+import axios from 'axios'
 /*import '../styles/User.css'*/
 
 
@@ -9,7 +10,7 @@ const RegisterForm = (props) => (
     {console.log(props)}
 
       <Formik
-        initialValues={{ fName:'', lName:'',email: '', password: '' }}
+        initialValues={{ first_name:'', last_name:'',email: '', password: '' }}
         validate={values => {
           const errors = {};
           if (!values.email) {
@@ -22,7 +23,19 @@ const RegisterForm = (props) => (
           return errors;
         }}
         onSubmit={(values, { setSubmitting }) => {
-          props.history.push('/')
+       
+          axios.post(`https://swimli.herokuapp.com/users/register`, values)
+          .then(res=>{
+            console.log(res)
+            localStorage.swimliFirstName = res.data.first_name
+            localStorage.swimliLastName = res.data.last_name
+            localStorage.swimliUserId = res.data.id
+            localStorage.swimliToken = res.data.token
+            if(localStorage.swimliToken){
+            props.history.push('/')
+            }
+            
+          })
         }}
       >
         {({
@@ -38,24 +51,24 @@ const RegisterForm = (props) => (
           <form onSubmit={handleSubmit}>
               <input
               type="text"
-              name="fName"
+              name="first_name"
               className="registerFormInput"
               placeholder="First Name"
               onChange={handleChange}
               onBlur={handleBlur}
-              value={values.fName}
+              value={values.first_name}
             />
-            {errors.fName && touched.fName && errors.fName}
+            {errors.first_name && touched.first_name && errors.first_name}
             <input
               type="text"
-              name="lName"
+              name="last_name"
               className="registerFormInput"
               placeholder="Last Name"
               onChange={handleChange}
               onBlur={handleBlur}
-              value={values.lName}
+              value={values.last_name}
             />
-            {errors.lName && touched.lName && errors.lName}
+            {errors.last_name && touched.last_name && errors.last_name}
             <input
               type="email"
               name="email"
