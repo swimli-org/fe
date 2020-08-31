@@ -13,7 +13,7 @@ import {
 export default function Login (props) {
     const history =useHistory();
     return(
-    <>
+    <div className="container">
     {console.log("PROPS",props)}
 
 
@@ -87,5 +87,6 @@ export default function Login (props) {
           </form>
         )}
       </Formik>
-      </>
+      Don't have an account? <Link to='/register'>Register</Link>
+      </div>
     )};
