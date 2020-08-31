@@ -31,16 +31,20 @@ export default function Navbar() {
               placeholder="Search Swimli..."
               onChange={(e)=>setSearchTerm(e.target.value)}
               onSearch={() =>{
-              const prom = new Promise(()=>history.push(`/results/${searchTerm}`))
+              const prom = new Promise(()=>history.push(`/s/${searchTerm}`))
                 prom.then(setSearchTerm(""))
               }}
             />
           </div>
 
           <div className="desktop-links">
-            <div className='desktop-links-tab'><Link to='/account'>Account</Link></div>
-            <div className='desktop-links-tab'><Link to='/returns'>Returns</Link></div>
-            <div className='desktop-links-tab'><Link to='/cart'>Cart</Link></div>
+            <div className='desktop-links-tab'><Link to='/overview'>Account</Link></div>
+            <div className='desktop-links-tab'>
+              <Link to='/cart'>
+                Cart
+                <div className='desktop-cart-badge'>0</div>
+              </Link>
+            </div>
           </div>
 
           <Badge count={100} className='cart-button-badge' showZero={true} overflowCount={9} offset={[-40, 10]} style={{ backgroundColor: '#2f89fc' }}>

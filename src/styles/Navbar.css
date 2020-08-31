@@ -23,7 +23,6 @@
     display: block;
     cursor: pointer;
     margin-left: auto !important;
-
     display: none;
   }
   .cart-button-badge{
@@ -43,7 +42,6 @@
     display: block;
     color: white;
     text-align: right;
-
   }
   .desktop-links-tab{
     display: inline;
@@ -54,6 +52,17 @@
   }
   .desktop-links-tab a{
     color: inherit;
+  }
+  .desktop-cart-badge{
+    display: inline;
+    margin-left: 8px;
+    padding: 3px 6px;
+    background: #FFFFFF;
+    color: #2f89fc;
+    font-size: 14px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
   }
 
 

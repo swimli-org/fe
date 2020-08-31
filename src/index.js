@@ -21,7 +21,8 @@ import Covers from './views/Covers'
 import Cart from './views/Cart'
 import Register from './views/Register'
 import Login from './views/Login'
-import Account from './views/Account'
+import Overview from './views/Overview'
+import Personal from './views/Personal'
 import Orders from './views/Orders'
 import Autoship from './views/Autoship'
 import Addresses from './views/Addresses'
@@ -68,8 +69,11 @@ ReactDOM.render(
       <Route path="/login">
             <Login />
       </Route>
-      <Route path="/account">
-            <Account />
+      <Route path="/overview">
+            <Overview />
+      </Route>
+      <Route path="/personal">
+            <Personal />
       </Route>
       <Route path="/orders">
             <Orders />
