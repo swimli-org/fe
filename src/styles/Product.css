@@ -187,24 +187,7 @@
     float: right;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*  MOBILE SCREENS  */
 @media only screen and (max-width: 975px) { 
     .breadcrumb-trail{
         font-size: 13px;

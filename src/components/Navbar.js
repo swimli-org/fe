@@ -39,6 +39,7 @@ export default function Navbar() {
 
           <div className="desktop-links">
             <div className='desktop-links-tab'><Link to='/overview'>Account</Link></div>
+            <div className='desktop-links-tab'><Link to='/login'>Login</Link></div>
             <div className='desktop-links-tab'>
               <Link to='/cart'>
                 Cart
@@ -57,7 +58,7 @@ export default function Navbar() {
           <Drawer
             title={
               <span className='avatar-container'>
-                <Link className='user-container' to='/account'>
+                <Link className='user-container' to='/overview'>
                   <Avatar size="small" className='avatar' icon={<UserOutlined />} />
                   Guest
                 </Link>
