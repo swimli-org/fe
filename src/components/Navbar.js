@@ -40,6 +40,7 @@ export default function Navbar() {
 
           <div className="desktop-links">
             <div className='desktop-links-tab'><Link to='/overview'>Account</Link></div>
+            <div className='desktop-links-tab'><Link to='/login'>Login</Link></div>
             <div className='desktop-links-tab'>
               <Link to='/cart'>
                 Cart
@@ -49,7 +50,7 @@ export default function Navbar() {
           </div>
           <div className='mobile-cart-link'>
           <Link to='/cart'>
-            <div className='cart-badge'>10,000,000</div>
+            <div className='cart-badge'>0</div>
             <img src={cart} className='cart-button' alt='Cart'></img>
           </Link>
           </div>
@@ -58,7 +59,7 @@ export default function Navbar() {
           <Drawer
             title={
               <span className='avatar-container'>
-                <Link className='user-container' to='/account'>
+                <Link className='user-container' to='/overview'>
                   <Avatar size="small" className='avatar' icon={<UserOutlined />} />
                  {name !="null null"? name:'Guest'}
                 </Link>
