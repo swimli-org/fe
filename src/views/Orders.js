@@ -7,7 +7,8 @@ export default function User() {
         <div className="container">
             <div className="user-tabs-container">
                 <div className="user-tabs-title">Hey, First Name!</div>
-                <Link to='/account'><div className="user-tabs">Account</div></Link>
+                <Link to='/overview'><div className="user-tabs">Overview</div></Link>
+                <Link to='/personal'><div className="user-tabs">Personal</div></Link>
                 <Link to='/orders'><div className="user-tabs-active">Orders</div></Link>
                 <Link to='/autoship'><div className="user-tabs">Autoship</div></Link>
                 <Link to='/addresses'><div className="user-tabs">Addresses</div></Link>
@@ -16,45 +17,9 @@ export default function User() {
             </div>
             <div className="user-content-container">
                 <div className='user-title'>
-                    Orders
+                    My Orders
                     <span><b>3 orders</b> placed in (Dropdown Menu)</span>
                 </div>
-                <div className='order-container'>
-                    <div className='order-topbar'>Order 1</div>
-                    <div className='order-contents'>
-                        <div className='order-item'>
-                            <div className='order-item-image'>
-                                <img src={product} alt='Product'></img>
-                            </div>
-                            <div className='order-item-info'>
-                                In The Swim Pool Shock 6 X 1 lb. bags
-                            </div>
-                        </div>
-                        <div className='order-item'>
-                            <div className='order-item-image'>
-                                <img src={product} alt='Product'></img>
-                            </div>
-                            <div className='order-item-info'>
-                                Item 2
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='order-container'>
-                    <div className='order-topbar'>Order 2</div>
-                    <div className='order-contents'>
-                        <div className='order-item'>
-                            <div className='order-item-image'>
-                                <img src={product} alt='Product'></img>
-                            </div>
-                            <div className='order-item-info'>
-                                Item 1
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     )

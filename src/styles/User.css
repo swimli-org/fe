@@ -74,7 +74,7 @@
 .user-title{
     height: 48px;
     line-height: 48px;
-    font-size: 18px;
+    font-size: 26px;
     font-weight: 500;
 }
 .user-title span{
@@ -82,81 +82,34 @@
     float: right;
 }
 
+
 /* ACCOUNT PAGE CSS */
-.account-tab{
+.personal-tab{
     height: auto;
     margin: 10px 0;
     overflow: hidden;
     border-bottom: 1px solid #DDDDDD;
 }
-.account-tab:last-child{
+.personal-tab:last-child{
     border-bottom: none;
 }
-.account-title{
+.personal-title{
     width: 20%;
     height: 100%;
     padding: 10px;
     font-weight: 600;
     float: left;
 }
-.account-description{
+.personal-description{
     width: 80%;
     padding: 10px;
-    font-weight: 600;
+    font-weight: 500;
     float: right;
 }
-.account-description span{
+.personal-description span{
     font-size: 12px;
     color: #2f89fc;
     cursor: pointer;
     float: right;
 }
 
-/* ORDERS PAGE CSS */
-.order-container{
-    height: auto;
-    margin: 10px 0;
-    border: 1px solid #CCCCCC;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-}
-.order-topbar{
-    padding: 10px;
-    background: #EEEEEE;
-    -webkit-border-top-left-radius: 6px;
-    -webkit-border-top-right-radius: 6px;
-    -moz-border-radius-topleft: 6px;
-    -moz-border-radius-topright: 6px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-}
-.order-contents{
-    padding: 0 10px;
-}
-.order-item{
-    padding: 10px 0 10px 5px;
-    overflow: hidden;
-    border-bottom: 1px solid #CCCCCC;
-}
-.order-item:last-child{
-    border-bottom: none;
-}
-.order-item-image{
-    width: 15%;
-    max-width: 100px;
-    height: 100px;
-    line-height: 100px;
-    float: left;
-}
-.order-item-image img{
-    width: 100%;
-}
-.order-item-info{
-    width: auto;
-    min-width: 85%;
-    height: 100px;
-    line-height: 100px;
-    padding: 0 10px;
-    float: left;
-}
