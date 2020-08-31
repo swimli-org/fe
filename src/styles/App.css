@@ -35,7 +35,7 @@ body{
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  background: #80B7FD;
+  background: #050505;
 
 
 
@@ -64,7 +64,6 @@ body{
   transform: scale(1.05);
   font-size: 21px;
   cursor: pointer;
-  background-color: #2f89fc;
   color: white;
   animation: scale .2s ease-in-out;
 }

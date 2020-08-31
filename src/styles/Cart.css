@@ -1,11 +1,28 @@
-.checkout-btn{
+.cart-title{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0 10px;
+  }
+  .cart-sub-title{
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+  }
+  .checkout-btn{
+    height: auto;
     display: block;
-    margin: 0 auto;
-    background-color: #2f89fc;
+    margin: 20px auto;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #26a69a;
+    color: #FFFFFF;
     border: none;
-    color: white;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 .checkout-btn:hover{
-    background-color: #2f89fc;
-    color: white;
+    background-color: #00897b;
+    color: #FFFFFF;
 }

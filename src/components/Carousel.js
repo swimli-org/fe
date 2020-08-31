@@ -5,7 +5,7 @@ const contentStyle = {
     color: '#fff',
     lineHeight: '260px',
     textAlign: 'center',
-    background: '#80b7fd',
+    background: '#26a69a',
     borderRadius:"20px"
     
   };
