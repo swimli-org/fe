@@ -6,10 +6,6 @@ export default function Product() {
     return (
       <div className="container">
         <div className='breadcrumb-trail'>Equipment / Pumps & Motors</div>
-        <div className='product-image-container'>
-        <img src={intelliflo} className='product-image' alt='Intelliflo'></img>
-
-        </div>
         <div className='product-header'>
             <div className='product-header-left'>
                 <div className='product-brand'>By Pentair</div>
@@ -24,6 +20,9 @@ export default function Product() {
                     Free 1-3 Day Shipping
                 </div>
             </div>
+        </div>
+        <div className='product-image-container'>
+            <img src={intelliflo} className='product-image' alt='Intelliflo'></img>
         </div>
       </div>
     )
