@@ -1,4 +1,6 @@
 import React from 'react'
+import {Button} from 'antd'
+import {Link} from 'react-router-dom'
 import '../styles/Product.css'
 import intelliflo from '../assets/products/intelliflo.jpg'
 
@@ -24,6 +26,34 @@ export default function Product() {
         <div className='product-image-container'>
             <img src={intelliflo} className='product-image' alt='Intelliflo'></img>
         </div>
+        
+        <div className='product-body-container'>
+            <div className='addcart'>
+                <div className='addcart-top'>
+                    <div className='addcart-top-left'>
+                        <p>Avaibility</p>
+                        <span>In Stock</span>
+                    </div>
+                    <div className='addcart-top-right'>
+                        <p>Order Now</p>
+                        <span>Recieve by September 3</span>
+                    </div>
+                </div>
+                <div className='addcart-bottom'>
+                    Quantity
+                    <Button className='addcart-btn'><Link to='/cart'>Add to Cart</Link></Button>
+                    <p>OR</p>
+                    <Button className='buynow-btn'><Link to='/cart'>Buy Now</Link></Button>
+                </div>
+            </div>
+            <div className='product-body-tabs'>Description</div>
+        </div>
+        <div className='similar-products-container'>
+            <p>Similar Products</p>
+            <div className='similar-products'></div>
+        </div>
+        
+
       </div>
     )
 }

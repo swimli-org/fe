@@ -48,7 +48,7 @@ export default function Navbar() {
           </div>
           <div className='mobile-cart-link'>
           <Link to='/cart'>
-            <div className='cart-badge'>10,000,000</div>
+            <div className='cart-badge'>0</div>
             <img src={cart} className='cart-button' alt='Cart'></img>
           </Link>
           </div>
