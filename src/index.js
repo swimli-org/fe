@@ -32,6 +32,7 @@ import SearchResults from './views/SearchResults'
 import Checkout from './views/Checkout'
 import Footer from './components/Footer'
 import Landing from './views/Landing'
+import Product from './views/Product'
 
 const store = createStore(allReducers,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
@@ -98,11 +99,12 @@ ReactDOM.render(
       </Route>
       <Route exact path="/">
             <App />
-
       </Route>
       <Route exact path="/checkout">
             <Checkout />
-
+      </Route>
+      <Route exact path="/product">
+            <Product />
       </Route>
     </Switch>
     <Footer/>

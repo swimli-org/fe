@@ -1,9 +1,7 @@
 import React, {useState} from 'react';
 import './styles/App.css';
-/* Commented out for now
 import {Link, useHistory} from 'react-router-dom'
 import Footer from './components/Footer'
-*/
 import CarouselSlider from './components/Carousel'
 
 import categoriesList from './components/categories.json'
@@ -26,6 +24,9 @@ console.log(auth)
           )
         })}
       </div>
+      <Link to='/product'>
+        View Product
+      </Link>
 
     </div>
   );
