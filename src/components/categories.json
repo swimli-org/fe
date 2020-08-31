@@ -1,26 +1,26 @@
 [
     {
         "category":"Toys",
-        "backgroundColor":"#ff8a80"
+        "backgroundColor":"#e57373"
     },
     {
         "category":"Floats",
-        "backgroundColor":"#ff80ab"
+        "backgroundColor":"#4db6ac"
     },
     {
         "category":"Chemicals",
-        "backgroundColor":"#ea80fc"
+        "backgroundColor":"#ff8a65"
     },
     {
         "category":"Furniture",
-        "backgroundColor":"#b388ff"
+        "backgroundColor":"#9575cd"
     },
     {
         "category":"Equipment",
-        "backgroundColor":"#ffd571"
+        "backgroundColor":"#a1887f"
     },
     {
         "category":"Covers",
-        "backgroundColor":"#82b1ff"
+        "backgroundColor":"#64b5f6"
     }
 ]

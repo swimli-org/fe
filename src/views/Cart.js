@@ -6,8 +6,9 @@ import '../styles/Cart.css'
 export default function Cart() {
     return (
       <div className="container">
-        <h1>There is currently nothing in your cart</h1>
-        <Button className='checkout-btn'><Link to='/checkout'>Checkout</Link></Button>
+        <div className='cart-title'>Your Cart is Empty.</div>
+        <div className='cart-sub-title'>Find something to put in it.</div>
+        <Button className='checkout-btn'><Link to='/'>Continue Shopping</Link></Button>
       </div>
     )
 }
