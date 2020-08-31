@@ -10,6 +10,7 @@ import {Link, useHistory} from 'react-router-dom'
 
 
 export default function Navbar() {
+  const name = `${localStorage.getItem('swimliFirstName')} ${localStorage.getItem('swimliLastName')}`
   const history = useHistory();
   const { Search } = Input;
     const[visible, setVisible]=useState(false)
@@ -59,11 +60,16 @@ export default function Navbar() {
               <span className='avatar-container'>
                 <Link className='user-container' to='/account'>
                   <Avatar size="small" className='avatar' icon={<UserOutlined />} />
-                  Guest
+                 {name !="null null"? name:'Guest'}
                 </Link>
-                <Link className='login-link'to='/login'>
+                {name !="null null"? <Link className='login-link' onClick={()=>{
+                  localStorage.removeItem('swimliFirstName') 
+                  localStorage.removeItem('swimliLastName')}}to='/'>
+                  Logout
+                </Link>:<Link className='login-link'to='/login'>
                   Login
-                </Link>
+                </Link>}
+                
               </span>
             }
             placement="left"

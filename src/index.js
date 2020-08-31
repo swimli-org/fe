@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
 } from "react-router-dom";
 import Navbar from './components/Navbar'
 import Toys from './views/Toys'
