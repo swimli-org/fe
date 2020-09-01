@@ -53,41 +53,41 @@ const RegisterForm = (props) => (
           /* and other goodies */
         }) => (
           <form onSubmit={handleSubmit}>
-            <div className='primary-input-title'>First Name:</div>
               <input
               type="text"
               name="first_name"
               className="primary-form"
+              placeholder="First Name"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.first_name}
             />
             {errors.first_name && touched.first_name && errors.first_name}
-            <div className='primary-input-title'>Last Name:</div>
             <input
               type="text"
               name="last_name"
               className="primary-form"
+              placeholder="Last Name"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.last_name}
             />
             {errors.last_name && touched.last_name && errors.last_name}
-            <div className='primary-input-title'>Email:</div>
             <input
               type="email"
               name="email"
               className="primary-form"
+              placeholder="Email"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.email}
             />
             {errors.email && touched.email && errors.email}
-            <div className='primary-input-title'>Password:</div>
             <input
               type="password"
               name="password"
               className="primary-form"
+              placeholder="Password"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.password}
