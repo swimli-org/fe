@@ -58,21 +58,21 @@ export default function Login (props) {
             /* and other goodies */
           }) => (
             <form onSubmit={handleSubmit}>
-              <div className='primary-input-title'>Email:</div>
               <input
                 type="email"
                 name="email"
                 className="primary-form"
+                placeholder="Email"
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.email}
               />
               {errors.email && touched.email && errors.email}
-              <div className='primary-input-title'>Password:</div>
               <input
                 type="password"
                 name="password"
                 className="primary-form"
+                placeholder="Password"
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.password}
