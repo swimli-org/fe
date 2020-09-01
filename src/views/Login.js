@@ -15,7 +15,7 @@ export default function Login (props) {
     return(
     <div className="container">
     {console.log("PROPS",props)}
-      <div className='primary-title'>Sign in to Swimli</div>
+      <div className='primary-title'>Sign in to Swimli.</div>
 
       <div className='primary-container'>
         <Formik

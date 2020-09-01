@@ -9,7 +9,7 @@ const RegisterForm = (props) => (
     <>
     {console.log(props)}
 
-    <div className='primary-title'>Sign in to Swimli</div>
+    <div className='primary-title'>Create a Swimli account.</div>
 
       <div className='primary-container'>
 
