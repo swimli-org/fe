@@ -15,9 +15,9 @@ export default function Login (props) {
     return(
     <div className="container">
     {console.log("PROPS",props)}
-      <div className='signin-title'>Sign in to Swimli</div>
+      <div className='primary-title'>Sign in to Swimli</div>
 
-      <div className='signin-container'>
+      <div className='primary-container'>
         <Formik
           initialValues={{ email: '', password: '' }}
           validate={values => {
@@ -58,21 +58,21 @@ export default function Login (props) {
             /* and other goodies */
           }) => (
             <form onSubmit={handleSubmit}>
-              <div className='signin-input-title'>Email:</div>
+              <div className='primary-input-title'>Email:</div>
               <input
                 type="email"
                 name="email"
-                className="signin-form"
+                className="primary-form"
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.email}
               />
               {errors.email && touched.email && errors.email}
-              <div className='signin-input-title'>Password:</div>
+              <div className='primary-input-title'>Password:</div>
               <input
                 type="password"
                 name="password"
-                className="signin-form"
+                className="primary-form"
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.password}
@@ -81,7 +81,7 @@ export default function Login (props) {
               <p>Forgot Password?</p>
               <button
                 type="submit"
-                className="signin-btn"
+                className="primary-btn"
                 disabled={isSubmitting}>
                 Sign In
               </button>
@@ -90,9 +90,9 @@ export default function Login (props) {
         </Formik>
       </div>
 
-      <div className='signin-register-container'>
-      <div className='signin-register-title'>New to Swimli?</div>
-        <button type="submit" className="signin-register-btn" to='/register'>
+      <div className='secondary-container'>
+      <div className='secondary-title'>New to Swimli?</div>
+        <button type="submit" className="secondary-btn" onClick={()=>history.push('/register')}>
           Create your Account
         </button>
       </div>
