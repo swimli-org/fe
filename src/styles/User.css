@@ -221,9 +221,6 @@
 
 
 @media only screen and (max-width: 975px) {
-    body{background: coral;}
-
-
     /*  Login Page  */
     .signin-title{
         font-size: 30px;
@@ -240,8 +237,6 @@
     }
   }
   @media only screen and (max-width: 600px) {
-    body{background: blue;}
-
     /*  Login Page  */
     .signin-title{
         font-size: 30px;
