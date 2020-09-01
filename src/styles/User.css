@@ -6,7 +6,8 @@
     margin: 30px 0 20px;
 }
   .signin-container{
-    width: 36%;
+    width: 90%;
+    max-width: 375px;
     margin: 0 auto;
     padding: 30px 40px;
     -webkit-border-radius: 6px;
@@ -57,7 +58,8 @@
     outline: none;
   }
   .signin-register-container{
-    width: 26%;
+    width: 75%;
+    max-width: 300px;
     margin: 50px auto;
     padding: 20px 30px;
     -webkit-border-radius: 6px;
@@ -225,13 +227,6 @@
     .signin-title{
         font-size: 30px;
     }
-    .signin-container{
-        width: 50%;
-    }
-    .signin-register-container{
-        width: 44%;
-
-    }
     .signin-register-title{
         font-size: 22px;
     }
@@ -241,15 +236,8 @@
     .signin-title{
         font-size: 30px;
     }
-    .signin-container{
-        width: 70%;
-    }
-    .signin-register-container{
-        width: 50%;
-
-    }
     .signin-register-title{
-        font-size: 26px;
+        font-size: 22px;
     }
     .signin-register-btn{
         font-size: 12px;
@@ -259,13 +247,6 @@
     /*  Login Page  */
     .signin-title{
       font-size: 30px;
-  }
-  .signin-container{
-      width: 90%;
-  }
-  .signin-register-container{
-      width: 75%;
-
   }
   .signin-register-title{
       font-size: 22px;
