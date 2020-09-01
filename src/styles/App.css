@@ -14,7 +14,6 @@ body{
   height: auto;
   position: relative;
 }
-
 .container h1{
   margin: 20px 0 10px 15px;
   text-align: center;
@@ -22,7 +21,6 @@ body{
   font-weight: 400;
   text-align: left;
 }
-
 .container{
   margin: 0 auto;
   max-width: 1320px;
@@ -68,6 +66,23 @@ body{
   color: white;
   animation: scale .2s ease-in-out;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 975px) {
   .category-container{
