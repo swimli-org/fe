@@ -9,9 +9,17 @@ export default function Register(props) {
     const history = useHistory();
     return (
         <div className="container">
-          <h1>Create an Account</h1>
           <RegisterForm history={history}/>
-          Already have an account? <Link to='/login'>Sign in</Link>
+
+          <div className='secondary-container'>
+          <div className='secondary-title'>Have an account?</div>
+            <button type="submit" className="secondary-btn" onClick={()=>history.push('/login')}>
+              Sign in to Your Account
+            </button>
+          </div>
         </div>
     )
 }
+
+
+

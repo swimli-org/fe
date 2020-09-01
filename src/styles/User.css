@@ -1,11 +1,11 @@
 /*  Login Page  */
-.signin-title{
+.primary-title{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     margin: 30px 0 20px;
 }
-  .signin-container{
+  .primary-container{
     width: 90%;
     max-width: 375px;
     margin: 0 auto;
@@ -15,15 +15,15 @@
     border-radius: 6px;
     background: #F2F2F2;
   }
-  .signin-container p{
+  .primary-container p{
     color: #2877DE;
     text-align: right;
   }
-  .signin-input-title{
+  .primary-input-title{
     margin: 10px 0 -5px;
     color: #2877DE;
   }
-  .signin-form{
+  .primary-form{
     width: 100%;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -37,10 +37,10 @@
     border: 1px solid #CCCCCC;
     outline: none;
   }
-  .signin-form:focus{
+  .primary-form:focus{
     color: #000000;
   }
-  .signin-btn{
+  .primary-btn{
     width: 100%;
     display: block;
     cursor: pointer;
@@ -57,7 +57,7 @@
     position: flex;
     outline: none;
   }
-  .signin-register-container{
+  .secondary-container{
     width: 75%;
     max-width: 300px;
     margin: 50px auto;
@@ -67,14 +67,14 @@
     border-radius: 6px;
     background: #3089FC;
   }
-  .signin-register-title{
+  .secondary-title{
     font-size: 26px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
     color: #FFFFFF;
   }
-  .signin-register-btn{
+  .secondary-btn{
     width: 100%;
     display: block;
     cursor: pointer;

@@ -83,8 +83,6 @@ export default function Navbar() {
             onClose={onClose}
             visible={visible}
           >
-            <Badge count={1}  style={{ backgroundColor: '#2f89fc' }} offset={[10, 10]}><p className='cart'><Link to='/cart'>Cart</Link></p></Badge>
-            <Divider plain>Categories</Divider>
             <p><Link to='/toys'>Toys</Link></p>
             <p><Link to='/floats'>Floats</Link></p>
             <p><Link to='/furniture'>Outdoor Furniture</Link></p>
