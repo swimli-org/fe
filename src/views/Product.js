@@ -43,10 +43,11 @@ export default function Product() {
                     Quantity
                     <Button className='addcart-btn'><Link to='/cart'>Add to Cart</Link></Button>
                     <p>OR</p>
-                    <Button className='buynow-btn'><Link to='/cart'>Buy Now</Link></Button>
+                    <Button className='autoship-btn'><Link to='/cart'>Add to Autoship</Link></Button>
                 </div>
             </div>
             <div className='product-body-tabs'>Description</div>
+            <div className='product-body-tabs-content'>Hi</div>
         </div>
         <div className='similar-products-container'>
             <p>Similar Products</p>
