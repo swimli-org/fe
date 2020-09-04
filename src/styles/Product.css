@@ -130,12 +130,17 @@
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #FFFFFF;
-    color: #3089FC;
-    border: 2.5px solid #3089FC;
+    background-color: #26a69a;
+    color: #FFFFFF;
+    border: none;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
+}
+.addcart-btn:hover{
+    background-color: #219187;
+    color: #FFFFFF;
+    border: none;
 }
 .buynow-btn{
     width: 100%;
@@ -146,9 +151,15 @@
     font-weight: 600;
     background-color: #3089FC;
     color: #FFFFFF;
+    border: none;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
+}
+.buynow-btn:hover{
+    background-color: #177bfc;
+    color: #FFFFFF;
+    border: none;
 }
 .product-body-tabs{
     width: 60%;
@@ -255,6 +266,21 @@
     }
   }
   @media only screen and (max-width: 375px) {
+    .product-header-left{
+        width: 72%;
+    }
+    .product-name{
+        font-size: 17px;
+    }
+    .product-header-right{
+        width: 28%;
+    }
+    .product-price{
+        font-size: 17px;
+    }
+    .product-price-tip{
+        font-size: 13px;
+    }
   }
   @keyframes scale {
     0%{
