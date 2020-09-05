@@ -1,10 +1,8 @@
 @import '~antd/dist/antd.css';
-
 body{
   font-family: roboto;
   color: #363636;
 }
-
 *{
   margin: 0;
   padding: 0;
@@ -48,9 +46,9 @@ body{
 .category{
   display: block;
   height: 160px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
   font-weight: 500;
   line-height: 160px;
   text-align: center;
@@ -63,6 +61,22 @@ body{
   cursor: pointer;
   color: white;
   animation: scale .2s ease-in-out;
+}
+.product-container{
+  width: 100%;
+  height: 100px;
+  line-height: 80px;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: center;
+  background: #177bfc;
+  border-radius: 8px;
+}
+.product-link{
+  color: #FFFFFF;
+}
+.product-link:hover{
+  color: #FFFFFF;
 }
 
 

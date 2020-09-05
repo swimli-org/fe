@@ -24,9 +24,11 @@ console.log(auth)
           )
         })}
       </div>
-      <Link to='/product'>
-        View Product
-      </Link>
+      <div className='product-container' link>
+        <Link className='product-link' to='/product'>
+          View Product
+        </Link>
+      </div>
 
     </div>
   );
