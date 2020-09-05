@@ -51,7 +51,10 @@ export default function Product() {
             </div>
         </div>
         <div className='product-info-container'>
-            <div className='product-info-tabs'>Description</div>
+            <div className='product-info-tabs'>
+                Description
+                <div className='product-info-tabs-arrow'></div>
+            </div>
             <div className='product-info-content'>
                 <p>
                     The Pentair 011028 Intelliflo variable speed pool pump features 8 speeds with a programmable digital time clock for each speed along with a rotating LCD screen that displays actual wattage consumption and speed settings. This Pentair Intelliflo pool pump is the solution for those looking to saving and increase performance with the Eco-Friendly, Energy Saving pool pump. IntelliFlo offers the same reliable performance and energy-savings that have made it the best-selling variable speed pump on the planet.

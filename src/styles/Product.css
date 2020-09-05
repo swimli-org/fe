@@ -183,13 +183,27 @@
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
+    position: relative;
     float: left;
+}
+.product-info-tabs-arrow:after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    border-right: .75em solid #3089FC;
+    border-top: .75em solid #3089FC;
+    border-radius: 4px;
+    transform: rotate(135deg);
+    margin-left: -0.65em;
+    margin-top: -0.2em;
 }
 .product-info-content{
     width: 100%;
     height: auto;
     min-height: 100px;
-    padding: 10px;
+    padding: 15px 10px 10px 10px;
     margin-bottom: 10px;
     float: left;
 }
