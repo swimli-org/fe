@@ -6,6 +6,10 @@ import '../styles/Search.css'
 export default function Search() {
     return (
         <div className="container">
+            <div className='mobile-filter-container'>Filter</div>
+            <div className='sort-container'>
+                Sort:
+            </div>
             <div className='filter-container'>
                 <div className='filter-title'>Categories</div>
                 <div className='filter-items'>

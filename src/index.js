@@ -31,7 +31,6 @@ import MyPool from './views/MyPool'
 import S from './views/S'
 import Checkout from './views/Checkout'
 import Footer from './components/Footer'
-import Landing from './views/Landing'
 import Product from './views/Product'
 
 const store = createStore(allReducers,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
@@ -93,9 +92,6 @@ ReactDOM.render(
       </Route>
       <Route path="/s/:term">
             <S />
-      </Route>
-      <Route path="/landing">
-            <Landing />
       </Route>
       <Route exact path="/">
             <App />

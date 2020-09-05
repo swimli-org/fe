@@ -67,15 +67,6 @@
   .mobile-cart-link{
     display: none;
   }
-
-
-
-
-
-
-
-
-
   .search-bar{
     width: 100%;
     outline: 0;
@@ -135,11 +126,7 @@
 
 
 
-
-
-
-
-
+/*  MOBILE SCREENS  */
   @media only screen and (max-width: 975px) {
     
   }
