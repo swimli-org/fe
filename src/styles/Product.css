@@ -123,7 +123,9 @@
     font-size: 14px;
     padding-top: 15px;
     overflow: hidden;
-    color: #3089FC;
+}
+.addcart-bottom span{
+    display: none;
 }
 .addcart-btn{
     width: 100%;
@@ -138,6 +140,7 @@
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
+    transition: 0s;
 }
 .addcart-btn:hover{
     background-color: #177bfc;
@@ -157,6 +160,7 @@
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
+    transition: 0s;
 }
 .autoship-btn:hover{
     background-color: #219187;

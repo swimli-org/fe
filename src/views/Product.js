@@ -1,8 +1,14 @@
 import React from 'react'
-import {Button} from 'antd'
+import {Button, Select} from 'antd'
 import {Link} from 'react-router-dom'
 import '../styles/Product.css'
 import intelliflo from '../assets/products/intelliflo.jpg'
+
+const { Option } = Select;
+
+function handleChange(value) {
+  console.log(`selected ${value}`);
+}
 
 export default function Product() {
     return (
