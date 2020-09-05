@@ -59,6 +59,7 @@
 .term-container{
     width: 80%;
     margin: 0px 1% 10px 1%;
+    padding-left: 1%;
     font-size: 16px;
     float: right;
 }
@@ -67,10 +68,23 @@
     height: auto;
     min-height: 300px;
     margin: 0px 1% 10px 1%;
-    padding: 0px 1%;
+    padding: 0px;
     color: #505050;
     font-size: 13px;
     float: right;
+}
+.results-item{
+    width: 24%;
+    height: 100px;
+    line-height: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 0 1% 1%;
+    border: 1px solid #CCCCCC;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    float: left;
 }
 
 
@@ -91,6 +105,9 @@
     }
     .results-container{
         width: 74%;
+    }
+    .results-item{
+        width: 32.33%;
     }
   }
   @media only screen and (max-width: 600px) {
@@ -118,12 +135,20 @@
     }
     .results-container{
         width: 100%;
-        margin-left: 0px;
-        float: left;
+        margin-left: -0.5%;
+    }
+    .results-item{
+        width: 32.33%;
     }
   }
   @media only screen and (max-width: 375px) {
-
+    .results-container{
+        margin-left: -1.5%;
+    }
+    .results-item{
+        width: 47%;
+        margin: 0px 0px 3% 3%;
+    }
   }
   @keyframes scale {
     0%{
