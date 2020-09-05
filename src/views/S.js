@@ -50,7 +50,22 @@ export default function Search() {
                 Showing results for <b>"TERM"</b>
             </div>
             <div className='results-container'>
-                Results Here
+                <div className='results-item'>1</div>
+                <div className='results-item'>2</div>
+                <div className='results-item'>3</div>
+                <div className='results-item'>4</div>
+                <div className='results-item'>5</div>
+                <div className='results-item'>6</div>
+                <div className='results-item'>7</div>
+                <div className='results-item'>8</div>
+                <div className='results-item'>9</div>
+                <div className='results-item'>10</div>
+                <div className='results-item'>11</div>
+                <div className='results-item'>12</div>
+                <div className='results-item'>13</div>
+                <div className='results-item'>14</div>
+                <div className='results-item'>15</div>
+                <div className='results-item'>16</div>
             </div>
 
 
