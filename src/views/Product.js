@@ -7,14 +7,18 @@ import intelliflo from '../assets/products/intelliflo.jpg'
 export default function Product() {
     return (
       <div className="container">
-        <div className='breadcrumb-trail'>Equipment / Pumps & Motors</div>
+        <div className='breadcrumb-trail'><span>Equipment</span> / <span>Pumps & Motors</span></div>
         <div className='product-header'>
             <div className='product-header-left'>
-                <div className='product-brand'>By Pentair</div>
+                <div className='product-brand'>
+                    <span>By Pentair</span>
+                </div>
                 <div className='product-name'>
                     Intelliflo Variable Speed Energy Saving Pool Pump
                 </div>
-                <div className='product-rating'>635 Reviews</div>
+                <div className='product-rating'>
+                    <span>635 Reviews</span>
+                    </div>
             </div>
             <div className='product-header-right'>
                 <div className='product-price'>$1,299.99</div>
@@ -27,7 +31,7 @@ export default function Product() {
             <img src={intelliflo} className='product-image' alt='Intelliflo'></img>
         </div>
         
-        <div className='product-body-container'>
+        <div className='addcart-container'>
             <div className='addcart'>
                 <div className='addcart-top'>
                     <div className='addcart-top-left'>
@@ -40,14 +44,19 @@ export default function Product() {
                     </div>
                 </div>
                 <div className='addcart-bottom'>
-                    Quantity
+                    <span>Quantity</span>
                     <Button className='addcart-btn'><Link to='/cart'>Add to Cart</Link></Button>
-                    <p>OR</p>
                     <Button className='autoship-btn'><Link to='/cart'>Add to Autoship</Link></Button>
                 </div>
             </div>
-            <div className='product-body-tabs'>Description</div>
-            <div className='product-body-tabs-content'>Hi</div>
+        </div>
+        <div className='product-info-container'>
+            <div className='product-info-tabs'>Description</div>
+            <div className='product-info-content'>
+                <p>
+                    The Pentair 011028 Intelliflo variable speed pool pump features 8 speeds with a programmable digital time clock for each speed along with a rotating LCD screen that displays actual wattage consumption and speed settings. This Pentair Intelliflo pool pump is the solution for those looking to saving and increase performance with the Eco-Friendly, Energy Saving pool pump. IntelliFlo offers the same reliable performance and energy-savings that have made it the best-selling variable speed pump on the planet.
+                </p>
+            </div>
         </div>
         <div className='similar-products-container'>
             <p>Similar Products</p>
