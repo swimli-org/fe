@@ -28,7 +28,7 @@ import Autoship from './views/Autoship'
 import Addresses from './views/Addresses'
 import PaymentMethods from './views/PaymentMethods'
 import MyPool from './views/MyPool'
-import SearchResults from './views/SearchResults'
+import S from './views/S'
 import Checkout from './views/Checkout'
 import Footer from './components/Footer'
 import Landing from './views/Landing'
@@ -91,8 +91,8 @@ ReactDOM.render(
       <Route path="/myPool">
             <MyPool />
       </Route>
-      <Route path="/results/:term">
-            <SearchResults />
+      <Route path="/s/:term">
+            <S />
       </Route>
       <Route path="/landing">
             <Landing />
