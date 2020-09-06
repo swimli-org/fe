@@ -2,6 +2,9 @@ import React from 'react'
 import {Button} from 'antd'
 import {Link} from 'react-router-dom'
 import '../styles/Search.css'
+import intelliflo from '../assets/products/intelliflo.jpg'
+
+
 
 export default function Search() {
     return (
@@ -45,27 +48,138 @@ export default function Search() {
                     <p>Brand 11</p>
                     <p>Brand 12</p>
                 </div>
+                <div className='filter-title'>Price</div>
+                <div className='filter-items'>
+                    <p>$</p>
+                    <p>$$</p>
+                    <p>$$$</p>
+                </div>
             </div>
             <div className='term-container'>
                 Showing results for <b>"TERM"</b>
             </div>
             <div className='results-container'>
-                <div className='results-item'>1</div>
-                <div className='results-item'>2</div>
-                <div className='results-item'>3</div>
-                <div className='results-item'>4</div>
-                <div className='results-item'>5</div>
-                <div className='results-item'>6</div>
-                <div className='results-item'>7</div>
-                <div className='results-item'>8</div>
-                <div className='results-item'>9</div>
-                <div className='results-item'>10</div>
-                <div className='results-item'>11</div>
-                <div className='results-item'>12</div>
-                <div className='results-item'>13</div>
-                <div className='results-item'>14</div>
-                <div className='results-item'>15</div>
-                <div className='results-item'>16</div>
+                <div className='results-item'>
+                    <div className='results-item-image'>
+                        <img src={intelliflo} alt='Intelliflo'></img>
+                    </div>
+                    <div className='results-item-title'>
+                        <span>Pentair</span>
+                        Intelliflo Variable Speed Energy Saving Pool Pump
+                    </div>
+                    <div className='results-item-rating'>635 Reviews</div>
+                    <div className='results-item-price'>$1,299.99</div>
+                </div>
+                <div className='results-item'>
+                    <div className='results-item-image'>
+                        <img src={intelliflo} alt='Intelliflo'></img>
+                    </div>
+                    <div className='results-item-title'>
+                        <span>Pentair</span>
+                        Intelliflo Variable Speed Energy Saving Pool Pump
+                    </div>
+                    <div className='results-item-rating'>635 Reviews</div>
+                    <div className='results-item-price'>$1,299.99</div>
+                </div>
+                <div className='results-item'>
+                    <div className='results-item-image'>
+                        <img src={intelliflo} alt='Intelliflo'></img>
+                    </div>
+                    <div className='results-item-title'>
+                        <span>Pentair</span>
+                        Intelliflo Variable Speed Energy Saving Pool Pump
+                    </div>
+                    <div className='results-item-rating'>635 Reviews</div>
+                    <div className='results-item-price'>$1,299.99</div>
+                </div>
+                <div className='results-item'>
+                    <div className='results-item-image'>
+                        <img src={intelliflo} alt='Intelliflo'></img>
+                    </div>
+                    <div className='results-item-title'>
+                        <span>Pentair</span>
+                        Intelliflo Variable Speed Energy Saving Pool Pump
+                    </div>
+                    <div className='results-item-rating'>635 Reviews</div>
+                    <div className='results-item-price'>$1,299.99</div>
+                </div>
+                <div className='results-item'>
+                    <div className='results-item-image'>
+                        <img src={intelliflo} alt='Intelliflo'></img>
+                    </div>
+                    <div className='results-item-title'>
+                        <span>Pentair</span>
+                        Intelliflo Variable Speed Energy Saving Pool Pump
+                    </div>
+                    <div className='results-item-rating'>635 Reviews</div>
+                    <div className='results-item-price'>$1,299.99</div>
+                </div>
+                <div className='results-item'>
+                    <div className='results-item-image'>
+                    <img src={intelliflo} alt='Intelliflo'></img>
+                    </div>
+                    <div className='results-item-title'>
+                        <span>Pentair</span>
+                        Intelliflo Variable Speed Energy Saving Pool Pump
+                    </div>
+                    <div className='results-item-rating'>635 Reviews</div>
+                    <div className='results-item-price'>$1,299.99</div>
+                </div>
+                <div className='results-item'>
+                    <div className='results-item-image'>
+                        <img src={intelliflo} alt='Intelliflo'></img>
+                    </div>
+                    <div className='results-item-title'>
+                        <span>Pentair</span>
+                        Intelliflo Variable Speed Energy Saving Pool Pump
+                    </div>
+                    <div className='results-item-rating'>635 Reviews</div>
+                    <div className='results-item-price'>$1,299.99</div>
+                </div>
+                <div className='results-item'>
+                    <div className='results-item-image'>
+                        <img src={intelliflo} alt='Intelliflo'></img>
+                    </div>
+                    <div className='results-item-title'>
+                        <span>Pentair</span>
+                        Intelliflo Variable Speed Energy Saving Pool Pump
+                    </div>
+                    <div className='results-item-rating'>635 Reviews</div>
+                    <div className='results-item-price'>$1,299.99</div>
+                </div>
+                <div className='results-item'>
+                    <div className='results-item-image'>
+                        <img src={intelliflo} alt='Intelliflo'></img>
+                    </div>
+                    <div className='results-item-title'>
+                        <span>Pentair</span>
+                        Intelliflo Variable Speed Energy Saving Pool Pump
+                    </div>
+                    <div className='results-item-rating'>635 Reviews</div>
+                    <div className='results-item-price'>$1,299.99</div>
+                </div>
+                <div className='results-item'>
+                    <div className='results-item-image'>
+                        <img src={intelliflo} alt='Intelliflo'></img>
+                    </div>
+                    <div className='results-item-title'>
+                        <span>Pentair</span>
+                        Intelliflo Variable Speed Energy Saving Pool Pump
+                    </div>
+                    <div className='results-item-rating'>635 Reviews</div>
+                    <div className='results-item-price'>$1,299.99</div>
+                </div>
+                <div className='results-item'>
+                    <div className='results-item-image'>
+                        <img src={intelliflo} alt='Intelliflo'></img>
+                    </div>
+                    <div className='results-item-title'>
+                        <span>Pentair</span>
+                        Intelliflo Variable Speed Energy Saving Pool Pump
+                    </div>
+                    <div className='results-item-rating'>635 Reviews</div>
+                    <div className='results-item-price'>$1,299.99</div>
+                </div>
             </div>
 
 
