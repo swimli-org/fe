@@ -39,8 +39,7 @@ export default function Navbar() {
           </div>
 
           <div className="desktop-links">
-            <div className='desktop-links-tab'><Link to='/overview'>Account</Link></div>
-            <div className='desktop-links-tab'><Link to='/login'>Login</Link></div>
+            {localStorage.getItem('swimliToken')?<div className='desktop-links-tab'><Link to='/overview'>Account</Link></div>:<div className='desktop-links-tab'><Link to='/login'>Login</Link></div>}
             <div className='desktop-links-tab'>
               <Link to='/cart'>
                 Cart
@@ -59,7 +58,7 @@ export default function Navbar() {
           <Drawer
             title={
               <span className='avatar-container'>
-                <Link className='user-container' to='/overview'>
+                <Link className='user-container' to={localStorage.getItem('swimliToken')?"/overview":"/login"}>
                   <Avatar size="small" className='avatar' icon={<UserOutlined />} />
                  {name !="null null"? name:'Guest'}
                 </Link>

@@ -7,7 +7,7 @@ export default function User() {
     return (
         <div className="container">
             <div className="user-tabs-container">
-                <div className="user-tabs-title">Hey, First Name!</div>
+    <div className="user-tabs-title">{localStorage.getItem('swimliFirstName')} {localStorage.getItem('swimliLastName')}</div>
                 <Link to='/overview'><div className="user-tabs-active">Overview</div></Link>
                 <Link to='/personal'><div className="user-tabs">Personal</div></Link>
                 <Link to='/orders'><div className="user-tabs">Orders</div></Link>
