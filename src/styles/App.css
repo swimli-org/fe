@@ -2,7 +2,7 @@
 body{
   font-family: roboto;
   color: #363636;
-  background: #FFFFFF;
+  background: #EBEDED;
 }
 *{
   margin: 0;
@@ -45,7 +45,9 @@ body{
 
 .home-container{
   width: 100%;
-  padding: 20px 10px;
+  padding: 10px 10px 10px;
+  margin: 10px 0;
+  background: #FFFFFF;
   overflow: hidden;
 }
 .home-container-title{
@@ -54,7 +56,8 @@ body{
   font-weight: bold;
   color: #333333;
   text-align: center;
-  margin-bottom: 20px;
+  padding: 0;
+  margin-bottom: 5px;
 }
 .category-container{
   width: 16.6%;
@@ -72,8 +75,8 @@ body{
   border-radius: 100px;
 }
 .category-image img{
-  width: 80%;
-  margin: 10%;
+  width: 60%;
+  margin: 20%;
 }
 .category-title{
   padding: 10px;
@@ -86,36 +89,40 @@ body{
   height: auto;
   float: left;
   margin: 1%;
-  padding-bottom: 10px;
-  background: #F7F7F7;
-  border-radius: 8px;
-  !box-shadow: 0 1px 5px rgba(0,0,0,0.12);
   overflow: hidden;
+  !background: red;
 }
 .boxed-items-image{
   width: 100%;
   min-width: 50%;
   height: auto;
   margin: 0 auto;
-  padding: 5px 15%;
+  padding: 5px 10px;
   overflow: hidden;
 }
 .boxed-items-image img{
   width: 100%;
+  !background: green;
 }
 .boxed-items-price{
   text-align: center;
   font-weight: bold;
   color: #177bfc;
   padding: 5px;
+  display: none;
 }
 .boxed-items-title{
   height: 50px;
-  padding: 5px 10px;
+  padding: 0px 10px;
   font-size: 14px;
   text-align: left;
   color: #333333;
   overflow: hidden;
+}
+.boxed-items-title span{
+  color: #177bfc;
+  font-weight: bold;
+  padding-right: 5px;
 }
 
 
@@ -166,6 +173,10 @@ body{
   }
   .category-container{
     width: 33.3%;
+  }
+  .category-image{
+    min-width: 30%;
+    max-width: 60%;
   }
 }
 @media only screen and (max-width: 600px) {
