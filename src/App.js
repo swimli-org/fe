@@ -9,6 +9,10 @@ import CategoryCard from './components/CategoryCard'
 import {useSelector} from 'react-redux'
 
 
+
+import intelliflo from './assets/products/intelliflo.png'
+
+
 function App() {
   const[categories]=useState(categoriesList)
   const auth = useSelector(state=>state.authReducer)
@@ -16,14 +20,106 @@ console.log(auth)
   return (
     <div className='container'>
       <CarouselSlider/>
-      <h1>Categories</h1>
-      <div className='category-container'>
-        {categories && categories.map(category=>{
-          return(
-            <CategoryCard key={category.category} category={category.category} bgColor={category.backgroundColor}/>
-          )
-        })}
+      <div className='home-container'>
+        <div className='home-container-title'>Categories</div>
+        <div className='category-container'>
+          <div className='category-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='category-title'>Toys</div>
+        </div>
+        <div className='category-container'>
+          <div className='category-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='category-title'>Floats</div>
+        </div>
+        <div className='category-container'>
+          <div className='category-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='category-title'>Chemicals</div>
+        </div>
+        <div className='category-container'>
+          <div className='category-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='category-title'>Furniture</div>
+        </div>
+        <div className='category-container'>
+          <div className='category-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='category-title'>Equipment</div>
+        </div>
+        <div className='category-container'>
+          <div className='category-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='category-title'>Covers</div>
+        </div>
       </div>
+
+      <div className='home-container'>
+        <div className='home-container-title'>Trending Now</div>
+        <Link to='/product'>
+          <div className='boxed-items-container'>
+            <div className='boxed-items-image'>
+              <img src={intelliflo}></img>
+            </div>
+            <div className='boxed-items-price'>Price</div>
+            <div className='boxed-items-title'>
+            Intelliflo Variable Speed Energy Saving Pool Pump
+            </div>
+          </div>
+        </Link>
+        <div className='boxed-items-container'>
+          <div className='boxed-items-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='boxed-items-price'>Price</div>
+          <div className='boxed-items-title'>
+            Title
+          </div>
+        </div>
+        <div className='boxed-items-container'>
+          <div className='boxed-items-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='boxed-items-price'>Price</div>
+          <div className='boxed-items-title'>
+            Title
+          </div>
+        </div>
+        <div className='boxed-items-container'>
+          <div className='boxed-items-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='boxed-items-price'>Price</div>
+          <div className='boxed-items-title'>
+            Title 
+          </div>
+        </div>
+        <div className='boxed-items-container'>
+          <div className='boxed-items-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='boxed-items-price'>Price</div>
+          <div className='boxed-items-title'>
+            Title
+          </div>
+        </div>
+        <div className='boxed-items-container'>
+          <div className='boxed-items-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='boxed-items-price'>Price</div>
+          <div className='boxed-items-title'>
+            Title
+          </div>
+        </div>
+      </div>
+
       <div className='product-container' link>
         <Link className='product-link' to='/product'>
           View Product

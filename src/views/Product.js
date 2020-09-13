@@ -35,12 +35,12 @@ export default function Product() {
             <div className='addcart'>
                 <div className='addcart-top'>
                     <div className='addcart-top-left'>
-                        <p>Avaibility</p>
+                        <p>Availability</p>
                         <span>In Stock</span>
                     </div>
                     <div className='addcart-top-right'>
                         <p>Order Now</p>
-                        <span>Recieve by September 3</span>
+                        <span>Receive by September 3</span>
                     </div>
                 </div>
                 <div className='addcart-bottom'>
