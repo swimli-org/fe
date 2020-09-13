@@ -45,7 +45,7 @@ export default function User() {
                 <div className='personal-tab'>
                     <div className='personal-title'>Password</div>
                     <div className='personal-description'>
-                        users password(encrypted)
+                        ************
                         <span>Change Password</span>
                     </div>
                 </div>

@@ -30,8 +30,9 @@ export default function Navbar() {
             <img src={logo} className='logo' alt='Logo' onClick={()=>history.push('/')}></img>
           </div>
 
-          <div className='user-container'>
-            <div className='user-container-tab'>
+          <div className="desktop-links">
+            {localStorage.getItem('swimliToken')?<div className='desktop-links-tab'><Link to='/overview'>Account</Link></div>:<div className='desktop-links-tab'><Link to='/login'>Login</Link></div>}
+            <div className='desktop-links-tab'>
               <Link to='/cart'>
                 <img src={cart} className='user-container-tab-icon' alt='Cart'></img>
                 <div className='cart-badge'>0</div>
@@ -64,14 +65,20 @@ export default function Navbar() {
 
           <Drawer
             title={
-              <Link className='sidebar-user-container' to='/overview'>
-                <Avatar size="small" className='sidebar-user-avatar' icon={<UserOutlined />} />
-                <div className='sidebar-user-username' to='/overview'>
-                  <Link to='/overview' >
-                    {name !="null null"? name:'Guest'}
-                  </Link>
-                </div>
-              </Link>
+              <span className='avatar-container'>
+                <Link className='user-container' to={localStorage.getItem('swimliToken')?"/overview":"/login"}>
+                  <Avatar size="small" className='avatar' icon={<UserOutlined />} />
+                 {name !="null null"? name:'Guest'}
+                </Link>
+                {name !="null null"? <Link className='login-link' onClick={()=>{
+                  localStorage.removeItem('swimliFirstName') 
+                  localStorage.removeItem('swimliLastName')}}to='/'>
+                  Logout
+                </Link>:<Link className='login-link'to='/login'>
+                  Login
+                </Link>}
+                
+              </span>
             }
             placement="left"
             closable={true}
