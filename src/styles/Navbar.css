@@ -84,12 +84,15 @@
   padding: 10px;
   border: 0px;
   outline: 0;
-  -webkit-border-top-left-radius: 8px;
-  -webkit-border-bottom-left-radius: 8px;
-  -moz-border-radius-topleft: 8px;
-  -moz-border-radius-bottomleft: 8px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  -webkit-border-radius: 8px;
+  -webkit-border-top-rig`ht-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius: 8px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   float: left;
 }
 .search-btn{

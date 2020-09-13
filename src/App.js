@@ -11,6 +11,12 @@ import {useSelector} from 'react-redux'
 
 
 import intelliflo from './assets/products/intelliflo.png'
+import toys from './assets/category-images/toys.png'
+import floats from './assets/category-images/floats.png'
+import chemicals from './assets/category-images/chemicals.png'
+import furniture from './assets/category-images/furniture.png'
+import covers from './assets/category-images/covers.png'
+
 
 
 function App() {
@@ -24,25 +30,25 @@ console.log(auth)
         <div className='home-container-title'>Categories</div>
         <div className='category-container'>
           <div className='category-image'>
-            <img src={intelliflo}></img>
+            <img src={toys}></img>
           </div>
           <div className='category-title'>Toys</div>
         </div>
         <div className='category-container'>
           <div className='category-image'>
-            <img src={intelliflo}></img>
+            <img src={floats}></img>
           </div>
           <div className='category-title'>Floats</div>
         </div>
         <div className='category-container'>
           <div className='category-image'>
-            <img src={intelliflo}></img>
+            <img src={chemicals}></img>
           </div>
           <div className='category-title'>Chemicals</div>
         </div>
         <div className='category-container'>
           <div className='category-image'>
-            <img src={intelliflo}></img>
+            <img src={furniture}></img>
           </div>
           <div className='category-title'>Furniture</div>
         </div>
@@ -54,7 +60,7 @@ console.log(auth)
         </div>
         <div className='category-container'>
           <div className='category-image'>
-            <img src={intelliflo}></img>
+            <img src={covers}></img>
           </div>
           <div className='category-title'>Covers</div>
         </div>
@@ -69,7 +75,8 @@ console.log(auth)
             </div>
             <div className='boxed-items-price'>Price</div>
             <div className='boxed-items-title'>
-            Intelliflo Variable Speed Energy Saving Pool Pump
+              <span>Pentair</span>
+              Intelliflo Variable Speed Energy Saving Pool Pump
             </div>
           </div>
         </Link>
@@ -79,6 +86,7 @@ console.log(auth)
           </div>
           <div className='boxed-items-price'>Price</div>
           <div className='boxed-items-title'>
+            <span>Brand</span>
             Title
           </div>
         </div>
@@ -88,6 +96,7 @@ console.log(auth)
           </div>
           <div className='boxed-items-price'>Price</div>
           <div className='boxed-items-title'>
+            <span>Brand</span>
             Title
           </div>
         </div>
@@ -97,6 +106,7 @@ console.log(auth)
           </div>
           <div className='boxed-items-price'>Price</div>
           <div className='boxed-items-title'>
+            <span>Brand</span>
             Title 
           </div>
         </div>
@@ -106,6 +116,7 @@ console.log(auth)
           </div>
           <div className='boxed-items-price'>Price</div>
           <div className='boxed-items-title'>
+            <span>Brand</span>
             Title
           </div>
         </div>
@@ -115,6 +126,7 @@ console.log(auth)
           </div>
           <div className='boxed-items-price'>Price</div>
           <div className='boxed-items-title'>
+            <span>Brand</span>
             Title
           </div>
         </div>
