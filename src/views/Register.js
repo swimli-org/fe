@@ -13,7 +13,7 @@ export default function Register(props) {
 
           <div className='secondary-container'>
           <div className='secondary-title'>Have an account?</div>
-            <button type="submit" className="secondary-btn" onClick={()=>history.push('/login')}>
+            <button type="submit" className="secondary-btn" onClick={()=>history.push('/signin')}>
               Sign in to Your Account
             </button>
           </div>

@@ -117,139 +117,104 @@
     outline: none;
 }
 .registerFormInput:focus{
-    color: #000000;
+  color: #000000;
 }
 .registerFormButton{
-    width: auto;
-    display: block;
-    cursor: pointer;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: 0px;
-    margin: 5px auto;
-    padding: 8px 20px;
-    background: #2f89fc;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 18px;
-    position: flex;
-    outline: none;
+  width: auto;
+  display: block;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 0px;
+  margin: 5px auto;
+  padding: 8px 20px;
+  background: #2f89fc;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 18px;
+  position: flex;
+  outline: none;
 }
 
-/*User Settings*/
-.user-tabs-container{
-    width: 20%;
-    margin-right: 3%;
-    padding-bottom: 10px;
-    background: #EEEEEE;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    float: left;
+/*User Account Settings*/
+.user-account-title{
+  font-size: 30px;
+  font-weight: bold;
+  color: #444444;
+  padding: 20px 1%;
 }
-.user-tabs-title{
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #222222;
-}
-.user-tabs-active{
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    background: #DDDDDD;
-    border-left: 3px solid #2f89fc;
-    cursor: pointer;
-}
-.user-tabs{
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-}
-.user-tabs:hover{
-    background: #CCCCCC;
-}
-.user-content-container{
-    width: 77%;
-    float: left;
-}
-.user-title{
-    height: 48px;
-    line-height: 48px;
-    font-size: 26px;
-    font-weight: 500;
-}
-.user-title span{
-    font-size: 13px;
-    float: right;
-}
+
+
+
+
+
+
 
 
 /* ACCOUNT PAGE CSS */
 .personal-tab{
-    height: auto;
-    margin: 10px 0;
-    overflow: hidden;
-    border-bottom: 1px solid #DDDDDD;
+  height: auto;
+  margin: 10px 0;
+  overflow: hidden;
+  border-bottom: 1px solid #DDDDDD;
 }
 .personal-tab:last-child{
-    border-bottom: none;
+  border-bottom: none;
 }
 .personal-title{
-    width: 20%;
-    height: 100%;
-    padding: 10px;
-    font-weight: 600;
-    float: left;
+  width: 20%;
+  height: 100%;
+  padding: 10px;
+  font-weight: 600;
+  float: left;
 }
 .personal-description{
-    width: 80%;
-    padding: 10px;
-    font-weight: 500;
-    float: right;
+  width: 80%;
+  padding: 10px;
+  font-weight: 500;
+  float: right;
 }
 .personal-description span{
-    font-size: 12px;
-    color: #2f89fc;
-    cursor: pointer;
-    float: right;
+  font-size: 12px;
+  cursor: pointer;
+  float: right;
 }
 
 
 
 
 @media only screen and (max-width: 975px) {
-    /*  Login Page  */
-    .signin-title{
-        font-size: 30px;
-    }
-    .signin-register-title{
-        font-size: 22px;
-    }
-  }
-  @media only screen and (max-width: 600px) {
-    /*  Login Page  */
-    .signin-title{
-        font-size: 30px;
-    }
-    .signin-register-title{
-        font-size: 22px;
-    }
-    .signin-register-btn{
-        font-size: 12px;
-    }
-  }
-  @media only screen and (max-width: 375px) {
-    /*  Login Page  */
-    .signin-title{
-      font-size: 30px;
+  /*  Login Page  */
+  .signin-title{
+    font-size: 30px;
   }
   .signin-register-title{
-      font-size: 22px;
+    font-size: 22px;
   }
+}
+@media only screen and (max-width: 600px) {
+  /*  Login Page  */
+  .signin-title{
+    font-size: 30px;
   }
+  .signin-register-title{
+    font-size: 22px;
+  }
+  .signin-register-btn{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  /*  Login Page  */
+  .signin-title{
+    font-size: 30px;
+  }
+  .signin-register-title{
+    font-size: 22px;
+  }
+
+}
   @keyframes scale {
     0%{
       transform: scale(1.0);

@@ -20,7 +20,8 @@ import Equipment from './views/Equipment'
 import Covers from './views/Covers'
 import Cart from './views/Cart'
 import Register from './views/Register'
-import Login from './views/Login'
+import Signin from './views/Signin'
+import ForgotPassword from './views/ForgotPassword'
 import Overview from './views/Overview'
 import Personal from './views/Personal'
 import Orders from './views/Orders'
@@ -66,8 +67,11 @@ ReactDOM.render(
       <Route path="/register">
             <Register />
       </Route>
-      <Route path="/login">
-            <Login />
+      <Route path="/signin">
+            <Signin />
+      </Route>
+      <Route path="/forgotpassword">
+            <ForgotPassword />
       </Route>
       <Route path="/overview">
             <Overview />
