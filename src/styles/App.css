@@ -179,6 +179,16 @@ body{
     min-width: 30%;
     max-width: 60%;
   }
+
+
+  .boxed-items-container{
+    width: 31.34%;
+    min-width: 100px;
+    min-height: 230px;
+    float: left;
+    margin: 1%;
+    overflow: hidden;
+  }
 }
 @media only screen and (max-width: 600px) {
   .slider-image{
