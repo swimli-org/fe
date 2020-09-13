@@ -3,6 +3,9 @@ import {Link} from 'react-router-dom'
 import '../styles/User.css'
 
 
+import uc from '../assets/UnderConstruction.png'
+
+
 export default function User() {
     return (
         <div className="container">
@@ -18,7 +21,11 @@ export default function User() {
             </div>
             <div className="user-content-container">
                 <div className='user-title'>Overview</div>
+            <div className='user-account-title'>
+                Account
             </div>
+            <img src={uc} style = {{width: '100%'}}></img>
+        </div>
         </div>
     )
 }

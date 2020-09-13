@@ -3,6 +3,8 @@ import { Drawer, Divider,Avatar, Badge, Input} from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import menu from '../assets/menu.svg'
 import logo from '../assets/logo.png'
+import search from '../assets/search.svg'
+import account from '../assets/account.svg'
 import cart from '../assets/cart.svg'
 import autoship from '../assets/autoship.svg'
 import '../styles/Navbar.css'
@@ -20,40 +22,46 @@ export default function Navbar() {
     const[searchTerm, setSearchTerm]=useState()
 
     return (
-      <div className='navbar__container'>
+      <div className='navbar-container'>
         <div className='navbar'>
-          <img src={menu} className='menu-btn' alt='Menu Button' onClick={showDrawer}></img>
-          <img src={logo} className='logo' alt='Logo' onClick={()=>history.push('/')}></img>
-
-          <div className='desktop-search'>
-            <Search
-              value={searchTerm}
-              className='search-bar'
-              placeholder="Search Swimli..."
-              onChange={(e)=>setSearchTerm(e.target.value)}
-              onSearch={() =>{
-              const prom = new Promise(()=>history.push(`/s/${searchTerm}`))
-                prom.then(setSearchTerm(""))
-              }}
-            />
+          
+          <div className='menu-btn-container'>
+            <img src={menu} className='menu-btn' alt='Menu Button' onClick={showDrawer}></img>
+            <img src={logo} className='logo' alt='Logo' onClick={()=>history.push('/')}></img>
           </div>
 
           <div className="desktop-links">
             {localStorage.getItem('swimliToken')?<div className='desktop-links-tab'><Link to='/overview'>Account</Link></div>:<div className='desktop-links-tab'><Link to='/login'>Login</Link></div>}
             <div className='desktop-links-tab'>
               <Link to='/cart'>
-                Cart
+                <img src={cart} className='user-container-tab-icon' alt='Cart'></img>
                 <div className='cart-badge'>0</div>
               </Link>
             </div>
+            <div className='user-container-tab'>
+              <Link to='/signin'>
+                <img src={account} className='user-container-tab-icon' alt='Account'></img>
+                <p>Sign In</p>
+              </Link>
+            </div>
+            
           </div>
-          <div className='mobile-cart-link'>
-          <Link to='/cart'>
-            <div className='cart-badge'>0</div>
-            <img src={cart} className='cart-button' alt='Cart'></img>
-          </Link>
+
+          <div className='search-container'>
+          <form className='search-form' >
+            <input
+              className='search-bar'
+              type='text'
+              placeholder='Search Swimli...'
+            ></input>
+            <button className='search-btn' type='submit'>
+              <img src={search} className='search-btn-icon' alt='Search'></img>
+            </button>
+          </form>
           </div>
+
           
+  
 
           <Drawer
             title={
@@ -73,7 +81,7 @@ export default function Navbar() {
               </span>
             }
             placement="left"
-            closable={false}
+            closable={true}
             onClick={(e) => {
               if(e.target.tagName.toLowerCase() === 'a'){
                 onClose()
@@ -82,34 +90,47 @@ export default function Navbar() {
             onClose={onClose}
             visible={visible}
           >
-            <p><Link to='/toys'>Toys</Link></p>
-            <p><Link to='/floats'>Floats</Link></p>
-            <p><Link to='/furniture'>Outdoor Furniture</Link></p>
-            <p><Link to='/chemicals'>Chemicals</Link></p>
-            <p><Link to='/equipment'>Equipment</Link></p>
-            <p><Link to='/covers'>Covers</Link></p>
-            </Drawer>
-          </div>
+            
 
-          <div className='mobile-search'>
-            <Search
-              value={searchTerm}
-              className='search-bar'
-              placeholder="Search Swimli..."
-              onChange={(e)=>setSearchTerm(e.target.value)}
-              onSearch={() =>{
-              const prom = new Promise(()=>history.push(`/s/${searchTerm}`))
-                prom.then(setSearchTerm(""))
-              }}
-            />
-          </div>
-          <div className='alert-header'>
-            <Link to='/autoship'>
-              <img src={autoship} className='autoship' alt='Autoship Icon' onClick={()=>history.push('/')}></img>
-              Save today on your first autoship order!
-            </Link>
-          </div>
+
+            <span className='signin-container'>
+              {name !="null null"? <Link className='signin-link' onClick={()=>{
+                localStorage.removeItem('swimliFirstName') 
+                localStorage.removeItem('swimliLastName')}}to='/'>
+                Sign Out
+              </Link>:<Link className='signin-link'to='/signin'>
+                Sign In
+              </Link>}
+                
+            </span>
+
+          </Drawer>
         </div>
+
+          
+        <div className='alert-header'>
+          <Link to='/autoship'>
+            <img src={autoship} className='autoship' alt='Autoship Icon' onClick={()=>history.push('/')}></img>
+            Save today on your first autoship order!
+          </Link>
+        </div>
+      </div>
   
-      )
+    )
 }
+
+
+
+
+/* For search
+<Search
+value={searchTerm}
+className='search-bar1'
+placeholder="Search Swimli..."
+onChange={(e)=>setSearchTerm(e.target.value)}
+onSearch={() =>{
+const prom = new Promise(()=>history.push(`/s/${searchTerm}`))
+  prom.then(setSearchTerm(""))
+}}
+/>
+*/
