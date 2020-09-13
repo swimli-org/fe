@@ -86,11 +86,11 @@ body{
 
 .boxed-items-container{
   width: 14.66%;
-  height: auto;
+  min-width: 100px;
+  min-height: 180px;
   float: left;
   margin: 1%;
   overflow: hidden;
-  !background: red;
 }
 .boxed-items-image{
   width: 100%;
@@ -102,7 +102,6 @@ body{
 }
 .boxed-items-image img{
   width: 100%;
-  !background: green;
 }
 .boxed-items-price{
   text-align: center;
@@ -112,17 +111,19 @@ body{
   display: none;
 }
 .boxed-items-title{
-  height: 50px;
   padding: 0px 10px;
-  font-size: 14px;
+  line-height: 1.1em;
+  font-size: 13px;
   text-align: left;
   color: #333333;
   overflow: hidden;
 }
 .boxed-items-title span{
+  width: 100%;
+  line-height: 1.6em;
   color: #177bfc;
   font-weight: bold;
-  padding-right: 5px;
+  float: left;
 }
 
 
