@@ -5,8 +5,8 @@ import {
     Link,
     useHistory,
   } from "react-router-dom";
-
-/*import '../styles/User.css'*/
+  
+import '../styles/User.css'
 
 
 
