@@ -2,7 +2,7 @@
 body{
   font-family: roboto;
   color: #363636;
-  background: #EBEDED;
+  background: #F7F8FA;
 }
 *{
   margin: 0;
@@ -182,7 +182,7 @@ body{
 
 
   .boxed-items-container{
-    width: 31.34%;
+    width: 31.33%;
     min-width: 100px;
     min-height: 230px;
     float: left;
@@ -215,4 +215,3 @@ body{
     transform: scale(1.05);
   }
 }
-

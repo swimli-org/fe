@@ -34,6 +34,8 @@ import Checkout from './views/Checkout'
 import Footer from './components/Footer'
 import Product from './views/Product'
 
+
+
 const store = createStore(allReducers,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render(
