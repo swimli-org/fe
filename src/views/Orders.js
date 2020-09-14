@@ -33,6 +33,7 @@ export default function Example()  {
       </div>
 
       <div className='account-container'>
+      <div className='account-title'>My Orders</div>
         <div className='account-rounded-tab-container'>
 
         </div>

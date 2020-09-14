@@ -29,42 +29,54 @@ console.log(auth)
       <CarouselSlider/>
       <div className='home-container'>
         <div className='home-container-title'>Categories</div>
-        <div className='category-container'>
-          <div className='category-image'>
-            <img src={toys}></img>
+        <Link to='/toys'>
+          <div className='category-container'>
+            <div className='category-image'>
+              <img src={toys}></img>
+            </div>
+            <div className='category-title'>Toys</div>
           </div>
-          <div className='category-title'>Toys</div>
-        </div>
-        <div className='category-container'>
-          <div className='category-image'>
-            <img src={floats}></img>
+        </Link>
+        <Link to='/floats'>
+          <div className='category-container'>
+            <div className='category-image'>
+              <img src={floats}></img>
+            </div>
+            <div className='category-title'>Floats</div>
           </div>
-          <div className='category-title'>Floats</div>
-        </div>
-        <div className='category-container'>
-          <div className='category-image'>
-            <img src={chemicals}></img>
+        </Link>
+        <Link to='/chemicals'>
+          <div className='category-container'>
+            <div className='category-image'>
+              <img src={chemicals}></img>
+            </div>
+            <div className='category-title'>Chemicals</div>
           </div>
-          <div className='category-title'>Chemicals</div>
-        </div>
-        <div className='category-container'>
-          <div className='category-image'>
-            <img src={furniture}></img>
+        </Link>
+        <Link to='/furniture'>
+          <div className='category-container'>
+            <div className='category-image'>
+              <img src={furniture}></img>
+            </div>
+            <div className='category-title'>Furniture</div>
           </div>
-          <div className='category-title'>Furniture</div>
-        </div>
-        <div className='category-container'>
-          <div className='category-image'>
-            <img src={intelliflo}></img>
+        </Link>
+        <Link to='/equipment'>
+          <div className='category-container'>
+            <div className='category-image'>
+              <img src={intelliflo}></img>
+            </div>
+            <div className='category-title'>Equipment</div>
           </div>
-          <div className='category-title'>Equipment</div>
-        </div>
+        </Link>
+        <Link to='/covers'>
         <div className='category-container'>
           <div className='category-image'>
             <img src={covers}></img>
           </div>
           <div className='category-title'>Covers</div>
         </div>
+        </Link>
       </div>
 
       <div className='home-container'>
