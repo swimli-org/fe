@@ -1,26 +1,43 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import product from '../assets/products/1.jpg'
+import '../styles/Account.css';
 
-export default function User() {
-    return (
-        <div className="container">
-            <div className="user-tabs-container">
-                <Link to='/overview'><div className="user-tabs">Overview</div></Link>
-                <Link to='/personal'><div className="user-tabs">Personal</div></Link>
-                <Link to='/orders'><div className="user-tabs-active">Orders</div></Link>
-                <Link to='/autoship'><div className="user-tabs">Autoship</div></Link>
-                <Link to='/addresses'><div className="user-tabs">Addresses</div></Link>
-                <Link to='/paymentmethods'><div className="user-tabs">Payment Methods</div></Link>
-                <Link to='/mypool'><div className="user-tabs">My Pool</div></Link>
-                <div className="user-tabs-title">Hey, Dylan!</div>
-            </div>
-            <div className="user-content-container">
-                <div className='user-title'>
-                    My Orders
-                    <span><b>3 orders</b> placed in (Dropdown Menu)</span>
-                </div>
-            </div>
+
+export default function Example()  {
+  return (
+    <div className="container">
+      <div className='account-tab-bar-container'>
+        <div className='account-tab-bar'>
+          <Link to='/overview'>
+            <div className='account-tab'>Overview</div>
+          </Link>
+          <Link to='/personal'>
+            <div className='account-tab'>Personal Info</div>
+          </Link>
+          <Link to='/orders'>
+            <div className='account-tab-active'>Orders</div>
+          </Link>
+          <Link to='/autoship'>
+            <div className='account-tab'>Autoship</div>
+          </Link>
+          <Link to='/addresses'>
+            <div className='account-tab'>Addresses</div>
+          </Link>
+          <Link to='/paymentmethods'>
+            <div className='account-tab'>Payment Methods</div>
+          </Link>
+          <Link to='/mypool'>
+            <div className='account-tab'>My Pool</div>
+          </Link>
         </div>
-    )
+      </div>
+
+      <div className='account-container'>
+        <div className='account-rounded-tab-container'>
+
+        </div>
+      </div>
+      
+    </div>
+  )
 }

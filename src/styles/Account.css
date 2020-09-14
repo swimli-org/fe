@@ -1,0 +1,95 @@
+.account-tab-bar-container {
+  padding: 2px;
+  margin: 20px 10px;
+  white-space: nowrap;
+  background-color: #E6EAF0;
+  border-radius: 8px;
+  overflow: hidden;
+  }
+.account-tab-bar{
+  padding: 3px;
+  border-radius: 8px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.account-tab-bar::-webkit-scrollbar {
+  display: none;
+}
+.account-tab {
+  padding: 5px 20px;
+  margin: 0 5px 0 0;
+  font-weight: bold;
+  color: #7183A4;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+.account-tab:hover {
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 8px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+.account-tab-active{
+  padding: 5px 20px;
+  margin: 0 5px 0 0;
+  font-weight: bold;
+  color: #474D5E;
+  background: #FFFFFF;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 8px rgba(0,0,0,0.12);
+}
+.account-container{
+  margin: 20px 10px;
+}
+.account-rounded-tab-container{
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #FFFFFF;
+
+  min-height: 200px;
+}
+
+/*  Personal Page CSS  */
+.personal-account-tab{
+  padding: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #e2e2e2;
+}
+.personal-account-tab:last-child{
+  border-bottom: 0px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 975px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (max-width: 375px) {
+  
+
+}
+  @keyframes scale {
+    0%{
+      transform: scale(1.0);
+    }
+    100%{
+      transform: scale(1.05);
+    }
+  }
+  
