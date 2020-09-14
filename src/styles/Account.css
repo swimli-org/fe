@@ -48,6 +48,13 @@
 .account-container{
   margin: 20px 10px;
 }
+.account-title{
+  padding: 0 10px 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #474D5E;
+  !background: red;
+}
 .account-rounded-tab-container{
   border: 1px solid #e2e2e2;
   border-radius: 8px;
@@ -60,11 +67,28 @@
 /*  Personal Page CSS  */
 .personal-account-tab{
   padding: 20px;
-  font-weight: bold;
   border-bottom: 1px solid #e2e2e2;
+  overflow: hidden;
 }
 .personal-account-tab:last-child{
   border-bottom: 0px;
+}
+.personal-account-tab-title{
+  width: 20%;
+  font-weight: bold;
+  float: left;
+}
+.personal-account-tab-title-content{
+  width: 80%;
+  float: left;
+}
+.personal-account-tab-title-content span{
+  font-weight: bold;
+  font-style: italic;
+  color: #777777;
+  margin-top: 0;
+  float: right;
+  cursor: pointer;
 }
 
 

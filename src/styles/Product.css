@@ -72,6 +72,7 @@
 }
 .product-image{
     width: 100%;
+    background: #FFFFFF;
 }
 .addcart-container{
     width: 26%;
@@ -82,7 +83,7 @@
     width: 100%;
     height: auto;
     padding: 20px;
-    background: #E7E7E7;
+    background: #E6EAF0;
     color: #505050;
     font-size: 13px;
     -webkit-border-radius: 6px;
@@ -216,6 +217,9 @@
 .similar-products-container{
     width: 100%;
     padding: 0 10px;
+    margin-top: 10px;
+    float: left;
+    overflow: hidden;
 }
 .similar-products-container p{
     width: 100%;
@@ -230,7 +234,7 @@
     height: auto;
     min-height: 100px;
     padding: 20px;
-    background: #E7E7E7;
+    background: #E6EAF0;
     color: #505050;
     font-size: 13px;
     -webkit-border-radius: 6px;

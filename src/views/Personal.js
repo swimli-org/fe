@@ -33,21 +33,53 @@ export default function Example()  {
       </div>
 
       <div className='account-container'>
+      <div className='account-title'>Personal Info</div>
         <div className='account-rounded-tab-container'>
           <div className='personal-account-tab'>
-            Name
+            <div className='personal-account-tab-title'>
+              Name
+            </div>
+            <div className='personal-account-tab-title-content'>
+              Dylan Baker
+              <span>Update</span>
+            </div>
           </div>
           <div className='personal-account-tab'>
-            Address
+            <div className='personal-account-tab-title'>
+              Address
+            </div>
+            <div className='personal-account-tab-title-content'>
+              2963 N Penstemon St. <br />
+              Wichita, KS 67226
+              <span>Change</span>
+            </div>
           </div>
           <div className='personal-account-tab'>
-            Email
+          <div className='personal-account-tab-title'>
+              Email
+            </div>
+            <div className='personal-account-tab-title-content'>
+              dylanmbaker@yahoo.com
+              <span>Update</span>
+            </div>
           </div>
           <div className='personal-account-tab'>
-            Password
+            <div className='personal-account-tab-title'>
+              Password
+            </div>
+            <div className='personal-account-tab-title-content'>
+              **********
+              <span>Change</span>
+            </div>
           </div>
           <div className='personal-account-tab'>
-            Deactivate
+          <div className='personal-account-tab-title'>
+              Deactivate
+            </div>
+            <div className='personal-account-tab-title-content'>
+              This cannot be undone.
+              <span>Delete Account</span>
+            </div>
           </div>
         </div>
       </div>
