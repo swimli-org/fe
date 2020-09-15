@@ -2,6 +2,9 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import '../styles/Account.css';
 
+import intelliflo from '../assets/products/intelliflo.jpg'
+
+
 
 export default function Example()  {
   return (
@@ -35,10 +38,17 @@ export default function Example()  {
       <div className='account-container'>
       <div className='account-title'>
         My Orders
-        <span>Select Menu</span>
+        <span>
+          <select>
+            <option>Past 30 days</option>
+            <option>Past 3 months</option>
+            <option>Past 6 months</option>
+            <option>2020</option>
+          </select>
+        </span>
       </div>
         <div className='account-rounded-tab-container'>
-          <div className='orders-header'>
+          <div className='account-rounded-tab-header'>
             <div className='orders-header-left'>
               <div className='orders-header-title'>September 24, 2020</div>
               <div className='orders-header-sub-title'>Order #3592011</div>
@@ -53,24 +63,52 @@ export default function Example()  {
             </div>
           </div>
           
-          <div className='orders-content'>
+          <div className='account-rounded-tab-content'>
             <div className='orders-delivery-details'>
               Delivered Thursday, April 2
               <div className='orders-delivery-track'>Track Package</div>
             </div>
             <div className='orders-item-container'>
-              <div className='orders-item-image'>Image</div>
-              <div className='orders-item-title'>Title</div>
+              <div className='orders-item-image'>
+                <img src={intelliflo}></img>
+              </div>
+              <div className='orders-item-content'>
+                <Link to='/product'>
+                  <div className='orders-item-content-title'>
+                    Intelliflo Variable Speed Energy Saving Pool Pump
+                  </div>
+                </Link>
+                <div className='orders-item-content-price'>
+                  $45.99
+                </div>
+                <div className='orders-item-content-review'>
+                  Write a review
+                </div>
+              </div>
             </div>
             <div className='orders-item-container'>
-              <div className='orders-item-image'>Image</div>
-              <div className='orders-item-title'>Title</div>
+              <div className='orders-item-image'>
+                <img src={intelliflo}></img>
+              </div>
+              <div className='orders-item-content'>
+                <Link to='/product'>
+                  <div className='orders-item-content-title'>
+                    Intelliflo Variable Speed Energy Saving Pool Pump
+                  </div>
+                </Link>
+                <div className='orders-item-content-price'>
+                  $45.99
+                </div>
+                <div className='orders-item-content-review'>
+                  Write a review
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div className='account-rounded-tab-container'>
-          <div className='orders-header'>
+          <div className='account-rounded-tab-header'>
             <div className='orders-header-left'>
               <div className='orders-header-title'>September 24, 2020</div>
               <div className='orders-header-sub-title'>Order #3592011</div>
@@ -85,22 +123,64 @@ export default function Example()  {
             </div>
           </div>
           
-          <div className='orders-content'>
+          <div className='account-rounded-tab-content'>
             <div className='orders-delivery-details'>
               Delivered Thursday, April 2
               <div className='orders-delivery-track'>Track Package</div>
             </div>
             <div className='orders-item-container'>
-              <div className='orders-item-image'>Image</div>
-              <div className='orders-item-title'>Title</div>
+              <div className='orders-item-image'>
+                <img src={intelliflo}></img>
+              </div>
+              <div className='orders-item-content'>
+                <Link to='/product'>
+                  <div className='orders-item-content-title'>
+                    Intelliflo Variable Speed Energy Saving Pool Pump
+                  </div>
+                </Link>
+                <div className='orders-item-content-price'>
+                  $45.99
+                </div>
+                <div className='orders-item-content-review'>
+                  Write a review
+                </div>
+              </div>
             </div>
             <div className='orders-item-container'>
-              <div className='orders-item-image'>Image</div>
-              <div className='orders-item-title'>Title</div>
+              <div className='orders-item-image'>
+                <img src={intelliflo}></img>
+              </div>
+              <div className='orders-item-content'>
+                <Link to='/product'>
+                  <div className='orders-item-content-title'>
+                    Intelliflo Variable Speed Energy Saving Pool Pump
+                  </div>
+                </Link>
+                <div className='orders-item-content-price'>
+                  $45.99
+                </div>
+                <div className='orders-item-content-review'>
+                  Write a review
+                </div>
+              </div>
             </div>
             <div className='orders-item-container'>
-              <div className='orders-item-image'>Image</div>
-              <div className='orders-item-title'>Title</div>
+              <div className='orders-item-image'>
+                <img src={intelliflo}></img>
+              </div>
+              <div className='orders-item-content'>
+                <Link to='/product'>
+                  <div className='orders-item-content-title'>
+                    Intelliflo Variable Speed Energy Saving Pool Pump
+                  </div>
+                </Link>
+                <div className='orders-item-content-price'>
+                  $45.99
+                </div>
+                <div className='orders-item-content-review'>
+                  Write a review
+                </div>
+              </div>
             </div>
           </div>
         </div>

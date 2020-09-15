@@ -35,7 +35,13 @@ export default function Example()  {
       <div className='account-container'>
       <div className='account-title'>Autoship</div>
         <div className='account-rounded-tab-container'>
-
+          <div className='account-rounded-tab-header'>
+            
+          </div>
+          
+          <div className='account-rounded-tab-content'>
+            
+          </div>
         </div>
       </div>
       
