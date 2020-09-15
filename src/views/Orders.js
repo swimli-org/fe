@@ -53,19 +53,19 @@ export default function Example()  {
               <div className='orders-header-title'>September 24, 2020</div>
               <div className='orders-header-sub-title'>Order #3592011</div>
             </div>
-            <div className='orders-header-middle'>
-              <div className='orders-header-title'>Shipped to</div>
-              <div className='orders-header-sub-title'>2963 N Penstemon St., Wichita, KS 67226</div>
-            </div>
             <div className='orders-header-right'>
               <div className='orders-header-title'>$31.69</div>
               <div className='orders-header-sub-title'>2 items</div>
+            </div>
+            <div className='orders-header-middle'>
+              <div className='orders-header-title'>Shipped to</div>
+              <div className='orders-header-sub-title'>2963 N Penstemon St., Wichita, KS 67226</div>
             </div>
           </div>
           
           <div className='account-rounded-tab-content'>
             <div className='orders-delivery-details'>
-              Delivered Thursday, April 2
+              <div className='orders-delivery-title'>Delivered Thursday, April 2</div>
               <div className='orders-delivery-track'>Track Package</div>
             </div>
             <div className='orders-item-container'>
@@ -82,7 +82,7 @@ export default function Example()  {
                   $45.99
                 </div>
                 <div className='orders-item-content-review'>
-                  Write a review
+                  Leave a review
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function Example()  {
                   $45.99
                 </div>
                 <div className='orders-item-content-review'>
-                  Write a review
+                  Leave a review
                 </div>
               </div>
             </div>
@@ -113,19 +113,19 @@ export default function Example()  {
               <div className='orders-header-title'>September 24, 2020</div>
               <div className='orders-header-sub-title'>Order #3592011</div>
             </div>
-            <div className='orders-header-middle'>
-              <div className='orders-header-title'>Shipped to</div>
-              <div className='orders-header-sub-title'>2963 N Penstemon St., Wichita, KS 67226</div>
-            </div>
             <div className='orders-header-right'>
               <div className='orders-header-title'>$1,292.48</div>
               <div className='orders-header-sub-title'>3 items</div>
+            </div>
+            <div className='orders-header-middle'>
+              <div className='orders-header-title'>Shipped to</div>
+              <div className='orders-header-sub-title'>2963 N Penstemon St., Wichita, KS 67226</div>
             </div>
           </div>
           
           <div className='account-rounded-tab-content'>
             <div className='orders-delivery-details'>
-              Delivered Thursday, April 2
+              <div className='orders-delivery-title'>Delivered Thursday, April 2</div>
               <div className='orders-delivery-track'>Track Package</div>
             </div>
             <div className='orders-item-container'>
@@ -142,7 +142,7 @@ export default function Example()  {
                   $45.99
                 </div>
                 <div className='orders-item-content-review'>
-                  Write a review
+                  Leave a review
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function Example()  {
                   $45.99
                 </div>
                 <div className='orders-item-content-review'>
-                  Write a review
+                 Leave a review
                 </div>
               </div>
             </div>
@@ -178,7 +178,7 @@ export default function Example()  {
                   $45.99
                 </div>
                 <div className='orders-item-content-review'>
-                  Write a review
+                   Leave a review
                 </div>
               </div>
             </div>
