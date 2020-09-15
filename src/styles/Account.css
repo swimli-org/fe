@@ -208,7 +208,21 @@
 }
 
 @media only screen and (max-width: 600px) {
+  /*  Personal Page CSS  */
+  .personal-account-tab{
+    font-size: 12px;
+    padding: 20px 10px;
+  }
+  .personal-account-tab-title{
+    width: 26%;
+  }
+  .personal-account-tab-title-content{
+    width: 74%;
 
+  }
+  .personal-account-tab-title-content span{
+    font-size: 10px;
+  }
 }
 @media only screen and (max-width: 375px) {
   
