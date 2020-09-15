@@ -12,7 +12,7 @@ export default function Example()  {
       <div className='account-tab-bar-container'>
         <div className='account-tab-bar'>
           <Link to='/overview'>
-            <div className='account-tab'>Overview</div>
+            <div className='account-tab' className='hidden'>Overview</div>
           </Link>
           <Link to='/personal'>
             <div className='account-tab'>Personal Info</div>
@@ -30,7 +30,7 @@ export default function Example()  {
             <div className='account-tab'>Payment Methods</div>
           </Link>
           <Link to='/mypool'>
-            <div className='account-tab'>My Pool</div>
+            <div className='account-tab' className='hidden'>My Pool</div>
           </Link>
         </div>
       </div>

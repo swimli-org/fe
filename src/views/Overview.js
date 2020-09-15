@@ -23,7 +23,7 @@ export default function Example()  {
           <Link to='/addresses'>
             <div className='account-tab'>Addresses</div>
           </Link>
-          <Link to='/paymentethods'>
+          <Link to='/paymentmethods'>
             <div className='account-tab'>Payment Methods</div>
           </Link>
           <Link to='/mypool'>

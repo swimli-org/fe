@@ -1,3 +1,10 @@
+.hidden{
+  display: none;
+}
+
+
+
+
 .account-tab-bar-container {
   padding: 2px;
   margin: 20px 10px;
@@ -77,7 +84,7 @@
   min-height: 200px;
 }
 .account-rounded-tab-header{
-  padding: 10px;
+  padding: 10px 20px;
   background: #E6EAF0;
   overflow: hidden;
 }
@@ -106,6 +113,7 @@
 .personal-account-tab-title-content span{
   font-weight: bold;
   font-style: italic;
+  text-decoration: underline;
   color: #777777;
   margin-top: 0;
   float: right;
@@ -190,6 +198,75 @@
 }
 
 
+/*  Payments Page CSS  */
+.payments-header-left{
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  float: left;
+}
+.payments-card-icon{
+  height: 40px;
+  margin-right: 10px;
+}
+.payments-header-right{
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: right;
+  float: left;
+}
+.payments-content-left{
+  width: 30%;
+  margin-left: 5%;
+  float: left;
+}
+.payments-content-left span{
+  font-weight: bold;
+}
+.payments-content-middle{
+  width: 30%;
+  float: left;
+}
+.payments-content-middle span{
+  font-weight: bold;
+}
+.payments-content-right{
+  width: 30%;
+  margin-right: 5%;
+  text-align: right;
+  float: right;
+}
+.payments-card-button{
+  width: 100px;
+  padding: 8px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #2f89fc;
+  border-radius: 8px;
+  border: 0px;
+  outline: 0;
+  cursor: pointer;
+}
+.payments-card-button:first-child{
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -204,10 +281,31 @@
 
 
 @media only screen and (max-width: 975px) {
-
+    /*  Payments Page CSS  */
+    .payments-content-left{
+      width: 30%;
+      margin-left: 5%;
+      float: left;
+    }
+    .payments-content-middle{
+      width: 40%;
+      float: left;
+    }
+    .payments-content-right{
+      width: 20%;
+      margin-right: 5%;
+      float: right;
+    }
+    .payments-card-button{
+      margin: 0 0 10px 0;
+    }
+    .payments-card-button:first-child{
+      margin: 0 0 10px 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+
   /*  Personal Page CSS  */
   .personal-account-tab{
     font-size: 12px;
@@ -223,10 +321,66 @@
   .personal-account-tab-title-content span{
     font-size: 10px;
   }
+
+
+  /*  Payments Page CSS  */
+  .payments-header-left{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;    
+  }
+  .payments-card-icon{
+    height: 20px;
+  }
+  .payments-header-right{
+    display: none;
+  }
+  .payments-content-left{
+    width: 50%;
+    margin-left: 0;
+  }
+  .payments-content-middle{
+    width: 50%;
+    text-align: right;
+  }
+  .payments-content-right{
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    float: left;
+  }
+  .payments-card-button{
+    margin: 0;
+  }
+  .payments-card-button:first-child{
+    margin: 0 10px 0;
+  }
 }
 @media only screen and (max-width: 375px) {
-  
 
+  /*  Payments Page CSS  */
+  .payments-content-left{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .payments-content-middle{
+    width: 100%;
+    text-align: left;
+  }
+  .payments-content-right{
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    float: left;
+  }
+  .payments-card-button{
+    margin: 0;
+  }
+  .payments-card-button:first-child{
+    margin: 0 10px 10px;
+  }
+  
 }
   @keyframes scale {
     0%{
