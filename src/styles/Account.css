@@ -27,9 +27,7 @@
   text-decoration: none;
 }
 .account-tab:hover {
-  background-color: #FFFFFF;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
-              0 2px 8px rgba(0,0,0,0.12);
+  color: #474D5E;
   transition: 0.3s;
 }
 .account-tab-active{
@@ -53,9 +51,15 @@
   font-size: 20px;
   font-weight: bold;
   color: #474D5E;
-  !background: red;
+}
+.account-title span{
+  padding: 9.5px 0;
+  font-size: 14px;
+  font-weight: normal;
+  float: right;
 }
 .account-rounded-tab-container{
+  margin-bottom: 15px;
   border: 1px solid #e2e2e2;
   border-radius: 8px;
   overflow: hidden;
@@ -90,6 +94,74 @@
   float: right;
   cursor: pointer;
 }
+
+/*  Orders Page CSS  */
+.orders-header{
+  padding: 10px;
+  background: #E6EAF0;
+  overflow: hidden;
+}
+.orders-header-left{
+  width: 20%;
+  float: left;
+}
+.orders-header-middle{
+  width: 60%;
+  text-align: center;
+  float: left;
+}
+.orders-header-right{
+  width: 20%;
+  text-align: right;
+  float: left;
+}
+.orders-header-title{
+  font-weight: bold;
+}
+.orders-content{
+  padding: 20px;
+}
+.orders-delivery-details{
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #c0c0c0;
+}
+.orders-delivery-track{
+  padding: 5px 15px;
+  margin-top: -5px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #FFFFFF;
+  background: #2f89fc;
+  border-radius: 8px;
+  float: right;
+
+  cursor: pointer;
+}
+.orders-item-container{
+  padding: 10px 0;
+  overflow: hidden;
+}
+.orders-item-image{
+  width: 30%;
+  min-height: 50px;
+  float: left;
+}
+.orders-item-title{
+  width: 70%;
+  min-height: 50px;
+  float: left;
+}
+
+
+
+
+
+
+
+
 
 
 
