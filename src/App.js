@@ -145,12 +145,6 @@ console.log(auth)
         </div>
       </div>
 
-      <div className='product-container' link>
-        <Link className='product-link' to='/product'>
-          View Product
-        </Link>
-      </div>
-
     </div>
   );
 }
