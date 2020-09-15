@@ -133,29 +133,30 @@
 .orders-header-right{
   width: 20%;
   text-align: right;
-  float: left;
+  float: right;
 }
 .orders-header-title{
   font-weight: bold;
 }
-
 .orders-delivery-details{
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 10px;
   margin-bottom: 5px;
   border-bottom: 1px solid #c0c0c0;
+  overflow: hidden;
+}
+.orders-delivery-title{
+  float: left;
 }
 .orders-delivery-track{
   padding: 5px 15px;
-  margin-top: -5px;
   font-size: 14px;
   font-weight: normal;
   color: #FFFFFF;
   background: #2f89fc;
   border-radius: 8px;
   float: right;
-
   cursor: pointer;
 }
 .orders-item-container{
@@ -172,14 +173,17 @@
   height: 100%;
 }
 .orders-item-content{
-  width: 70%;
+  width: 84%;
   padding: 20px;
   min-height: 140px;
   float: left;
 }
 .orders-item-content-title{
-  font-size: 22px;
+  font-size: 20px;
   color: #333333;
+}
+.orders-item-content-title:hover{
+  text-decoration: underline;
 }
 .orders-item-content-price{
   font-size: 16px;
@@ -187,13 +191,10 @@
   color: #2f89fc;
 }
 .orders-item-content-review{
-  padding: 6px 15px;
   margin-top: 5px;
-  color: #FFFFFF;
-  background: #2f89fc;
-  border-radius: 8px;
-  float: left;
-
+  color: #333333;
+  border-radius: 4px;
+  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -256,52 +257,68 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 975px) {
-    /*  Payments Page CSS  */
-    .payments-content-left{
-      width: 30%;
-      margin-left: 5%;
-      float: left;
-    }
-    .payments-content-middle{
-      width: 40%;
-      float: left;
-    }
-    .payments-content-right{
-      width: 20%;
-      margin-right: 5%;
-      float: right;
-    }
-    .payments-card-button{
-      margin: 0 0 10px 0;
-    }
-    .payments-card-button:first-child{
-      margin: 0 0 10px 0;
-    }
+
+  /*  Orders Page CSS  */
+  .orders-header-left{
+    font-size: 12px;
+  }
+  .orders-header-middle{
+    font-size: 12px;
+  }
+  .orders-header-right{
+    font-size: 12px;
+  }
+  .orders-delivery-details{
+    font-size: 14px;
+  }
+  .orders-delivery-track{
+    font-size: 12px;
+  }
+  .orders-item-image{
+    width: 18%;
+    height: 100px;
+  }
+  .orders-item-image img{
+    height: 100%;
+  }
+  .orders-item-content{
+    width: 82%;
+    padding: 5px 20px;
+    min-height: 100px;
+  }
+  .orders-item-content-title{
+    font-size: 16px;
+  }
+
+  .orders-item-content-price{
+    font-size: 14px;
+  }
+  .orders-item-content-review{
+    font-size: 12px;
+  }
+
+  /*  Payments Page CSS  */
+  .payments-content-left{
+    width: 30%;
+    margin-left: 5%;
+    float: left;
+  }
+  .payments-content-middle{
+    width: 40%;
+    float: left;
+  }
+  .payments-content-right{
+    width: 20%;
+    margin-right: 5%;
+    float: right;
+  }
+  .payments-card-button{
+    margin: 0 0 10px 0;
+  }
+  .payments-card-button:first-child{
+    margin: 0 0 10px 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -320,6 +337,48 @@
   }
   .personal-account-tab-title-content span{
     font-size: 10px;
+  }
+
+  /*  Orders Page CSS  */
+  .orders-header-left{
+    width: 50%;
+  }
+  .orders-header-middle{
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid #CCCCCC;
+  }
+  .orders-header-right{
+    width: 50%;
+  }
+  .orders-delivery-details{
+    font-size: 14px;
+  }
+  .orders-delivery-track{
+    font-size: 12px;
+  }
+  .orders-item-image{
+    width: 24%;
+    height: 70px;
+  }
+  .orders-item-image img{
+    height: 100%;
+  }
+  .orders-item-content{
+    width: 76%;
+    padding: 0px 10px;
+    min-height: 70px;
+  }
+  .orders-item-content-title{
+    font-size: 14px;
+  }
+  .orders-item-content-price{
+    font-size: 12px;
+  }
+  .orders-item-content-review{
+    font-size: 11px;
+    margin: 0;
   }
 
 
@@ -358,6 +417,49 @@
   }
 }
 @media only screen and (max-width: 375px) {
+
+   /*  Orders Page CSS  */
+  .orders-delivery-details{
+    height: auto;
+    font-size: 14px;
+    text-align: left;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  .orders-delivery-title{
+    width: 100%;
+  }
+  .orders-delivery-track{
+    font-size: 10px;
+    margin: 5px 0;
+    float: left;
+  }
+  .orders-item-image{
+    width: 24%;
+    height: 50px;
+  }
+  .orders-item-image img{
+    height: 100%;
+  }
+  .orders-item-content{
+    width: 76%;
+    padding: 0px 5px;
+    min-height: auto;
+  }
+  .orders-item-content-title{
+    font-size: 12px;
+  }
+  .orders-item-content-price{
+    font-size: 11px;
+  }
+  .orders-item-content-review{
+    font-size: 10px;
+  }
+
+
+
+
 
   /*  Payments Page CSS  */
   .payments-content-left{
