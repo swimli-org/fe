@@ -64,10 +64,10 @@ export default function Navbar() {
 
           <Drawer
             title={
-              <Link className='sidebar-user-container' to='/overview'>
+              <Link className='sidebar-user-container' to='/personal'>
                 <Avatar size="small" className='sidebar-user-avatar' icon={<UserOutlined />} />
                 <div className='sidebar-user-username' to='/overview'>
-                  <Link to='/overview' >
+                  <Link to='/personal' >
                     {name !="null null"? name:'Guest'}
                   </Link>
                 </div>

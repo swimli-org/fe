@@ -34,8 +34,20 @@ export default function Example()  {
 
       <div className='account-container'>
       <div className='account-title'>Addresses</div>
-        <div className='account-rounded-tab-container'>
-
+      <div className='account-rounded-tab-container'>
+          <div className='account-rounded-tab-header'>
+            <div className='addresses-header-title'>
+              <b>Home</b> (rename)
+              <span>Edit</span>
+            </div>
+          </div>
+          
+          <div className='account-rounded-tab-content'>
+            <b>Dylan Baker</b><br />
+            2963 N Penstemon St.<br />
+            Wichita, KS 67226<br />
+            Phone: (316) 789-3632<br />
+          </div>
         </div>
       </div>
       
