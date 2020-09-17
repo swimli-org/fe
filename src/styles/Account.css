@@ -198,23 +198,36 @@
   cursor: pointer;
 }
 
+/*  Addresses Page CSS  */
+.addresses-header-title{
+  height: 40px;
+  line-height: 40px;
+  font-weight: normal;
+}
+.addresses-header-title span{
+  font-weight: normal;
+  text-decoration: underline;
+  cursor: pointer;
+  float: right;
+}
+
 
 /*  Payments Page CSS  */
 .payments-header-left{
   width: 50%;
-  height: 40px;
-  line-height: 40px;
+  height: 35px;
+  line-height: 35px;
   font-weight: bold;
   float: left;
 }
 .payments-card-icon{
-  height: 40px;
+  height: 30px;
   margin-right: 10px;
 }
 .payments-header-right{
   width: 50%;
-  height: 40px;
-  line-height: 40px;
+  height: 35px;
+  line-height: 35px;
   font-weight: bold;
   text-align: right;
   float: left;
