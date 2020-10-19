@@ -1,5 +1,5 @@
-import React,{useState} from 'react'
-import { Drawer, Divider,Avatar, Badge, Input} from 'antd';
+import React,{useState, useEffect, useRef} from 'react'
+import { Drawer, Divider, Avatar, Badge, Input} from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import menu from '../assets/menu.svg'
 import logo from '../assets/logo.png'
@@ -20,6 +20,24 @@ export default function Navbar() {
     const onClose = () => setVisible(false);
 
     const[searchTerm, setSearchTerm]=useState()
+  
+  const outside = useRef()
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleClick = e => {
+    if (outside.current.contains(e.target)) {
+      return
+    }
+    setIsOpen(false)
+  }
+
+  useEffect(() => {
+    const getClick = document.addEventListener('click', handleClick)
+
+    return () => {
+      getClick()
+    }
+  }, [])
 
     return (
       <div className='navbar-container'>
@@ -101,29 +119,29 @@ export default function Navbar() {
         </div>
 
           
-        <div className='alert-header'>
-          <Link to='/autoship'>
-            <img src={autoship} className='autoship' alt='Autoship Icon' onClick={()=>history.push('/')}></img>
-            Save today on your first autoship order!
-          </Link>
+        <div className='alert-header' ref={outside}>
+            <button onClick={() => setIsOpen(!isOpen)}>
+              <img src={autoship} className='autoship' alt='Autoship Icon' onClick={()=>history.push('/')}></img>
+              Save today on your first autoship order!
+            </button>
+            {isOpen ? (
+              <div className='alert-modal-container'>
+                <div className='alert-modal'>
+                  <button className="alert-modal-action" onClick={() => setIsOpen(!isOpen)}>
+                    Close
+                  </button>
+                  
+                  <p>Content goes here</p>
+
+                </div>
+              </div>
+            ) : null}
         </div>
+
+
+
+
       </div>
   
     )
 }
-
-
-
-
-/* For search
-<Search
-value={searchTerm}
-className='search-bar1'
-placeholder="Search Swimli..."
-onChange={(e)=>setSearchTerm(e.target.value)}
-onSearch={() =>{
-const prom = new Promise(()=>history.push(`/s/${searchTerm}`))
-  prom.then(setSearchTerm(""))
-}}
-/>
-*/
