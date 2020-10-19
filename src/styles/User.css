@@ -1,58 +1,45 @@
-.fullscreen-container{
-  min-width: 100%;
-  min-height: 100%;
-  background: #FFFFFF;
-  top: 0;
-  position: absolute;
+/*  Login Page  */
+.primary-title{
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #474D5E;
+  margin: 30px 0 20px;
 }
-.fullscreen-header{
-  width: 100%;
-  padding: 40px 0 60px;
-}
-.fullscreen-header-logo{
-  height: 30px;
-  margin: 0 auto;
-  display: block;
-}
-.signin-register-outer-container{
+.primary-container{
   width: 90%;
   max-width: 375px;
   margin: 0 auto;
-}
-.signin-register-inner-container{
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px 30px;
+  padding: 24px 30px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  border: 1px solid #CCCCCC;
-  background: #FFFFFF;
+  background: #E6EAF0;
 }
-.signin-register-inner-title{
-  margin-bottom: 10px;
-  font-size: 24px;
-  color: #474D5E;
-  text-align: center;
+.primary-container p{
+  color: #2877DE;
+  text-align: right;
 }
-.signin-register-form-input{
+.primary-form{
   width: 100%;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
   border: 0px;
   margin: 5px auto;
   padding: 5px 15px;
   font-weight: 400;
   font-size: 16px;
   background: #FFFFFF;
-  border: 1px solid #CCCCCC;
+  border: 0px;
   outline: none;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 8px rgba(0,0,0,0.12);
 }
-.signin-register-form-input:focus{
+.primary-form:focus{
   color: #000000;
 }
-.signin-register-form-btn{
+.primary-btn{
   width: 100%;
   display: block;
   cursor: pointer;
@@ -69,96 +56,40 @@
   position: flex;
   outline: none;
 }
-.signin-register-form-forgot{
-  margin-top: 10px;
-  text-align: center;
+.secondary-container{
+  width: 75%;
+  max-width: 300px;
+  margin: 50px auto;
+  padding: 16px 20px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: #3089FC;
+}
+.secondary-title{
+  font-size: 24px;
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #FFFFFF;
 }
-.signin-register-inner-container hr{
-  margin: 10px 0 20px;
-  height: 1px;
-  background-color: #CCCCCC;
-  border: none;
-}
-
-.signin-register-switch-btn{
-  width: auto;
+.secondary-btn{
+  width: 100%;
   display: block;
   cursor: pointer;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  border: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 0px;
   margin: 5px auto;
-  padding: 8px 20px;
-  background: #12BA9E;
-  color: #FFFFFF;
-  font-weight: bold;
-  font-size: 17px;
+  padding: 10px 20px;
+  background: #FFFFFF;
+  color: #363636;
+  font-weight: 600;
+  font-size: 14px;
   position: flex;
   outline: none;
 }
-
-
-
-
-
-
-
-
-
-  
-  .signin-register-form-btn{
-    width: 100%;
-    display: block;
-    cursor: pointer;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: 0px;
-    margin: 5px auto;
-    padding: 8px 20px;
-    background: #2f89fc;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 16px;
-    position: flex;
-    outline: none;
-  }
-  .secondary-container{
-    width: 75%;
-    max-width: 300px;
-    margin: 50px auto;
-    padding: 16px 20px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    background: #3089FC;
-  }
-  .secondary-title{
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #FFFFFF;
-  }
-  .secondary-btn{
-    width: 100%;
-    display: block;
-    cursor: pointer;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    border: 0px;
-    margin: 5px auto;
-    padding: 10px 20px;
-    background: #FFFFFF;
-    color: #363636;
-    font-weight: 600;
-    font-size: 14px;
-    position: flex;
-    outline: none;
-  }
 
 
 
@@ -173,46 +104,46 @@
 
 /*  REGISTER PAGE  */
 .registerFormInput{
-    width: 100%;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: 0px;
-    margin: 5px auto;
-    padding: 5px 15px;
-    font-weight: 400;
-    font-size: 16px;
-    background: white;
-    border: 1px solid #CCCCCC;
-    outline: none;
-}
-.registerFormInput:focus{
-  color: #000000;
-}
-.registerFormButton{
-  width: auto;
-  display: block;
-  cursor: pointer;
+  width: 100%;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   border: 0px;
   margin: 5px auto;
-  padding: 8px 20px;
-  background: #2f89fc;
-  color: #FFFFFF;
-  font-weight: 600;
-  font-size: 18px;
-  position: flex;
+  padding: 5px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  background: white;
+  border: 1px solid #CCCCCC;
   outline: none;
+}
+.registerFormInput:focus{
+color: #000000;
+}
+.registerFormButton{
+width: auto;
+display: block;
+cursor: pointer;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+border: 0px;
+margin: 5px auto;
+padding: 8px 20px;
+background: #2f89fc;
+color: #FFFFFF;
+font-weight: 600;
+font-size: 18px;
+position: flex;
+outline: none;
 }
 
 /*User Account Settings*/
 .user-account-title{
-  font-size: 30px;
-  font-weight: bold;
-  color: #444444;
-  padding: 20px 1%;
+font-size: 30px;
+font-weight: bold;
+color: #444444;
+padding: 20px 1%;
 }
 
 
@@ -224,74 +155,72 @@
 
 /* ACCOUNT PAGE CSS */
 .personal-tab{
-  height: auto;
-  margin: 10px 0;
-  overflow: hidden;
-  border-bottom: 1px solid #DDDDDD;
+height: auto;
+margin: 10px 0;
+overflow: hidden;
+border-bottom: 1px solid #DDDDDD;
 }
 .personal-tab:last-child{
-  border-bottom: none;
+border-bottom: none;
 }
 .personal-title{
-  width: 20%;
-  height: 100%;
-  padding: 10px;
-  font-weight: 600;
-  float: left;
+width: 20%;
+height: 100%;
+padding: 10px;
+font-weight: 600;
+float: left;
 }
 .personal-description{
-  width: 80%;
-  padding: 10px;
-  font-weight: 500;
-  float: right;
+width: 80%;
+padding: 10px;
+font-weight: 500;
+float: right;
 }
 .personal-description span{
-  font-size: 12px;
-  cursor: pointer;
-  float: right;
+font-size: 12px;
+cursor: pointer;
+float: right;
 }
 
 
 
 
 @media only screen and (max-width: 975px) {
-  /*  Login Page  */
-  .signin-title{
-    font-size: 30px;
-  }
-  .signin-register-title{
-    font-size: 22px;
-  }
+/*  Login Page  */
+.signin-title{
+  font-size: 30px;
+}
+.signin-register-title{
+  font-size: 22px;
+}
 }
 @media only screen and (max-width: 600px) {
-  /*  Login Page  */
-  .signin-title{
-    font-size: 30px;
-  }
-  .signin-register-title{
-    font-size: 22px;
-  }
-  .signin-register-btn{
-    font-size: 12px;
-  }
+/*  Login Page  */
+.signin-title{
+  font-size: 30px;
+}
+.signin-register-title{
+  font-size: 22px;
+}
+.signin-register-btn{
+  font-size: 12px;
+}
 }
 @media only screen and (max-width: 375px) {
-  /*  Login Page  */
-  .signin-title{
-    font-size: 30px;
-  }
-  .signin-register-title{
-    font-size: 22px;
-  }
+/*  Login Page  */
+.signin-title{
+  font-size: 30px;
+}
+.signin-register-title{
+  font-size: 22px;
+}
 
 }
-  @keyframes scale {
-    0%{
-      transform: scale(1.0);
-    }
-    100%{
-      transform: scale(1.05);
-    }
+@keyframes scale {
+  0%{
+    transform: scale(1.0);
   }
-  
-  
+  100%{
+    transform: scale(1.05);
+  }
+}

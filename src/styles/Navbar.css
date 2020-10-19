@@ -85,7 +85,7 @@
   border: 0px;
   outline: 0;
   -webkit-border-radius: 8px;
-  -webkit-border-top-rig`ht-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
   -webkit-border-bottom-right-radius: 0px;
   -moz-border-radius: 8px;
   -moz-border-radius-topright: 0px;
@@ -142,18 +142,132 @@
 }
 .alert-header{
   height: auto;
-  text-align: center;
-  padding: 5px;
+  padding: 0px;
   color: white;
   background: #2877DE;
 }
 .alert-header a{
   color: #FFFFFF;
 }
+.alert-header button{
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+}
 .autoship{
   height: 18px;
   padding-right: 5px;
 }
+.alert-modal-container{
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.);
+
+  backdrop-filter: blur(1.5px);
+}
+
+.alert-modal{
+  width: 900px;
+  max-width: 90%;
+  height: 600px;
+
+  background: #9AC4FE;
+  color: #000000;
+  margin: 100px auto 0 auto;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 26px;
+  overflow: hidden;
+  z-index: 99999;
+  text-align: center;
+  vertical-align: middle;
+}
+.alert-modal button{
+  width: auto;
+  background: rgba(255, 255, 255, 1);
+  color: #555555;
+  font-weight: bold;
+  float: right;
+  margin: 10px;
+  padding: 5px 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.12), 
+              -1px 1px 3px rgba(0,0,0,0.12);
+}
+.alert-modal button:hover{
+  background: rgba(255, 255, 255, 1);
+  color: #2f89fc;
+  transition: 0.3s;
+}
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*  MOBILE SCREENS  */
