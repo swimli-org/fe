@@ -1,14 +1,17 @@
 import React, {useState, useEffect} from 'react';
-import './styles/App.css';
+import {useSelector} from 'react-redux'
 import {Link, useHistory} from 'react-router-dom'
+
+/* Import CSS */
+import './styles/App.css';
+
+/* Import Components */
 import Footer from './components/Footer'
 import CarouselSlider from './components/Carousel'
-
-
 import categoriesList from './components/categories'
 import CategoryCard from './components/CategoryCard'
-import {useSelector} from 'react-redux'
 
+/* Import Images */
 import intelliflo from './assets/products/intelliflo.png'
 import toys from './assets/category-images/toys.png'
 import floats from './assets/category-images/floats.png'
@@ -17,12 +20,10 @@ import furniture from './assets/category-images/furniture.png'
 import covers from './assets/category-images/covers.png'
 
 
-
 function App() {
   const[categories]=useState(categoriesList)
   const auth = useSelector(state=>state.authReducer)
 console.log(auth)
-
 
 
   return (

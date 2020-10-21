@@ -27,7 +27,7 @@ export default function CarouselSlider() {
     <div className='slider-image'>
       <img src={pool}></img>
     </div>
-    <div className='slider-image'>
+    <div className='slider-image' style={{backgroundColor: "red"}}>
     </div>
     <div className='slider-image'>
     </div>
