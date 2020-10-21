@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './styles/App.css';
 import {Link, useHistory} from 'react-router-dom'
 import Footer from './components/Footer'
@@ -22,6 +22,9 @@ function App() {
   const[categories]=useState(categoriesList)
   const auth = useSelector(state=>state.authReducer)
 console.log(auth)
+
+
+
   return (
     <div className='container'>
       <CarouselSlider/>

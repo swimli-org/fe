@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom'
 import '../styles/Account.css';
 
 
 export default function Example()  {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  });
+
   return (
     <div className="container">
       <div className='account-tab-bar-container'>

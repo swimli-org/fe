@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react';
 import {Button} from 'antd'
 import {Link} from 'react-router-dom'
 import '../styles/Product.css'
 import intelliflo from '../assets/products/intelliflo.jpg'
 
 export default function Product() {
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
     return (
       <div className="container">
         <div className='breadcrumb-trail'><span>Equipment</span> / <span>Pumps & Motors</span></div>

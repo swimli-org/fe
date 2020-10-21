@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
 import App from './App';
@@ -33,8 +33,6 @@ import S from './views/S'
 import Checkout from './views/Checkout'
 import Footer from './components/Footer'
 import Product from './views/Product'
-
-
 
 const store = createStore(allReducers,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
