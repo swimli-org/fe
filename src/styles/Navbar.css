@@ -167,7 +167,6 @@
   padding: 0 20px;
   background: rgba(255, 255, 255);
   border-bottom: .2px solid #F0F0F0;
-  *position: fixed;
 }
 .sidebarHeader p{
   height: 20px;
@@ -234,7 +233,6 @@
   border-top: .2px solid #F0F0F0;
   background: #FFFFFF;
 }
-
 .sidebarTint{
   width: 100vw;
   height: 100vh;
@@ -401,6 +399,30 @@
     .user-container-tab p{
       display: none;
     }
+
+    /* Sidebar and Tint Screen */
+    .sidebar{
+      width: 100%;
+      height: 100%;
+    }
+    .sidebarHeader{
+      width: 100%;
+    }
+    .sidebarCategories{
+      width: 100%;
+    }
+    .sidebarUser{
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      border-top: .2px solid #F0F0F0;
+      background: #FFFFFF;
+    }
+
+
+
+
+
   }
   @keyframes scale {
     0%{
