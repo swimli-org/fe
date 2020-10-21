@@ -13,7 +13,7 @@ import {Link, useHistory} from 'react-router-dom'
 
 
 export default function Navbar() {
-  const name = `${localStorage.getItem('swimliFirstName')} ${localStorage.getItem('swimliLastName')}`
+  const name = `${localStorage.getItem('swimliFirstName')}`
   const history = useHistory();
   const { Search } = Input;
     const[visible, setVisible]=useState(false)
@@ -44,10 +44,14 @@ export default function Navbar() {
               </Link>
             </div>
             <div className='user-container-tab'>
-              <Link to='/signin'>
+              
+              {name !="null"? <Link to='/personal'>
+                <img src={account} className='user-container-tab-icon' alt='Account'></img>
+                <p>{name !="null"? name:'Guest'}</p>
+                </Link>:<Link to='/signin'>
                 <img src={account} className='user-container-tab-icon' alt='Account'></img>
                 <p>Sign In</p>
-              </Link>
+                </Link>}
             </div>
             
           </div>
@@ -69,8 +73,8 @@ export default function Navbar() {
           {/* Sidebar and Sidebar Tint */}
           <div className={sidebarIsOpen ? "sidebar sidebarClose" : "sidebar"}>
             <div className='sidebarHeader'>
-              {name !="null null"? <Link to='/personal' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
-                {name !="null null"? name:'Guest'}
+              {name !="null"? <Link to='/personal' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
+                {name !="null"? name:'Guest'}
                 </Link>:<Link to='/signin' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
                 Sign In
                 </Link>}
@@ -80,13 +84,13 @@ export default function Navbar() {
               <div className='sidebarTitle'>Shop by Category</div>
               <div className='sidebarContent'>
                 <ul onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
-                  <li><Link to='/Toys'>Toys</Link></li>
-                  <li><Link to='/Floats'>Floats</Link></li>
-                  <li><Link to='/Chemicals'>Chemicals</Link></li>
-                  <li><Link to='/Furniture'>Furniture</Link></li>
-                  <li><Link to='/Equipment'>Equipment</Link></li>
-                  <li><Link to='/Covers'>Covers</Link></li>
-                  <li><Link to='/#'>Parts & Tools</Link></li>
+                  <Link to='/Toys'><li>Toys</li></Link>
+                  <Link to='/Floats'><li>Floats</li></Link>
+                  <Link to='/Chemicals'><li>Chemicals</li></Link>
+                  <Link to='/Furniture'><li>Furniture</li></Link>
+                  <Link to='/Equipment'><li>Equipment</li></Link>
+                  <Link to='/Covers'><li>Covers</li></Link>
+                  <Link to='/#'><li>Parts & Tools</li></Link>
                   
                 </ul>
               </div>
@@ -95,18 +99,20 @@ export default function Navbar() {
               <div className='sidebarTitle'>Account</div>
               <div className='sidebarContent'>
                 <ul onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
-                  <li><Link to='/Personal'>Account Settings</Link></li>
-                  <li><Link to='/Orders'>Orders</Link></li>
-                  <li><Link to='/Autoship'>Autoship</Link></li>
-                  <li>
+                  <Link to='/Personal'><li>Account Settings</li></Link>
+                  <Link to='/Orders'><li>Orders</li></Link>
+                  <Link to='/Autoship'><li>Autoship</li></Link>
+                  
                   {name !="null null"? <Link onClick={()=>{
                     localStorage.removeItem('swimliFirstName') 
-                    localStorage.removeItem('swimliLastName')}}to='/'>
+                    localStorage.removeItem('swimliLastName')}}to='/'><li>
                   Sign Out
-                  </Link>:<Link to='/signin'>
-                  Sign In
-                  </Link>}
                   </li>
+                  </Link>:<Link to='/signin'><li>
+                  Sign In
+                  </li>
+                  </Link>}
+                  
                 </ul>
               </div>
             </div>
