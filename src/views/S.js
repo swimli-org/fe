@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react';
 import {Button} from 'antd'
 import {Link} from 'react-router-dom'
 import '../styles/Search.css'
@@ -7,7 +7,12 @@ import intelliflo from '../assets/products/intelliflo.jpg'
 
 
 export default function Search() {
-    return (
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      });
+    
+      return (
         <div className="container">
             <div className='search-page-container'>
                 <div className='mobile-filter-container'>Filter</div>

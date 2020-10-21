@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react';
 import { Formik } from 'formik';
 import axios from 'axios'
 import {
@@ -12,7 +12,12 @@ import {
 
 export default function Login (props) {
     const history =useHistory();
-    return(
+    
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    });
+  
+    return (
     <div className="container">
     {console.log("PROPS",props)}
       <div className='primary-title'>Forgot your Password?</div>
