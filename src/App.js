@@ -5,11 +5,9 @@ import Footer from './components/Footer'
 import CarouselSlider from './components/Carousel'
 
 
-import categoriesList from './components/categories.json'
+import categoriesList from './components/categories'
 import CategoryCard from './components/CategoryCard'
 import {useSelector} from 'react-redux'
-
-
 
 import intelliflo from './assets/products/intelliflo.png'
 import toys from './assets/category-images/toys.png'

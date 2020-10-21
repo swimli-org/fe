@@ -140,119 +140,176 @@
   font-weight: bold;
   text-decoration: underline;
 }
+
+/* Sidebar and Tint Screen */
+.sidebar{
+  width: 260px;
+  height: 100vh;
+  left: -500px;
+  top: 0;
+  overflow-y: hidden;
+  position: fixed;
+  background: #FFFFFF;
+  transition: 550ms;
+  -webkit-box-shadow: 15px 0px 64px -18px rgba(0,0,0,0.75);
+  -moz-box-shadow: 15px 0px 64px -18px rgba(0,0,0,0.75);
+  box-shadow: 15px 0px 64px -18px rgba(0,0,0,0.75);
+  z-index: 17;
+}
+.sidebarClose{
+  left: 0%;
+  transition: 550ms;
+}
+.sidebarHeader{
+  width: 260px;
+  height: 56px;
+  line-height: 60px;
+  padding: 0 20px;
+  background: rgba(255, 255, 255);
+  border-bottom: .2px solid #F0F0F0;
+  *position: fixed;
+}
+.sidebarHeader p{
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  color: #3089FC;
+  margin: 18px 0px;
+  padding: 0px 0px 0px 6px;
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+}
+.sidebarback-btn{
+  height: 28px;
+  margin: 14px 0px;
+  padding: 6px;
+  float: right;
+  cursor: pointer;
+}
+.sidebarTitle{
+  padding: 10px 25px;
+  font-weight: bold;
+  color: rgb(88, 88, 88);
+}
+.sidebarContent{
+  max-height: 500px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  position: relative;
+}
+.sidebarContent ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+.sidebarContent li{
+  display: block;
+  padding: 8px 25px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.sidebarContent li a{
+  color: #363636;
+  text-decoration: none;
+}
+.sidebarContent li:hover{
+  background: #e7e7e7;
+  transition: 200ms;
+}
+.sidebarCategories{
+  width: 260px;
+  height: auto;
+  overflow: auto;
+  position: absolute;
+  top: 56px;
+  bottom: 206px;
+  padding-bottom: 20px;
+}
+.sidebarUser{
+  width: 260px;
+  position: absolute;
+  bottom: 0;
+  border-top: .2px solid #F0F0F0;
+  background: #FFFFFF;
+}
+
+.sidebarTint{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 16;
+  overflow: hidden;
+}
+.sidebarTintClose{
+  display: none;
+}
+
+
+/* Autoship and modul */
 .alert-header{
   height: auto;
-  padding: 0px;
+  padding: 3px;
+  text-align: center;
+  font-size: 14px;
   color: white;
   background: #2877DE;
+  cursor: pointer;
 }
 .alert-header a{
   color: #FFFFFF;
 }
-.alert-header button{
-  width: 100%;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 5px;
-}
-.autoship{
-  height: 18px;
+.autoshipIcon{
+  height: 16px;
   padding-right: 5px;
 }
-.alert-modal-container{
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  overflow: auto;
+.modul{
+  width: 80%;
+  height: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -40%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 2;
+}
+.modulClose{
+  display: none;
+}
+.modulCloseBtn{
+  padding: 1px 6px;
+  font-size: 13px;
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  float: right;
+  cursor: pointer;
+}
+.modulCloseBtn:hover{
+  text-decoration: underline;
+}
+.modulTint{
+  height: 100vh;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.);
-
-  backdrop-filter: blur(1.5px);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.modulTintClose{
+  display: none;
 }
 
-.alert-modal{
-  width: 900px;
-  max-width: 90%;
-  height: 600px;
-
-  background: #9AC4FE;
-  color: #000000;
-  margin: 100px auto 0 auto;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 26px;
-  overflow: hidden;
-  z-index: 99999;
-  text-align: center;
-  vertical-align: middle;
-}
-.alert-modal button{
-  width: auto;
-  background: rgba(255, 255, 255, 1);
-  color: #555555;
-  font-weight: bold;
-  float: right;
-  margin: 10px;
-  padding: 5px 10px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  cursor: pointer;
-
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.12), 
-              -1px 1px 3px rgba(0,0,0,0.12);
-}
-.alert-modal button:hover{
-  background: rgba(255, 255, 255, 1);
-  color: #2f89fc;
-  transition: 0.3s;
-}
-
-
-
-
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 
 

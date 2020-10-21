@@ -2,6 +2,7 @@ import React,{useState, useEffect, useRef} from 'react'
 import { Drawer, Divider, Avatar, Badge, Input} from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import menu from '../assets/menu.svg'
+import back from '../assets/back.svg'
 import logo from '../assets/logo.png'
 import search from '../assets/search.svg'
 import account from '../assets/account.svg'
@@ -19,35 +20,22 @@ export default function Navbar() {
     const showDrawer = () => setVisible(true);
     const onClose = () => setVisible(false);
 
+    const[sidebarIsOpen, setSidebarIsOpen] = useState(false)
+    const[modulIsOpen, setModulIsOpen] = useState(false)
+
     const[searchTerm, setSearchTerm]=useState()
   
-  const outside = useRef()
-  const [isOpen, setIsOpen] = useState(false)
-
-  const handleClick = e => {
-    if (outside.current.contains(e.target)) {
-      return
-    }
-    setIsOpen(false)
-  }
-
-  useEffect(() => {
-    const getClick = document.addEventListener('click', handleClick)
-
-    return () => {
-      getClick()
-    }
-  }, [])
-
     return (
       <div className='navbar-container'>
         <div className='navbar'>
-          
+
+          {/* Menu button and Logo */}
           <div className='menu-btn-container'>
-            <img src={menu} className='menu-btn' alt='Menu Button' onClick={showDrawer}></img>
+            <img src={menu} className='menu-btn' alt='Menu Button' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}></img>
             <img src={logo} className='logo' alt='Logo' onClick={()=>history.push('/')}></img>
           </div>
 
+          {/* User and Cart */}
           <div className='user-container'>
             <div className='user-container-tab'>
               <Link to='/cart'>
@@ -64,6 +52,7 @@ export default function Navbar() {
             
           </div>
 
+          {/* Searchbar */}
           <div className='search-container'>
           <form className='search-form' >
             <input
@@ -77,66 +66,106 @@ export default function Navbar() {
           </form>
           </div>
 
-          
-  
-
-          <Drawer
-            title={
-              <Link className='sidebar-user-container' to='/personal'>
-                <Avatar size="small" className='sidebar-user-avatar' icon={<UserOutlined />} />
-                <div className='sidebar-user-username' to='/overview'>
-                  <Link to='/personal' >
-                    {name !="null null"? name:'Guest'}
-                  </Link>
-                </div>
-              </Link>
-            }
-            placement="left"
-            closable={true}
-            onClick={(e) => {
-              if(e.target.tagName.toLowerCase() === 'a'){
-                onClose()
-              }
-            }}
-            onClose={onClose}
-            visible={visible}
-          >
-            
-
-
-            <span className='signin-container'>
-              {name !="null null"? <Link className='signin-link' onClick={()=>{
-                localStorage.removeItem('swimliFirstName') 
-                localStorage.removeItem('swimliLastName')}}to='/'>
-                Sign Out
-              </Link>:<Link className='signin-link'to='/signin'>
+          {/* Sidebar and Sidebar Tint */}
+          <div className={sidebarIsOpen ? "sidebar sidebarClose" : "sidebar"}>
+            <div className='sidebarHeader'>
+              {name !="null null"? <Link to='/personal' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
+                {name !="null null"? name:'Guest'}
+                </Link>:<Link to='/signin' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
                 Sign In
-              </Link>}
-                
-            </span>
-
-          </Drawer>
-        </div>
-
-          
-        <div className='alert-header' ref={outside}>
-            <button onClick={() => setIsOpen(!isOpen)}>
-              <img src={autoship} className='autoship' alt='Autoship Icon' onClick={()=>history.push('/')}></img>
-              Save today on your first autoship order!
-            </button>
-            {isOpen ? (
-              <div className='alert-modal-container'>
-                <div className='alert-modal'>
-                  <button className="alert-modal-action" onClick={() => setIsOpen(!isOpen)}>
-                    Close
-                  </button>
-                  
-                  <p>Content goes here</p>
-
-                </div>
+                </Link>}
+              <img src={back} className='sidebarback-btn' alt='Back Button' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}></img>
+            </div>
+            <div className='sidebarCategories'>
+              <div className='sidebarTitle'>Shop by Category</div>
+              <div className='sidebarContent'>
+                <ul onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
+                  <li>Toys</li>
+                  <li>Floats</li>
+                  <li>Chemicals</li>
+                  <li>Furniture</li>
+                  <li>Equipment</li>
+                  <li>Covers</li>
+                  <li>Parts & Tools</li>
+                  <li>Toys</li>
+                  <li>Floats</li>
+                  <li>Chemicals</li>
+                  <li>Furniture</li>
+                  <li>Equipment</li>
+                  <li>Covers</li>
+                  <li>Parts & Tools</li>
+                  <li>Toys</li>
+                  <li>Floats</li>
+                  <li>Chemicals</li>
+                  <li>Furniture</li>
+                  <li>Equipment</li>
+                  <li>Covers</li>
+                  <li>Parts & Tools</li>
+                  <li>Toys</li>
+                  <li>Floats</li>
+                  <li>Chemicals</li>
+                  <li>Furniture</li>
+                  <li>Equipment</li>
+                  <li>Covers</li>
+                  <li>Parts & Tools</li>
+                  <li>Toys</li>
+                  <li>Floats</li>
+                  <li>Chemicals</li>
+                  <li>Furniture</li>
+                  <li>Equipment</li>
+                  <li>Covers</li>
+                  <li>Parts & Tools</li>
+                  <li>Toys</li>
+                  <li>Floats</li>
+                  <li>Chemicals</li>
+                  <li>Furniture</li>
+                  <li>Equipment</li>
+                  <li>Covers</li>
+                  <li>Parts & Tools</li>
+                  <li>Toys</li>
+                  <li>Floats</li>
+                  <li>Chemicals</li>
+                  <li>Furniture</li>
+                  <li>Equipment</li>
+                  <li>Covers</li>
+                  <li>Parts & Tools</li>
+                </ul>
               </div>
-            ) : null}
+            </div>
+            <div className='sidebarUser'>
+              <div className='sidebarTitle'>Account</div>
+              <div className='sidebarContent'>
+                <ul onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
+                  <li>Account Settings</li>
+                  <li>Orders</li>
+                  <li>Autoship</li>
+                  <li>
+                  {name !="null null"? <Link onClick={()=>{
+                    localStorage.removeItem('swimliFirstName') 
+                    localStorage.removeItem('swimliLastName')}}to='/'>
+                  Sign Out
+                  </Link>:<Link to='/signin'>
+                  Sign In
+                  </Link>}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div onClick={() => setSidebarIsOpen(!sidebarIsOpen)} className={sidebarIsOpen ? "sidebarTint" : "sidebarTint sidebarTintClose"}></div>
+
+
         </div>
+
+        {/* Autoship Alert/Modul */}
+        <div className='alert-header' onClick={() => setModulIsOpen(!modulIsOpen)}>
+              <img src={autoship} className='autoshipIcon' alt='Autoship Icon'></img>
+              Save today on your first autoship order!
+        </div>
+        <div className={modulIsOpen ? "modul" : "modul modulClose"}>
+          <button className='modulCloseBtn' onClick={() => setModulIsOpen(!modulIsOpen)}>Close</button>
+        </div>
+        <div className={modulIsOpen ? "modulTint" : "modulTint modulTintClose"} onClick={() => setModulIsOpen(!modulIsOpen)}></div>
 
 
 
