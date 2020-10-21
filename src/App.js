@@ -25,8 +25,8 @@ console.log(auth)
   return (
     <div className='container'>
       <CarouselSlider/>
+      <div className='home-container-title'>Categories</div>
       <div className='home-container'>
-        <div className='home-container-title'>Categories</div>
         <Link to='/toys'>
           <div className='category-container'>
             <div className='category-image'>
@@ -77,8 +77,9 @@ console.log(auth)
         </Link>
       </div>
 
+      <div className='home-container-title'>Trending Now</div>
       <div className='home-container'>
-        <div className='home-container-title'>Trending Now</div>
+        
         <Link to='/product'>
           <div className='boxed-items-container'>
             <div className='boxed-items-image'>
@@ -119,6 +120,36 @@ console.log(auth)
           <div className='boxed-items-title'>
             <span>Brand</span>
             Title 
+          </div>
+        </div>
+        <div className='boxed-items-container'>
+          <div className='boxed-items-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='boxed-items-price'>Price</div>
+          <div className='boxed-items-title'>
+            <span>Brand</span>
+            Title
+          </div>
+        </div>
+        <div className='boxed-items-container'>
+          <div className='boxed-items-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='boxed-items-price'>Price</div>
+          <div className='boxed-items-title'>
+            <span>Brand</span>
+            Title
+          </div>
+        </div>
+        <div className='boxed-items-container'>
+          <div className='boxed-items-image'>
+            <img src={intelliflo}></img>
+          </div>
+          <div className='boxed-items-price'>Price</div>
+          <div className='boxed-items-title'>
+            <span>Brand</span>
+            Title
           </div>
         </div>
         <div className='boxed-items-container'>
