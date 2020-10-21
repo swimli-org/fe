@@ -80,55 +80,14 @@ export default function Navbar() {
               <div className='sidebarTitle'>Shop by Category</div>
               <div className='sidebarContent'>
                 <ul onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
-                  <li>Toys</li>
-                  <li>Floats</li>
-                  <li>Chemicals</li>
-                  <li>Furniture</li>
-                  <li>Equipment</li>
-                  <li>Covers</li>
-                  <li>Parts & Tools</li>
-                  <li>Toys</li>
-                  <li>Floats</li>
-                  <li>Chemicals</li>
-                  <li>Furniture</li>
-                  <li>Equipment</li>
-                  <li>Covers</li>
-                  <li>Parts & Tools</li>
-                  <li>Toys</li>
-                  <li>Floats</li>
-                  <li>Chemicals</li>
-                  <li>Furniture</li>
-                  <li>Equipment</li>
-                  <li>Covers</li>
-                  <li>Parts & Tools</li>
-                  <li>Toys</li>
-                  <li>Floats</li>
-                  <li>Chemicals</li>
-                  <li>Furniture</li>
-                  <li>Equipment</li>
-                  <li>Covers</li>
-                  <li>Parts & Tools</li>
-                  <li>Toys</li>
-                  <li>Floats</li>
-                  <li>Chemicals</li>
-                  <li>Furniture</li>
-                  <li>Equipment</li>
-                  <li>Covers</li>
-                  <li>Parts & Tools</li>
-                  <li>Toys</li>
-                  <li>Floats</li>
-                  <li>Chemicals</li>
-                  <li>Furniture</li>
-                  <li>Equipment</li>
-                  <li>Covers</li>
-                  <li>Parts & Tools</li>
-                  <li>Toys</li>
-                  <li>Floats</li>
-                  <li>Chemicals</li>
-                  <li>Furniture</li>
-                  <li>Equipment</li>
-                  <li>Covers</li>
-                  <li>Parts & Tools</li>
+                  <li><Link to='/Toys'>Toys</Link></li>
+                  <li><Link to='/Floats'>Floats</Link></li>
+                  <li><Link to='/Chemicals'>Chemicals</Link></li>
+                  <li><Link to='/Furniture'>Furniture</Link></li>
+                  <li><Link to='/Equipment'>Equipment</Link></li>
+                  <li><Link to='/Covers'>Covers</Link></li>
+                  <li><Link to='/#'>Parts & Tools</Link></li>
+                  
                 </ul>
               </div>
             </div>
@@ -136,9 +95,9 @@ export default function Navbar() {
               <div className='sidebarTitle'>Account</div>
               <div className='sidebarContent'>
                 <ul onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
-                  <li>Account Settings</li>
-                  <li>Orders</li>
-                  <li>Autoship</li>
+                  <li><Link to='/Personal'>Account Settings</Link></li>
+                  <li><Link to='/Orders'>Orders</Link></li>
+                  <li><Link to='/Autoship'>Autoship</Link></li>
                   <li>
                   {name !="null null"? <Link onClick={()=>{
                     localStorage.removeItem('swimliFirstName') 
