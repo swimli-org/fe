@@ -1,15 +1,32 @@
 import React, {useEffect} from 'react';
 
-export default function Covers() {
+/* CSS */
+
+/* Components */
+import CategoryPageHeadingTab from '../components/CategoryPageHeadingTab';
+import CategoryPageContentTab from '../components/CategoryPageContentTab';
+
+
+export default function Floats() {
     
   useEffect(() => {
     window.scrollTo(0, 0)
   });
 
-  return (
-      <div className="container">
-        <h1>Future Covers Page</h1>
+  const style = {
+    backgroundColor: '#3867CB',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: '50% 0%',
+    backgroundSize: 'cover',
+    transition: 'all .4s ease'
+  }
 
+  return (
+    <div className='App'>
+      <CategoryPageHeadingTab style={style} title='Furniture' />
+      <div className='container'>
+        <CategoryPageContentTab />
       </div>
+    </div>
     )
 }

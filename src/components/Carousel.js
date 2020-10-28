@@ -1,12 +1,11 @@
 import React from 'react'
 import { Carousel } from 'antd';
 
-
 import one from '../assets/one.jpg'
 import pool from '../assets/pool.jpg'
 
 
-const contentStyle = {
+  const contentStyle = {
     width: '100%',
     maxWidth: '1320px',
     height: '360px',
@@ -15,8 +14,7 @@ const contentStyle = {
     lineHeight: '260px',
     textAlign: 'center',
     background: '#26a69a',
-  }
-  ;
+  };
  
 export default function CarouselSlider() {
     return (
