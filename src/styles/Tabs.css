@@ -155,3 +155,36 @@
     font-weight: bold;
     float: left;
 }
+
+
+@media only screen and (max-width: 975px) {
+    /* CategoriesTab.js */
+    .categoriesItemContainer{
+      width: 33.3%;
+    }
+    .categoriesItemImage{
+      min-width: 30%;
+      max-width: 60%;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (max-width: 375px) {
+    /* CategoriesTab.js */
+    .categoriesItemImage{
+      min-width: 30%;
+      max-width: 60%;
+    }
+    .categoriesItemTitle{
+      font-size: 15px;
+    }
+}
+@keyframes scale {
+    0%{
+      transform: scale(1.0);
+    }
+    100%{
+      transform: scale(1.05);
+    }
+}
