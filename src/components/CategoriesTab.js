@@ -15,9 +15,9 @@ import covers from '../assets/category-images/covers.png'
 const CategoriesTab = (props) => {
     return (
         <div className='categoriesContainer'>
-            <div className='categoriesContainerTitle'>Categories</div>
+            <div className='categoriesContainerTitle'>Shop By Category</div>
             
-            <div className='trendingContentBody'>
+            <div className='categoriesContentBody'>
                 <Link to='/toys'>
                     <div className='categoriesItemContainer'>
                         <div className='categoriesItemImage'>
