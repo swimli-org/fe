@@ -1,6 +1,5 @@
-import React,{useState, useEffect, useRef} from 'react'
-import { Drawer, Divider, Avatar, Badge, Input} from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+import React, { useState, useEffect, useRef } from 'react'
+import { Input } from 'antd';
 import menu from '../assets/menu.svg'
 import back from '../assets/back.svg'
 import logo from '../assets/logo.png'
@@ -9,21 +8,19 @@ import account from '../assets/account.svg'
 import cart from '../assets/cart.svg'
 import autoship from '../assets/autoship.svg'
 import '../styles/Navbar.css'
-import {Link, useHistory} from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 
 export default function Navbar() {
   const name = `${localStorage.getItem('swimliFirstName')}`
   const history = useHistory();
   const { Search } = Input;
-    const[visible, setVisible]=useState(false)
-    const showDrawer = () => setVisible(true);
-    const onClose = () => setVisible(false);
+    const [visible, setVisible] = useState(false)
 
-    const[sidebarIsOpen, setSidebarIsOpen] = useState(false)
-    const[modulIsOpen, setModulIsOpen] = useState(false)
+    const [sidebarIsOpen, setSidebarIsOpen] = useState(false)
+    const [modulIsOpen, setModulIsOpen] = useState(false)
 
-    const[searchTerm, setSearchTerm]=useState()
+    const [searchTerm, setSearchTerm] = useState()
   
     return (
       <div className='navbar-container'>
