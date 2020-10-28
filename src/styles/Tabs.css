@@ -39,31 +39,31 @@
 /* CategoriesTab.js */
 .categoriesContainer{
     padding: 5px 0;
+    background: #2977DE;
+    color: #FFFFFF;
 }
 .categoriesContainerTitle{
     width: 100%;
     font-size: 24px;
     font-weight: bold;
-    color: #474D5E;
     text-align: center;
     padding: 0;
     padding-top: 10px;
     margin: 5px 0;
 }
-.trendingContentBody{
+.categoriesContentBody{
     width: 97%;
     height: auto;
     padding: 10px;
     margin: 0 0px 10px 10px;
-    background: #FFFFFF;
     overflow: hidden;
     overflow-x: scroll;
     white-space: nowrap;
 }
 .categoriesItemContainer{
     width: 16.6%;
-    color: #474D5E;
     float: left;
+    color: #FFFFFF;
 }
 .categoriesItemContainer:hover{
     text-decoration: underline;
@@ -93,26 +93,26 @@
 /* TrendingContentTab */
 .trendingContentContainer{
     padding: 5px 0;
+    margin: 10px 0;
+    background: #FFFFFF;
 }
 .trendingContentTitle{
     width: 100%;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     color: #474D5E;
-    text-align: center;
-    padding: 0;
-    padding-top: 10px;
-    margin: 5px 0;
+    text-align: left;
+    padding: 0 10px 0 40px;
+    margin: 10px 0;
 }
 .trendingContentBody{
-    width: 97%;
     height: auto;
     padding: 10px;
-    margin: 0 0px 10px 10px;
-    background: #FFFFFF;
+    margin: 0 10px 10px 10px;
     overflow: hidden;
     overflow-x: scroll;
     white-space: nowrap;
+    background: #FFFFFF;
 }
 .trendingItemContainer{
     width: 155px;
