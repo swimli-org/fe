@@ -14,7 +14,7 @@ import CategoriesTab from './components/CategoriesTab';
 
 
 
-function App() {
+function App(props) {
   const[categories]=useState(categoriesList)
   const auth = useSelector(state=>state.authReducer)
 console.log(auth)
@@ -22,12 +22,12 @@ console.log(auth)
 
   return (
     <div className='container'>
-      <CarouselSlider/>
+      <CarouselSlider />
       <CategoriesTab />
 
       <TrendingContentTab title='Trending Now' />
-      <TrendingContentTab title='Buy It Today, Get It Tomoorow' />
-      <TrendingContentTab title='New Releases' />
+      <TrendingContentTab title='Buy It Today, Get It Tomorrow' />
+      <TrendingContentTab title='Recommended For You' />
       <TrendingContentTab title='Summer Fun' />
     </div>
   );

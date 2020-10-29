@@ -71,7 +71,7 @@ export default function Navbar() {
           <div className={sidebarIsOpen ? "sidebar sidebarClose" : "sidebar"}>
             <div className='sidebarHeader'>
               {name !="null"? <Link to='/personal' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
-                {name !="null"? name:'Guest'}
+                Hey, {name !="null"? name:''}!
                 </Link>:<Link to='/signin' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
                 Sign In
                 </Link>}
