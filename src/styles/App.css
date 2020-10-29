@@ -10,7 +10,7 @@ body{
 }
 .App{
   width: 100%;
-  min-height: 100vh;
+  min-height: 1000px;
   height: auto;
   position: relative;
 }
@@ -20,7 +20,7 @@ body{
   height: auto;
   position: relative;
   overflow: hidden;
-  padding-bottom: 40px;
+  padding-bottom: 140px;
 }
 .container h1{
   margin: 20px 0 10px 15px;
