@@ -55,6 +55,9 @@ export default function Product() {
                 </div>
             </div>
         </div>
+
+
+        
         <div className='product-info-container'>
             <div className='product-info-tabs'>
                 Description
@@ -66,6 +69,9 @@ export default function Product() {
                 </p>
             </div>
         </div>
+
+
+
         <div className='similar-products-container'>
             <p>Similar Products</p>
             <div className='similar-products'></div>
