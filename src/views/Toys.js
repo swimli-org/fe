@@ -27,9 +27,7 @@ export default function Toys() {
   return (
     <div className='App'>
       <CategoryPageHeadingTab style={style} title='Toys' />
-      <div className='container'>
-        <CategoryPageContentTab />
-      </div>
+      <CategoryPageContentTab category='Toys' />
     </div>
     )
 }

@@ -13,16 +13,83 @@
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    text-shadow: 0px 0px 15px rgba(0,0,0,0.5);
     color: #FFFFFF;
 }
 
 /* CategoryPageContentTab.js */
+.fullContainer{
+    padding-bottom: 40px;
+}
+.categoryPageFilterContainer{
+    margin-bottom: 20px;
+    padding: 14px 10px;
+    box-shadow:
+        0 0px 1px -4px rgba(0, 0, 0, 0.093),
+        0 0px 2.6px -4px rgba(0, 0, 0, 0.133),
+        0 0px 5.3px -4px rgba(0, 0, 0, 0.167),
+        0 0px 11px -4px rgba(0, 0, 0, 0.207),
+        0 0px 30px -4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.categoryPageFilter{
+    width: auto;
+    max-width: 1100px;
+    margin: auto;
+    color: #464646;
+}
+.categoryPageFilterTitle{
+    width: auto;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: inline-block;
+}
+.categoryPageFilterTitle p{
+    height: 26px;
+    display: inline-block;
+    font-size: 0.7em;
+    margin: 0;
+    padding: 5px;
+    color: #3089FC;
+    position: absolute;
+
+}
+.categoryPageFilterItems{
+    width: auto;
+    float: right;
+}
+.categoryPageFilterItems p{
+    width: auto;
+    display: inline;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.categoryPageFilterItems span{
+    padding: 9.5px 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+.categoryPageFilterItems span select{
+    padding: 5px;
+    margin-top: -5px;
+    color: #177bfc;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.categoryPageContentContainer{
+    width: auto;
+    max-width: 1120px;
+    margin: auto;
+}
 .categoryPageContent{
     width: auto;
+    max-width: 1120px;
     box-sizing: border-box;
-    border-top: .25px solid #cfcfcf;
-    border-left: .25px solid #cfcfcf;
+    border-top: .25px solid #EAEDED;
+    border-left: .25px solid #EAEDED;
     overflow: hidden;
     margin: 10px;
 }
@@ -30,9 +97,10 @@
     width: 20%;
     height: auto;
     padding: 10px;
+    background: #FFFFFF;
     box-sizing: border-box;
-    border-right: .25px solid #cfcfcf;
-    border-bottom: .25px solid #cfcfcf;
+    border-right: .25px solid #EAEDED;
+    border-bottom: .25px solid #EAEDED;
     float: left;
 }
 .categoryPageItemImage{
@@ -87,13 +155,12 @@
     padding: 10px;
     margin: 0 0px 10px 10px;
     overflow: hidden;
-    overflow-x: scroll;
-    white-space: nowrap;
 }
 .categoriesItemContainer{
     width: 16.6%;
     float: left;
     color: #FFFFFF;
+    transition: 0ms;
 }
 .categoriesItemContainer:hover{
     text-decoration: underline;
@@ -132,7 +199,7 @@
     font-weight: bold;
     color: #474D5E;
     text-align: left;
-    padding: 0 10px 0 40px;
+    padding: 0 10px 0 20px;
     margin: 10px 0;
 }
 .trendingContentBody{
@@ -143,6 +210,15 @@
     overflow-x: scroll;
     white-space: nowrap;
     background: #FFFFFF;
+}
+.trendingContentBody::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 8px;
+    height: 8px;
+}
+.trendingContentBody:hover::-webkit-scrollbar-thumb  {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.35);
 }
 .trendingItemContainer{
     width: 155px;
@@ -248,6 +324,20 @@
     .categoryPageItem{
         width: 25%;
     }
+    /* CategoriesTab.js */
+    .categoriesContentBody{
+        width: 97%;
+        height: auto;
+        padding: 10px;
+        margin: 0 0px 10px 10px;
+        overflow: hidden;
+    }
+    .categoriesItemContainer{
+        width: 16.6%;
+        float: left;
+        color: #FFFFFF;
+        transition: 0;
+    }
 }
 @media only screen and (max-width: 975px) {
     /* CategoryPageContentTab.js */
@@ -268,10 +358,11 @@
     .categoryPageItemPrice{
         font-size: 1.2em;
     }
-
     /* CategoriesTab.js */
     .categoriesItemContainer{
-      width: 33.3%;
+      width: 25%;
+      margin: 0 4.165%;
+      transition: 150ms;
     }
     .categoriesItemImage{
       min-width: 30%;
@@ -279,13 +370,18 @@
     }
 }
 @media only screen and (max-width: 600px) {
-        /* CategoryPageContentTab.js */
-        .categoryPageItem{
-            width: 50%;
-        }
-        .categoryPageItemImage img{
-            height: 150px;
-        }
+    /* CategoryPageContentTab.js */
+    .categoryPageItem{
+        width: 50%;
+    }
+    .categoryPageItemImage img{
+        height: 150px;
+    }
+    /* CategoriesTab.js */
+    .categoriesItemContainer{
+        width: 33.33%;
+        margin: 0;
+      }
 }
 @media only screen and (max-width: 375px) {
     

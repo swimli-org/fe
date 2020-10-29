@@ -24,9 +24,7 @@ export default function Chemicals() {
   return (
     <div className='App'>
       <CategoryPageHeadingTab style={style} title='Chemicals' />
-      <div className='container'>
-        <CategoryPageContentTab />
-      </div>
+      <CategoryPageContentTab category='Chemicals'  />
     </div>
     )
 }

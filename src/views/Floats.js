@@ -24,9 +24,7 @@ export default function Floats() {
   return (
     <div className='App'>
       <CategoryPageHeadingTab style={style} title='Floats' />
-      <div className='container'>
-        <CategoryPageContentTab />
-      </div>
+      <CategoryPageContentTab category='Floats'  />
     </div>
     )
 }
