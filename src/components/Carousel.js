@@ -18,19 +18,17 @@ import pool from '../assets/pool.jpg'
  
 export default function CarouselSlider() {
     return (
-      <Carousel autoplay effect="fade" autoplaySpeed="50">
-      <div className='slider-image'>
-        <img src={one}></img>
-      </div>
-      <div className='slider-image'>
-        <img src={pool}></img>
-      </div>
-      <div className='slider-image'>
-
-      </div>
-      <div className='slider-image'>
-        
-      </div>
-      </Carousel>
+        <Carousel autoplay effect="fade" autoplaySpeed="50">
+    <div className='slider-image'>
+      <img src={one}></img>
+    </div>
+    <div className='slider-image'>
+      <img src={pool}></img>
+    </div>
+    <div className='slider-image' style={{backgroundColor: "red"}}>
+    </div>
+    <div className='slider-image'>
+    </div>
+  </Carousel>
     )
 }

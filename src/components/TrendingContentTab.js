@@ -12,7 +12,7 @@ import intelliflo from '../assets/products/intelliflo.png'
 
 const TrendingContentTab = (props) => {
     return (
-        <div className='trendingContentContainer' style={{backgroundColor: props.bgColor}}>
+        <div className='trendingContentContainer'>
             <div className='trendingContentTitle'>{props.title}</div>
 
             <div className='trendingContentBody'>

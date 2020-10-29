@@ -27,7 +27,7 @@ console.log(auth)
 
       <TrendingContentTab title='Trending Now' />
       <TrendingContentTab title='Buy It Today, Get It Tomoorow' />
-      <TrendingContentTab title='Recommended For You' />
+      <TrendingContentTab title='New Releases' />
       <TrendingContentTab title='Summer Fun' />
     </div>
   );
