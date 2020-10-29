@@ -6,7 +6,7 @@ import '../styles/Tabs.css';
 
 
 /* Import Images */
-import intelliflo from '../assets/products/intelliflo.png'
+import intelliflo from '../assets/products/intelliflo.png';
 
 
 
