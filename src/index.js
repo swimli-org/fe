@@ -43,67 +43,67 @@ ReactDOM.render(
         <div className='App'>
   <Navbar/>
   <Switch>
-      <Route path="/toys">
+      <Route path="/toys/">
             <Toys />
       </Route>
-      <Route path="/furniture">
+      <Route path="/furniture/">
             <Furniture />
       </Route>
-      <Route path="/Floats">
+      <Route path="/floats/">
             <Floats />
       </Route>
-      <Route path="/Chemicals">
+      <Route path="/chemicals/">
             <Chemicals />
       </Route>
-      <Route path="/equipment">
+      <Route path="/equipment/">
             <Equipment />
       </Route>
-      <Route path="/covers">
+      <Route path="/covers/">
             <Covers />
       </Route>
-      <Route path="/cart">
+      <Route path="/cart/">
             <Cart />
       </Route>
-      <Route path="/register">
+      <Route path="/register/">
             <Register />
       </Route>
-      <Route path="/signin">
+      <Route path="/signin/">
             <Signin />
       </Route>
-      <Route path="/forgotpassword">
+      <Route path="/forgot-password/">
             <ForgotPassword />
       </Route>
-      <Route path="/overview">
+      <Route path="/overview/">
             <Overview />
       </Route>
-      <Route path="/personal">
+      <Route path="/personal/">
             <Personal />
       </Route>
-      <Route path="/orders">
+      <Route path="/orders/">
             <Orders />
       </Route>
-      <Route path="/autoship">
+      <Route path="/autoship/">
             <Autoship />
       </Route>
-      <Route path="/addresses">
+      <Route path="/addresses/">
             <Addresses />
       </Route>
-      <Route path="/paymentMethods">
+      <Route path="/payment-methods/">
             <PaymentMethods />
       </Route>
-      <Route path="/myPool">
+      <Route path="/my-pool/">
             <MyPool />
       </Route>
-      <Route path="/s/:term">
+      <Route path="/s/:term/">
             <S />
       </Route>
       <Route exact path="/">
             <App />
       </Route>
-      <Route exact path="/checkout">
+      <Route exact path="/checkout/">
             <Checkout />
       </Route>
-      <Route exact path="/product">
+      <Route exact path="/product/">
             <Product />
       </Route>
     </Switch>

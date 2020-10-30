@@ -51,7 +51,6 @@
     padding: 5px;
     color: #3089FC;
     position: absolute;
-
 }
 .categoryPageFilterItems{
     width: auto;
@@ -78,7 +77,6 @@
     border-radius: 4px;
     cursor: pointer;
 }
-
 .categoryPageContentContainer{
     width: auto;
     max-width: 1120px;
@@ -137,8 +135,7 @@
 /* CategoriesTab.js */
 .categoriesContainer{
     padding: 5px 0;
-    background: #2977DE;
-    color: #FFFFFF;
+    color: #5D5D5B;
 }
 .categoriesContainerTitle{
     width: 100%;
@@ -159,7 +156,7 @@
 .categoriesItemContainer{
     width: 16.6%;
     float: left;
-    color: #FFFFFF;
+    color: #5D5D5B;
     transition: 0ms;
 }
 .categoriesItemContainer:hover{
@@ -172,7 +169,7 @@
     height: auto;
     margin: 0 auto;
     padding: 5px;
-    background: #F7F7F7;
+    background: rgba(0, 0, 0, 0.1);
     overflow: hidden;
     border-radius: 100px;
 }
@@ -191,7 +188,7 @@
 .trendingContentContainer{
     padding: 5px 0;
     margin: 10px 0;
-    background: #FFFFFF;
+    background: #f3f3f3;
 }
 .trendingContentTitle{
     width: 100%;
@@ -209,7 +206,6 @@
     overflow: hidden;
     overflow-x: scroll;
     white-space: nowrap;
-    background: #FFFFFF;
 }
 .trendingContentBody::-webkit-scrollbar{
     -webkit-appearance: none;
@@ -334,8 +330,6 @@
     }
     .categoriesItemContainer{
         width: 16.6%;
-        float: left;
-        color: #FFFFFF;
         transition: 0;
     }
 }

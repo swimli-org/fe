@@ -83,7 +83,7 @@ export default function Login (props) {
                 value={values.password}
               />
               {errors.password && touched.password && errors.password}
-              <Link to='/forgotpassword'>
+              <Link to='/forgot-password/'>
                 <p>Forgot Password?</p>
               </Link>
               <button

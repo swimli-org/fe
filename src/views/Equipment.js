@@ -24,7 +24,7 @@ export default function Floats() {
   return (
     <div className='App'>
       <CategoryPageHeadingTab style={style} title='Equipment' />
-      <CategoryPageContentTab category='Equipment' subcategory='/ Pumps & Motors' />
+      <CategoryPageContentTab category='Equipment' />
     </div>
     )
 }

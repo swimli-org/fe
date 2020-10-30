@@ -17,13 +17,13 @@ const CategoryPageHeadingTab = (props) => {
                 <div className='categoryPageFilter'>
                     <div className='categoryPageFilterTitle'>
                         {props.category}
-                        <p>{props.subcategory}</p>
                     </div>
                     
                     <div className='categoryPageFilterItems'>
                         <p>Subcategory</p>
                         <span>
                             <select>
+                                <option>All</option>
                                 <option>Sub 1</option>
                                 <option>Sub 2</option>
                                 <option>Sub 3</option>
