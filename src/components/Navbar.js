@@ -42,12 +42,14 @@ export default function Navbar() {
             </div>
             <div className='user-container-tab'>
               
-              {name !="null"? <Link to='/personal'>
-                <img src={account} className='user-container-tab-icon' alt='Account'></img>
-                <p>{name !="null"? name:'Guest'}</p>
-                </Link>:<Link to='/signin'>
-                <img src={account} className='user-container-tab-icon' alt='Account'></img>
-                <p>Sign In</p>
+              {name !="null"?
+                <Link to='/personal'>
+                  <img src={account} className='user-container-tab-icon' alt='Account'></img>
+                  <p>{name}</p>
+                </Link>:
+                <Link to='/signin'>
+                  <img src={account} className='user-container-tab-icon' alt='Account'></img>
+                  <p>Sign In</p>
                 </Link>}
             </div>
             
@@ -71,7 +73,7 @@ export default function Navbar() {
           <div className={sidebarIsOpen ? "sidebar sidebarClose" : "sidebar"}>
             <div className='sidebarHeader'>
               {name !="null"? <Link to='/personal' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
-                Hey, {name !="null"? name:''}!
+                Hey, {name}!
                 </Link>:<Link to='/signin' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
                 Sign In
                 </Link>}
@@ -92,27 +94,28 @@ export default function Navbar() {
                 </ul>
               </div>
             </div>
-            <div className='sidebarUser'>
+
+
+
+            {name !="null"? <div className='sidebarUser'>
               <div className='sidebarTitle'>Account</div>
               <div className='sidebarContent'>
                 <ul onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
                   <Link to='/Personal'><li>Account Settings</li></Link>
                   <Link to='/Orders'><li>Orders</li></Link>
                   <Link to='/Autoship'><li>Autoship</li></Link>
-                  
-                  {name !="null null"? <Link onClick={()=>{
-                    localStorage.removeItem('swimliFirstName') 
-                    localStorage.removeItem('swimliLastName')}}to='/'><li>
-                  Sign Out
-                  </li>
-                  </Link>:<Link to='/signin'><li>
-                  Sign In
-                  </li>
-                  </Link>}
-                  
+                  <Link onClick={()=>{
+                  localStorage.removeItem('swimliFirstName') 
+                  localStorage.removeItem('swimliLastName')}}to='/'>
+                    <li>
+                      Sign Out
+                    </li>
+                  </Link>
                 </ul>
               </div>
-            </div>
+            </div>:''}
+
+
           </div>
           <div onClick={() => setSidebarIsOpen(!sidebarIsOpen)} className={sidebarIsOpen ? "sidebarTint" : "sidebarTint sidebarTintClose"}></div>
 
