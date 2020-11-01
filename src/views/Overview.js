@@ -4,7 +4,6 @@ import '../styles/Account.css';
 
 
 export default function Example()  {
-    
   useEffect(() => {
     window.scrollTo(0, 0)
   });
