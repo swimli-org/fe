@@ -119,6 +119,25 @@
   float: right;
   cursor: pointer;
 }
+.personal-account-edit-btn{
+  border: 1px solid #2f89fc;
+  border-radius: 8px;
+  background: none;
+  width: max-content;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #2f89fc;
+  display: inline-block;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.personal-account-edit-btn:hover{
+  background-color: #2f89fc;
+  color: white;
+}
+.personal-account-edit-btn:focus{
+  outline: none;
+}
 
 /*  Orders Page CSS  */
 .orders-header-left{
@@ -351,6 +370,7 @@
   .personal-account-tab-title-content span{
     font-size: 10px;
   }
+
 
   /*  Orders Page CSS  */
   .orders-header-left{
