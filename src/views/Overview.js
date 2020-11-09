@@ -6,6 +6,7 @@ import '../styles/Account.css';
 export default function Example()  {
   useEffect(() => {
     window.scrollTo(0, 0)
+    document.title = "Overview - Account | Swimli"
   });
 
   return (
@@ -27,10 +28,10 @@ export default function Example()  {
           <Link to='/addresses'>
             <div className='account-tab'>Addresses</div>
           </Link>
-          <Link to='/paymentmethods'>
+          <Link to='/payment-methods'>
             <div className='account-tab'>Payment Methods</div>
           </Link>
-          <Link to='/mypool'>
+          <Link to='/my-pool'>
             <div className='account-tab'>My Pool</div>
           </Link>
         </div>

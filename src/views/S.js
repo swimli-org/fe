@@ -10,10 +10,11 @@ export default function Search() {
     
     useEffect(() => {
         window.scrollTo(0, 0)
-      });
+        document.title = "'Search Term' - Search Results | Swimli"
+    });
     
       return (
-        <div className="container">
+        <div className='container'>
             <div className='search-page-container'>
                 <div className='mobile-filter-container'>Filter</div>
                 <div className='sort-container'>

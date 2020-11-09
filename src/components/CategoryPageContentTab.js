@@ -8,7 +8,6 @@ import intelliflo from '../assets/products/intelliflo.png';
 
 const CategoryPageHeadingTab = (props) => {
 
-    const [filterTop, setFilterTop] = useState(false)
 
 
     return (

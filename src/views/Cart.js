@@ -7,6 +7,7 @@ export default function Cart() {
 
   useEffect(() => {
     window.scrollTo(0, 0)
+    document.title = "Your Cart | Swimli"
   });
 
   return (

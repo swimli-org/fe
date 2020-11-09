@@ -7,43 +7,49 @@ export default function Example()  {
 
   useEffect(() => {
     window.scrollTo(0, 0)
+    document.title = "Addresses - Account | Swimli"
   });
 
   return (
     <div className="container">
-      <div className='account-tab-bar-container'>
-        <div className='account-tab-bar'>
+      <div className='accountTabBarContainer'>
+        <div className='accountTabBar'>
           <Link to='/overview'>
-            <div className='account-tab' className='hidden'>Overview</div>
+            <div className='accountTab' className='hidden'>Overview</div>
           </Link>
           <Link to='/personal'>
-            <div className='account-tab'>Personal Info</div>
+            <div className='accountTab'>Personal Info</div>
           </Link>
           <Link to='/orders'>
-            <div className='account-tab'>Orders</div>
+            <div className='accountTab'>Orders</div>
           </Link>
           <Link to='/autoship'>
-            <div className='account-tab'>Autoship</div>
+            <div className='accountTab'>Autoship</div>
           </Link>
           <Link to='/addresses'>
-            <div className='account-tab-active'>Addresses</div>
+            <div className='accountTabActive'>Addresses</div>
           </Link>
-          <Link to='/paymentmethods'>
-            <div className='account-tab'>Payment Methods</div>
+          <Link to='/payment-methods'>
+            <div className='accountTab'>Payment Methods</div>
           </Link>
-          <Link to='/mypool'>
-            <div className='account-tab' className='hidden'>My Pool</div>
+          <Link to='/my-pool'>
+            <div className='accountTab' className='hidden'>My Pool</div>
           </Link>
         </div>
       </div>
 
-      <div className='account-container'>
-      <div className='account-title'>Addresses</div>
-      <div className='account-rounded-tab-container'>
-          <div className='account-rounded-tab-header'>
-            <div className='addresses-header-title'>
-              <b>Home</b> (rename)
-              <span>Edit</span>
+      <div className='accountContainer'>
+        <div className='accountTitle'>Addresses</div>
+        <div className='accountTitleAction'>
+          <button className='accountTitleActionButton'>Add a New Address</button>
+        </div>
+        <div className='accountRoundedContainer'>
+          <div className='accountRoundedTabHeader'>
+            <div className='accountRoundedTabHeaderLeft'>
+              Home
+            </div>
+            <div className='accountRoundedTabHeaderRight'>
+              <button className='accountRoundedTabHeaderAction'>Edit</button>
             </div>
           </div>
           

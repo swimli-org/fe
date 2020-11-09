@@ -10,40 +10,41 @@ export default function Example()  {
     
   useEffect(() => {
     window.scrollTo(0, 0)
+    document.title = "Orders - Account | Swimli"
   });
 
   return (
     <div className="container">
-      <div className='account-tab-bar-container'>
-        <div className='account-tab-bar'>
+      <div className='accountTabBarContainer'>
+        <div className='accountTabBar'>
           <Link to='/overview'>
-            <div className='account-tab' className='hidden'>Overview</div>
+            <div className='accountTab' className='hidden'>Overview</div>
           </Link>
           <Link to='/personal'>
-            <div className='account-tab'>Personal Info</div>
+            <div className='accountTab'>Personal Info</div>
           </Link>
           <Link to='/orders'>
-            <div className='account-tab-active'>Orders</div>
+            <div className='accountTabActive'>Orders</div>
           </Link>
           <Link to='/autoship'>
-            <div className='account-tab'>Autoship</div>
+            <div className='accountTab'>Autoship</div>
           </Link>
           <Link to='/addresses'>
-            <div className='account-tab'>Addresses</div>
+            <div className='accountTab'>Addresses</div>
           </Link>
-          <Link to='/paymentmethods'>
-            <div className='account-tab'>Payment Methods</div>
+          <Link to='/payment-methods'>
+            <div className='accountTab'>Payment Methods</div>
           </Link>
-          <Link to='/mypool'>
-            <div className='account-tab' className='hidden'>My Pool</div>
+          <Link to='/my-pool'>
+            <div className='accountTab' className='hidden'>My Pool</div>
           </Link>
         </div>
       </div>
 
-      <div className='account-container'>
-      <div className='account-title'>
-        My Orders
-        <span>
+      <div className='accountContainer'>
+      <div className='accountTitle'>My Orders</div>
+      <div className='accountTitleAction'>
+      <span>
           <select>
             <option>Past 30 days</option>
             <option>Past 3 months</option>
@@ -52,8 +53,8 @@ export default function Example()  {
           </select>
         </span>
       </div>
-        <div className='account-rounded-tab-container'>
-          <div className='account-rounded-tab-header'>
+        <div className='accountRoundedContainer'>
+          <div className='accountRoundedTabHeader'>
             <div className='orders-header-left'>
               <div className='orders-header-title'>September 24, 2020</div>
               <div className='orders-header-sub-title'>Order #3592011</div>
@@ -112,7 +113,7 @@ export default function Example()  {
           </div>
         </div>
 
-        <div className='account-rounded-tab-container'>
+        <div className='accountRoundedContainer'>
           <div className='account-rounded-tab-header'>
             <div className='orders-header-left'>
               <div className='orders-header-title'>September 24, 2020</div>
