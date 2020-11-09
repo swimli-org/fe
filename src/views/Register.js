@@ -10,6 +10,7 @@ export default function Register(props) {
     
     useEffect(() => {
       window.scrollTo(0, 0)
+      document.title = "Register | Swimli"
     });
   
     return (

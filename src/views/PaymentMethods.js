@@ -9,51 +9,55 @@ export default function Example()  {
     
   useEffect(() => {
     window.scrollTo(0, 0)
+    document.title = "Payment Methods - Account | Swimli"
   });
 
   return (
     <div className="container">
-      <div className='account-tab-bar-container'>
-        <div className='account-tab-bar'>
+      <div className='accountTabBarContainer'>
+        <div className='accountTabBar'>
           <Link to='/overview'>
-            <div className='account-tab' className='hidden'>Overview</div>
+            <div className='accountTab' className='hidden'>Overview</div>
           </Link>
           <Link to='/personal'>
-            <div className='account-tab'>Personal Info</div>
+            <div className='accountTab'>Personal Info</div>
           </Link>
           <Link to='/orders'>
-            <div className='account-tab'>Orders</div>
+            <div className='accountTab'>Orders</div>
           </Link>
           <Link to='/autoship'>
-            <div className='account-tab'>Autoship</div>
+            <div className='accountTab'>Autoship</div>
           </Link>
           <Link to='/addresses'>
-            <div className='account-tab'>Addresses</div>
+            <div className='accountTab'>Addresses</div>
           </Link>
-          <Link to='/paymentmethods'>
-            <div className='account-tab-active'>Payment Methods</div>
+          <Link to='/payment-methods'>
+            <div className='accountTabActive'>Payment Methods</div>
           </Link>
-          <Link to='/mypool'>
-            <div className='account-tab' className='hidden'>My Pool</div>
+          <Link to='/my-pool'>
+            <div className='accountTab' className='hidden'>My Pool</div>
           </Link>
         </div>
       </div>
 
-      <div className='account-container'>
-      <div className='account-title'>Payment Methods</div>
-        <div className='account-rounded-tab-container'>
-          <div className='account-rounded-tab-header'>
-            <div className='payments-header-left'>
+      <div className='accountContainer'>
+      <div className='accountTitle'>Payment Methods</div>
+      <div className='accountTitleAction'>
+        <button className='accountTitleActionButton'>Add a New Card</button>
+      </div>
+        <div className='accountRoundedContainer'>
+          <div className='accountRoundedTabHeader'>
+            <div className='accountRoundedTabHeaderLeft'>
               <img src={visa} className='payments-card-icon'></img>
               Visa ending in 3590
             </div>
-            <div className='payments-header-right'>
-              Dylan M Baker
+            <div className='accountRoundedTabHeaderRight'>
+              <button className='accountRoundedTabHeaderAction'>Edit</button>
             </div>
           </div>
           
           <div className='account-rounded-tab-content'>
-            <div className='payments-content-left'>
+            <div className='paymentsContentLeft'>
               <span>Name on card</span>
               <p>
                 Dylan M Baker<br />
@@ -61,7 +65,7 @@ export default function Example()  {
                 Expires 10/2022
               </p>
             </div>
-            <div className='payments-content-middle'>
+            <div className='paymentsContentRight'>
               <span>Billing Address</span>
               <p>
                 Dylan M Baker<br />
@@ -69,10 +73,6 @@ export default function Example()  {
                 Wichita, KS 67226<br />
                 United States
               </p>
-            </div>
-            <div className='payments-content-right'>
-              <button className='payments-card-button'>Remove</button>
-              <button className='payments-card-button'>Edit</button>
             </div>
           </div>
         </div>

@@ -11,6 +11,7 @@ export default function Floats() {
     
   useEffect(() => {
     window.scrollTo(0, 0)
+    document.title = "Equipment | Swimli"
   });
 
   const style = {

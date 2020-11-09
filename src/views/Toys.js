@@ -14,6 +14,7 @@ export default function Toys() {
     
   useEffect(() => {
     window.scrollTo(0, 0)
+    document.title = "Toys | Swimli"
   });
 
   const style = {

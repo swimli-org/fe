@@ -11,7 +11,9 @@ export default function Floats() {
     
   useEffect(() => {
     window.scrollTo(0, 0)
+    document.title = "Furniture | Swimli"
   });
+
 
   const style = {
     backgroundColor: '#313131',

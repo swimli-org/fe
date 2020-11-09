@@ -9,6 +9,10 @@ export default function Example()  {
     window.scrollTo(0, 0)
   });
 
+  useEffect(() => {
+    document.title = "My Pool - Account | Swimli"
+  });
+
   return (
     <div className="container">
       <div className='account-tab-bar-container'>
@@ -28,10 +32,10 @@ export default function Example()  {
           <Link to='/addresses'>
             <div className='account-tab'>Addresses</div>
           </Link>
-          <Link to='/paymentmethods'>
+          <Link to='/payment-methods'>
             <div className='account-tab'>Payment Methods</div>
           </Link>
-          <Link to='/mypool'>
+          <Link to='/my-pool'>
             <div className='account-tab-active'>My Pool</div>
           </Link>
         </div>

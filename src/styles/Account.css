@@ -5,7 +5,7 @@
 
 
 
-.account-tab-bar-container {
+.accountTabBarContainer {
   padding: 2px;
   margin: 20px 10px;
   white-space: nowrap;
@@ -13,17 +13,17 @@
   border-radius: 8px;
   overflow: hidden;
   }
-.account-tab-bar{
+.accountTabBar{
   padding: 3px;
   border-radius: 8px;
   overflow-x: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
-.account-tab-bar::-webkit-scrollbar {
+.accountTabBar::-webkit-scrollbar {
   display: none;
 }
-.account-tab {
+.accountTab {
   padding: 5px 20px;
   margin: 0 5px 0 0;
   font-weight: bold;
@@ -33,11 +33,11 @@
   text-align: center;
   text-decoration: none;
 }
-.account-tab:hover {
+.accountTab:hover {
   color: #474D5E;
   transition: 0.3s;
 }
-.account-tab-active{
+.accountTabActive{
   padding: 5px 20px;
   margin: 0 5px 0 0;
   font-weight: bold;
@@ -50,67 +50,100 @@
   box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
               0 2px 8px rgba(0,0,0,0.12);
 }
-.account-container{
+.accountContainer{
   margin: 20px 10px;
 }
-.account-title{
+.accountTitle{
   padding: 0 0 14px 10px;
   font-size: 20px;
   font-weight: bold;
   color: #474D5E;
+  display: inline-block;
 }
-.account-title span{
-  padding: 9.5px 0;
-  font-size: 14px;
-  font-weight: normal;
+.accountTitleAction{
+  padding: 0 0 10px 0;
+  margin-right: 5px;
   float: right;
 }
-.account-title span select{
-  padding: 5px;
-  margin-top: -5px;
+.accountTitleActionButton{
+  padding: 4px 16px;
+  margin-left: 10px;
   background: #E6EAF0;
   outline: none;
   border: 1px solid #7183A4;
   border-radius: 4px;
   cursor: pointer;
 }
-.account-rounded-tab-container{
+.accountTitleAction select{
+  font-weight: normal;
+  padding: 5px;
+  background: #E6EAF0;
+  outline: none;
+  border: 1px solid #7183A4;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.accountRoundedContainer{
   margin-bottom: 15px;
   border: 1px solid #e2e2e2;
   border-radius: 8px;
   overflow: hidden;
   background: #FFFFFF;
-
-  min-height: 200px;
 }
-.account-rounded-tab-header{
+.accountRoundedTabHeader{
   padding: 10px 20px;
   background: #E6EAF0;
   overflow: hidden;
 }
+.accountRoundedTabHeaderLeft{
+  width: 50%;
+  height: 35px;
+  line-height: 35px;
+  font-weight: bold;
+  float: left;
+}
+.accountRoundedTabHeaderRight{
+  width: 50%;
+  height: 35px;
+  font-weight: bold;
+  text-align: right;
+  float: left;
+}
+.accountRoundedTabHeaderAction{
+  padding: 4px 16px;
+  margin-left: 10px;
+  background: #FFFFFF;
+  outline: none;
+  border: 1px solid #7183A4;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 900ms;
+}
+
 .account-rounded-tab-content{
   padding: 20px;
 }
 
 /*  Personal Page CSS  */
-.personal-account-tab{
+.personalTab{
   padding: 20px;
   border-bottom: 1px solid #e2e2e2;
   overflow: hidden;
 }
-.personal-account-tab:last-child{
+.personalTab:last-child{
   border-bottom: 0px;
 }
-.personal-account-tab-title{
+.personalTabTitle{
+  height: 100%;
   width: 20%;
   font-weight: bold;
   float: left;
 }
-.personal-account-tab-title-content{
+.personalTabContent{
   width: 80%;
   float: left;
 }
-.personal-account-tab-title-content span{
+.personalTabContentAction{
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
@@ -119,24 +152,29 @@
   float: right;
   cursor: pointer;
 }
-.personal-account-edit-btn{
-  border: 1px solid #2f89fc;
-  border-radius: 8px;
-  background: none;
-  width: max-content;
-  margin: 0 auto;
-  font-size: 16px;
-  color: #2f89fc;
-  display: inline-block;
-  padding: 5px 20px;
-  cursor: pointer;
-}
-.personal-account-edit-btn:hover{
-  background-color: #2f89fc;
-  color: white;
-}
-.personal-account-edit-btn:focus{
+.personalTabContentInput{
+  width: 100%;
+  padding: 4px 10px;
+  margin-top: -6px;
+  margin-right: 10px;
+  background: #FFFFFF;
   outline: none;
+  border: 1px solid #7183A4;
+  border-radius: 4px;
+}
+.personalTabContentInputHalf{
+  min-width: 20%;
+  width: 49%;
+  padding: 4px 10px;
+  margin-top: -6px;
+  margin-right: 2%;
+  background: #FFFFFF;
+  outline: none;
+  border: 1px solid #7183A4;
+  border-radius: 4px;
+}
+.personalTabContentInputHalf:last-child{
+  margin-right: 0;
 }
 
 /*  Orders Page CSS  */
@@ -232,60 +270,24 @@
 
 
 /*  Payments Page CSS  */
-.payments-header-left{
-  width: 50%;
-  height: 35px;
-  line-height: 35px;
-  font-weight: bold;
-  float: left;
-}
 .payments-card-icon{
   height: 30px;
   margin-right: 10px;
 }
-.payments-header-right{
+.paymentsContentLeft{
   width: 50%;
-  height: 35px;
-  line-height: 35px;
-  font-weight: bold;
-  text-align: right;
+  padding-left: 5%;
   float: left;
 }
-.payments-content-left{
-  width: 30%;
-  margin-left: 5%;
+.paymentsContentLeft span{
+  font-weight: bold;
+}
+.paymentsContentRight{
+  width: 50%;
   float: left;
 }
-.payments-content-left span{
+.paymentsContentRight span{
   font-weight: bold;
-}
-.payments-content-middle{
-  width: 30%;
-  float: left;
-}
-.payments-content-middle span{
-  font-weight: bold;
-}
-.payments-content-right{
-  width: 30%;
-  margin-right: 5%;
-  text-align: right;
-  float: right;
-}
-.payments-card-button{
-  width: 100px;
-  padding: 8px;
-  margin-right: 10px;
-  font-weight: bold;
-  color: #FFFFFF;
-  background: #2f89fc;
-  border-radius: 8px;
-  border: 0px;
-  outline: 0;
-  cursor: pointer;
-}
-.payments-card-button:first-child{
-  margin-right: 10px;
 }
 
 

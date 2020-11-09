@@ -20,6 +20,12 @@ function App(props) {
 console.log(auth)
 
 
+useEffect(() => {
+  window.scrollTo(0, 0)
+  document.title = "Swimli"
+});
+
+
   return (
     <div className='container'>
       <CarouselSlider />

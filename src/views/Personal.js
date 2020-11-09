@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import '../styles/Account.css';
 
 
-export default function Example()  {
+export default function Account()  {
   const[userInfo, setUserInfo]=useState({})
   const[isEditing, setIsEditing]=useState(false)
     let userId = localStorage.getItem('swimliUserId')
@@ -15,84 +15,106 @@ export default function Example()  {
     })
   }, []);
 
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    document.title = "Personal Info - Account | Swimli"
+  });
+
+
   return (
     <div className="container">
-      <div className='account-tab-bar-container'>
-        <div className='account-tab-bar'>
+      <div className='accountTabBarContainer'>
+        <div className='accountTabBar'>
           <Link to='/overview'>
-            <div className='account-tab' className='hidden'>Overview</div>
+            <div className='accountTab' className='hidden'>Overview</div>
           </Link>
           <Link to='/personal'>
-            <div className='account-tab-active'>Personal Info</div>
+            <div className='accountTabActive'>Personal Info</div>
           </Link>
           <Link to='/orders'>
-            <div className='account-tab'>Orders</div>
+            <div className='accountTab'>Orders</div>
           </Link>
           <Link to='/autoship'>
-            <div className='account-tab'>Autoship</div>
+            <div className='accountTab'>Autoship</div>
           </Link>
           <Link to='/addresses'>
-            <div className='account-tab'>Addresses</div>
+            <div className='accountTab'>Addresses</div>
           </Link>
-          <Link to='/paymentmethods'>
-            <div className='account-tab'>Payment Methods</div>
+          <Link to='/payment-methods'>
+            <div className='accountTab'>Payment Methods</div>
           </Link>
-          <Link to='/mypool'>
-            <div className='account-tab' className='hidden'>My Pool</div>
+          <Link to='/my-pool'>
+            <div className='accountTab' className='hidden'>My Pool</div>
           </Link>
         </div>
       </div>
 
-      <div className='account-container'>
-  <div className='account-title'>Personal Info</div>
+      <div className='accountContainer'>
+      <div className='accountTitle'>Personal Info</div>
+      <div className='accountTitleAction'>
+        <button onClick={() => setIsEditing(!isEditing)} className='accountTitleActionButton'>{isEditing?"Update":"Edit"}</button>
+        {isEditing?<button className='accountTitleActionButton' onClick={() => setIsEditing(false)}>Cancel</button>:null}
+      </div>
       
-        <div className='account-rounded-tab-container'>
-          <div className='personal-account-tab'>
-            <div className='personal-account-tab-title'>
+
+
+        <div className='accountRoundedContainer'>
+          <div className='personalTab'>
+            <div className='personalTabTitle'>
               Name
             </div>
-            <div className='personal-account-tab-title-content'>
-              {isEditing?<input type="text" placeholder="Enter New Name"/>:userInfo.first_name + ' ' + userInfo.last_name}
-      
+            <div className='personalTabContent'>
+              {isEditing?
+                <span>
+                  <input className='personalTabContentInputHalf' type="text" placeholder="First Name"/>
+                  <input className='personalTabContentInputHalf' type="text" placeholder="Last Name"/>
+                </span>
+              :userInfo.first_name + ' ' + userInfo.last_name}
             </div>
           </div>
-          <div className='personal-account-tab'>
-            <div className='personal-account-tab-title'>
+          <div className='personalTab'>
+            <div className='personalTabTitle'>
               Address
             </div>
-            <div className='personal-account-tab-title-content'>
-            {isEditing?<input type="text" placeholder="Add Address Here"/>:"User Address"}
+            <div className='personalTabContent'>
+              2963 N Penstemon St.<br />
+              Wichita, KS 67226 <b>(REPLACE)</b>
             </div>
           </div>
-          <div className='personal-account-tab'>
-          <div className='personal-account-tab-title'>
+          <div className='personalTab'>
+            <div className='personalTabTitle'>
               Email
             </div>
-            <div className='personal-account-tab-title-content'>
-            {isEditing?<input type="text" placeholder="Enter New Email"/>:userInfo.email}
-      
+            <div className='personalTabContent'>
+              {isEditing?<input className='personalTabContentInput' type="text" placeholder="Enter New Email"/>:userInfo.email}
             </div>
           </div>
-          <div className='personal-account-tab'>
-            <div className='personal-account-tab-title'>
+          <div className='personalTab'>
+            <div className='personalTabTitle'>
               Password
             </div>
-            <div className='personal-account-tab-title-content'>
-            {isEditing?<input type="text" placeholder='Enter New Password'value=""/>:"********"}
+            <div className='personalTabContent'>
+              {isEditing?
+                <span>
+                  <input className='personalTabContentInputHalf' type="text" placeholder='New Password'value=""/>
+                  <input className='personalTabContentInputHalf' type="text" placeholder='Confirm New Password'value=""/>
+                </span>
+              :"**********"}
             </div>
           </div>
-          {/* <div className='personal-account-tab'>
-          <div className='personal-account-tab-title'>
+        </div>
+        <div className='accountRoundedContainer'>
+          <div className='personalTab'>
+            <div className='personalTabTitle'>
               Deactivate
             </div>
-            <div className='personal-account-tab-title-content'>
+            <div className='personalTabContent'>
               This cannot be undone.
-              <span>Delete Account</span>
+              <div className='personalTabContentAction'>Delete Account</div>
             </div>
-          </div> */}
+          </div>
         </div>
-        <button onClick={() => setIsEditing(!isEditing)} className='personal-account-edit-btn'>{isEditing?"Update":"Edit"}</button>
-      {isEditing?<button className='personal-account-edit-btn' onClick={() => setIsEditing(false)}>Cancel</button>:null}
       </div>
     </div>
   )

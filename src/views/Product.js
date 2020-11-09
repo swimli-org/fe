@@ -8,6 +8,7 @@ export default function Product() {
     
     useEffect(() => {
         window.scrollTo(0, 0)
+        document.title = "'Product Name' | Swimli"
     });
 
     return (

@@ -15,6 +15,7 @@ export default function Login (props) {
     
     useEffect(() => {
       window.scrollTo(0, 0)
+      document.title = "Forgot Password | Swimli"
     });
   
     return (
