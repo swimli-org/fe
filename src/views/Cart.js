@@ -1,7 +1,12 @@
 import React, {useEffect} from 'react';
 import {Button} from 'antd'
 import {Link} from 'react-router-dom'
-import '../styles/Cart.css'
+
+/* Import CSS */
+import '../styles/Cart.css';
+
+/* Import Components */
+import CartRecommend from '../components/CartRecommend';
 
 export default function Cart() {
 
@@ -15,6 +20,7 @@ export default function Cart() {
         <div className='cart-title'>Your Cart is Empty.</div>
         <div className='cart-sub-title'>Find something to put in it.</div>
         <Button className='checkout-btn'><Link to='/'>Continue Shopping</Link></Button>
+        <CartRecommend />
       </div>
     )
 }

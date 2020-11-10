@@ -136,6 +136,7 @@
 .categoriesContainer{
     padding: 5px 0;
     color: #5D5D5B;
+    background: #F4F4F4;
 }
 .categoriesContainerTitle{
     width: 100%;
@@ -155,6 +156,7 @@
 }
 .categoriesItemContainer{
     width: 16.6%;
+    height: 100%;
     float: left;
     color: #5D5D5B;
     transition: 0ms;
@@ -169,7 +171,7 @@
     height: auto;
     margin: 0 auto;
     padding: 5px;
-    background: rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
     overflow: hidden;
     border-radius: 100px;
 }
@@ -181,14 +183,17 @@
     padding: 10px;
     font-size: 18px;
     text-align: center;
-  }
+}
 
 
 /* TrendingContentTab */
 .trendingContentContainer{
     padding: 5px 0;
-    margin: 10px 0;
-    background: #f3f3f3;
+    margin: 10px;
+    border-bottom: 1.8px solid #DDDDDD;
+}
+.trendingContentContainer:last-child{
+    border-bottom: 0;
 }
 .trendingContentTitle{
     width: 100%;
@@ -196,13 +201,13 @@
     font-weight: bold;
     color: #474D5E;
     text-align: left;
-    padding: 0 10px 0 20px;
-    margin: 10px 0;
+    padding: 0 10px;
+    margin: 5px 0 10px;
 }
 .trendingContentBody{
     height: auto;
     padding: 10px;
-    margin: 0 10px 10px 10px;
+    margin-bottom: 20px;
     overflow: hidden;
     overflow-x: scroll;
     white-space: nowrap;
@@ -257,6 +262,7 @@
     font-weight: bold;
     float: left;
 }
+
 /* product-info-container */
 .product-info-container{
     width: 41%;
@@ -302,10 +308,61 @@
     margin: 0px;
 }
 
-
-
-
-
+/* CartRecommend.js */
+.cartRecommend{
+    padding: 0 200px;
+    margin-top: 150px;
+}
+.cartRecommendTitle{
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+.cartRecommendChevronLeft,
+.cartRecommendChevronRight{
+    padding: 8px 9.5px 0;
+    font-weight: bold;
+    font-size: 1.4em;
+    background: #3088FA;
+    color: #FFFFFF;
+    border-radius: 1000px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.cartRecommendChevronLeft{
+    margin-left: -10px;
+}
+.cartRecommendChevronRight{
+    margin-right: -10px;
+}
+.cartRecommendChevronLeft:hover,
+.cartRecommendChevronRight:hover{
+    background: #2867b9;
+    transition: 250ms;
+}
+.cartRecommendItem{
+    height: auto;
+    overflow: hidden;
+}
+.cartRecommendItemImage{
+    width: 100%;
+    float: left;
+}
+.cartRecommendItemImage img{
+    max-width: 100%;
+}
+.cartRecommendItemTitle{
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: #3089FC;
+}
+.cartRecommendItemPrice{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #2c2c2c;
+}
 
 
 
@@ -332,6 +389,17 @@
         width: 16.6%;
         transition: 0;
     }
+    /* CartRecommend.js */
+    .cartRecommend{
+        padding: 0 160px;
+    }
+    .cartRecommendItemTitle{
+        font-size: 1.1em;
+        line-height: 1em;
+    }
+    .cartRecommendItemPrice{
+        font-size: 1.1em;
+    }
 }
 @media only screen and (max-width: 975px) {
     /* CategoryPageContentTab.js */
@@ -341,7 +409,6 @@
     .categoryPageItemImage img{
         height: 174px;
     }
-
     .categoryPageItemBrand{
         font-size: 0.9em;
     }
@@ -354,13 +421,26 @@
     }
     /* CategoriesTab.js */
     .categoriesItemContainer{
-      width: 25%;
-      margin: 0 4.165%;
-      transition: 150ms;
+        width: 25%;
+        margin: 0 4.165%;
+        transition: 150ms;
     }
     .categoriesItemImage{
-      min-width: 30%;
-      max-width: 60%;
+        min-width: 30%;
+        max-width: 60%;
+    }
+
+    /* CartRecommend.js */
+    .cartRecommend{
+        padding: 0 100px;
+    }
+    .cartRecommendItemTitle{
+        margin-bottom: 10px;
+        font-size: 1em;
+        line-height: 1.1em;
+    }
+    .cartRecommendItemPrice{
+        font-size: 0.9em;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -375,7 +455,31 @@
     .categoriesItemContainer{
         width: 33.33%;
         margin: 0;
-      }
+    }
+
+    /* CartRecommend.js */
+    .cartRecommend{
+        padding: 0 40px;
+    }
+    .cartRecommendChevronLeft,
+    .cartRecommendChevronRight{
+        padding: 0px 6px;
+        font-size: 0.9em;
+    }
+    .cartRecommendChevronLeft{
+        margin-left: 0px;
+    }
+    .cartRecommendChevronRight{
+        margin-right: 0px;
+    }
+    .cartRecommendItemTitle{
+        margin-bottom: 2px;
+        font-size: 0.7em;
+        line-height: 1.1em;
+    }
+    .cartRecommendItemPrice{
+        font-size: 0.8em;
+    }
 }
 @media only screen and (max-width: 375px) {
     
@@ -389,11 +493,17 @@
 
     /* CategoriesTab.js */
     .categoriesItemImage{
-      min-width: 30%;
-      max-width: 60%;
+        min-width: 30%;
+        max-width: 60%;
     }
     .categoriesItemTitle{
-      font-size: 15px;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 290px) {
+    /* CartRecommend.js */
+    .cartRecommend{
+        display: none;
     }
 }
 @keyframes scale {
