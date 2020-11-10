@@ -97,8 +97,8 @@ export default function Account()  {
             <div className='personalTabContent'>
               {isEditing?
                 <span>
-                  <input className='personalTabContentInputHalf' type="text" placeholder='New Password'value=""/>
-                  <input className='personalTabContentInputHalf' type="text" placeholder='Confirm New Password'value=""/>
+                  <input className='personalTabContentInputHalf' type="text" placeholder='New Password' />
+                  <input className='personalTabContentInputHalf' type="text" placeholder='Confirm' />
                 </span>
               :"**********"}
             </div>
@@ -110,7 +110,6 @@ export default function Account()  {
               Deactivate
             </div>
             <div className='personalTabContent'>
-              This cannot be undone.
               <div className='personalTabContentAction'>Delete Account</div>
             </div>
           </div>

@@ -74,6 +74,9 @@
   border-radius: 4px;
   cursor: pointer;
 }
+.accountTitleActionButton:hover{
+  outline:
+}
 .accountTitleAction select{
   font-weight: normal;
   padding: 5px;
@@ -293,6 +296,13 @@
 
 @media only screen and (max-width: 975px) {
 
+  /* Account Pages */
+  .accountTitleAction{}
+  .accountTitleActionButton{
+    padding: 2px 8px;
+    font-size: 0.9em;
+  }
+
   /*  Orders Page CSS  */
   .orders-header-left{
     font-size: 12px;
@@ -358,21 +368,20 @@
 @media only screen and (max-width: 600px) {
 
   /*  Personal Page CSS  */
-  .personal-account-tab{
+  .personalTab{
     font-size: 12px;
     padding: 20px 10px;
   }
-  .personal-account-tab-title{
+  .personalTabTitle{
     width: 26%;
   }
-  .personal-account-tab-title-content{
+  .personalTabContent{
     width: 74%;
-
+    text-align: right;
   }
-  .personal-account-tab-title-content span{
+  .personalTabContent span{
     font-size: 10px;
   }
-
 
   /*  Orders Page CSS  */
   .orders-header-left{
@@ -452,6 +461,24 @@
   }
 }
 @media only screen and (max-width: 375px) {
+
+  /* Account Pages */
+  .accountTitle{
+    padding: 0 0 7px 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #474D5E;
+    display: inline-block;
+  }
+  .accountTitleAction{
+    padding: 0 0 10px 0;
+    margin-right: 5px;
+    float: right;
+  }
+  .accountTitleActionButton{
+    padding: 1px 6px;
+    font-size: 0.8em;
+  }
 
    /*  Orders Page CSS  */
   .orders-delivery-details{
