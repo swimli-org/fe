@@ -1,9 +1,11 @@
 @import '~antd/dist/antd.css';
 body{
+  height: auto;
   font-family: roboto;
   color: #363636;
   background: #FFFFFF;
 }
+
 *{
   margin: 0;
   padding: 0;
@@ -11,17 +13,16 @@ body{
 .App{
   width: 100%;
   height: auto;
-  min-height: 100vh;
+  min-height: 100%;
   position: relative;
-  padding-bottom: 50px;
 }
 .container{
   margin: 0 auto;
-  max-width: 1320px;
+  min-height: 100vh;
   height: auto;
   position: relative;
-  overflow: hidden;
-  padding-bottom: 0px;
+  top: 90px;
+  padding-bottom: 50px;
 }
 .container h1{
   margin: 20px 0 10px 15px;
@@ -29,6 +30,13 @@ body{
   color: #333333;
   font-weight: 400;
   text-align: left;
+}
+.content-wrap{
+  max-width: 1320px;
+  height: 100%;
+  margin: auto;
+  padding-bottom: 50px;
+  overflow: hidden;
 }
 
 /* Slider */

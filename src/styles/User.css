@@ -1,3 +1,138 @@
+/* Login/Register Page */
+.sign-in{
+  width: 100%;
+  min-height: 100vh;
+  background: #4b92ee;
+  padding: 0px 0;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+.sign-in-container {
+  width: 380px;
+  height: 100%;
+  background: #ffffff;
+  padding: 20px 35px;
+  margin: 20px auto;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(50, 50, 50, 0.10);
+  -ms-box-shadow: 0px 0px 10px 2px rgba(50, 50, 50, 0.10);
+  box-shadow: 0px 0px 10px 2px rgba(50, 50, 50, 0.10);
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+.sign-in-logo{
+  width: 100%;
+  padding: 30px 80px;
+  float: left;
+  overflow: hidden;
+}
+.sign-in-logo img{
+  max-width: 100%;
+}
+.sign-in-title{
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  float: left;
+}
+.sign-in-form{
+  width: 100%;
+  margin: 20px 0;
+  float: left;
+  overflow: hidden;
+}
+.sign-in-input{
+  width: 100%;
+  font-size: 16px;
+  color: #4d4d4d;
+  margin: 10px 0;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid #949494;
+  outline: none;
+}
+.sign-in-form button{
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.sign-in-btn{
+  background: #2877DE;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.forgot-password{
+  width: 60%;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 0px auto 10px;
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  cursor: pointer;
+  transition: 250ms;
+}
+.forgot-password:hover{
+  background: #ebebeb;
+}
+.sign-in-form p{
+  text-align: center;
+  padding-top:  20px;
+  margin-top: 20px;
+  border-top: 1px ridge #7e7e7e;
+}
+.create-account-btn{
+  background: #3d3d3d;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*  Login Page  */
 .primary-title{
   font-size: 26px;

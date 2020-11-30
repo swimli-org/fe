@@ -47,7 +47,7 @@ export default function Navbar() {
                   <img src={account} className='user-container-tab-icon' alt='Account'></img>
                   <p>{name}</p>
                 </Link>:
-                <Link to='/signin'>
+                <Link to='/sign-in'>
                   <img src={account} className='user-container-tab-icon' alt='Account'></img>
                   <p>Sign In</p>
                 </Link>}
@@ -74,7 +74,7 @@ export default function Navbar() {
             <div className='sidebarHeader'>
               {name !="null"? <Link to='/personal' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
                 Hey, {name}!
-                </Link>:<Link to='/signin' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
+                </Link>:<Link to='/sign-in' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}>
                 Sign In
                 </Link>}
               <img src={back} className='sidebarback-btn' alt='Back Button' onClick={() => setSidebarIsOpen(!sidebarIsOpen)}></img>

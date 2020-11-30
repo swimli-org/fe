@@ -1,12 +1,10 @@
 import React, {useEffect} from 'react';
 
-/* CSS */
-
-/* Images */
-
 /* Components */
+import NavBar from '../components/Navbar';
 import CategoryPageHeadingTab from '../components/CategoryPageHeadingTab';
 import CategoryPageContentTab from '../components/CategoryPageContentTab';
+import Footer from '../components/Footer';
 
 
 
@@ -26,9 +24,11 @@ export default function Toys() {
   }
 
   return (
-    <div className='App'>
-      <CategoryPageHeadingTab style={style} title='Toys' />
-      <CategoryPageContentTab category='Toys' />
+    <div className="container">
+      <NavBar />
+      <CategoryPageHeadingTab style={style} title="Toys" />
+      <CategoryPageContentTab category="Toys" />
+      <Footer />
     </div>
     )
 }

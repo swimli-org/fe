@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 
-/* CSS */
-
-/* Components */
+// Components
+import NavBar from '../components/Navbar';
 import CategoryPageHeadingTab from '../components/CategoryPageHeadingTab';
 import CategoryPageContentTab from '../components/CategoryPageContentTab';
+import Footer from '../components/Footer';
 
 
 export default function Floats() {
@@ -23,9 +23,11 @@ export default function Floats() {
   }
 
   return (
-    <div className='App'>
-      <CategoryPageHeadingTab style={style} title='Equipment' />
-      <CategoryPageContentTab category='Equipment' />
+    <div className="container">
+      <NavBar />
+      <CategoryPageHeadingTab style={style} title="Equipment" />
+      <CategoryPageContentTab category="Equipment" />
+      <Footer />
     </div>
     )
 }

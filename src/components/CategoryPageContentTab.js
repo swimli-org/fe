@@ -1,24 +1,22 @@
 import React, { useState } from 'react';
 
+// CSS
 import '../styles/Tabs.css';
 
-/* Import Images */
+// Images
 import intelliflo from '../assets/products/intelliflo.png';
 
 
 const CategoryPageHeadingTab = (props) => {
-
-
-
     return (
-        <div className='fullContainer'>
-            <div className='categoryPageFilterContainer'>
-                <div className='categoryPageFilter'>
-                    <div className='categoryPageFilterTitle'>
+        <div className="fullContainer">
+            <div className="categoryPageFilterContainer">
+                <div className="categoryPageFilter">
+                    <div className="categoryPageFilterTitle">
                         {props.category}
                     </div>
                     
-                    <div className='categoryPageFilterItems'>
+                    <div className="categoryPageFilterItems">
                         <p>Subcategory</p>
                         <span>
                             <select>
@@ -53,241 +51,244 @@ const CategoryPageHeadingTab = (props) => {
                     </div>
                 </div>
             </div>
-            <div className='categoryPageContentContainer'>
-                <div className='categoryPageContent'>
+            <div className="categoryPageContentContainer">
+                <div className="categoryPageContent">
             
                     
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
-                    <div className='categoryPageItem'>
-                        <div className='categoryPageItemImage'>
+                    <div className="categoryPageItem">
+                        <div className="categoryPageItemImage">
                             <img src={intelliflo}></img>
                         </div>
-                        <div className='categoryPageItemBrand'>Pentair</div>
-                        <div className='categoryPageItemName'>
+                        <div className="categoryPageItemBrand">Pentair</div>
+                        <div className="categoryPageItemName">
                             Intelliflo Variable Speed Energy Saving Pool Pump
                             Intelliflo Variable Speed Energy Saving Pool Pump
                         </div>
-                        <div className='categoryPageItemPrice'>$1,299.99</div>
+                        <div className="categoryPageItemPrice">$1,299.99</div>
                     </div>
+
+
+
                 </div>
             </div>
         </div>
