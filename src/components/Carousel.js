@@ -1,8 +1,9 @@
 import React from 'react';
 import { Carousel } from 'antd';
 
-import one from '../assets/one.jpg'
-import pool from '../assets/pool.jpg'
+// Assets
+import one from '../assets/one.jpg';
+import pool from '../assets/pool.jpg';
 
 
   const contentStyle = {
@@ -19,16 +20,15 @@ import pool from '../assets/pool.jpg'
 export default function CarouselSlider() {
   return (
     <Carousel autoplay effect="fade" autoplaySpeed="50">
-      <div className='slider-image'>
+      <div className="slider-image">
         <img src={one}></img>
       </div>
-      <div className='slider-image'>
+      <div className="slider-image">
         <img src={pool}></img>
       </div>
-      <div className='slider-image' style={{backgroundColor: "red"}}>
+      <div className="slider-image" style={{backgroundColor: "red"}}>
       </div>
-      <div className='slider-image'>
-        hi
+      <div className="slider-image">
       </div>
     </Carousel>
   )

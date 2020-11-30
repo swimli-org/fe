@@ -1,12 +1,13 @@
 import React, {useEffect} from 'react';
 import { Formik } from 'formik';
-import axios from 'axios'
-import {
-    Link,
-    useHistory,
-  } from "react-router-dom";
+import axios from 'axios';
+import { Link, useHistory, } from "react-router-dom";
 
-/*import '../styles/User.css'*/
+// Assets
+import logo from '../assets/logoBlue.png';
+
+// CSS
+import '../styles/User.css';
 
 
 
@@ -19,30 +20,43 @@ export default function Login (props) {
     });
   
     return (
-    <div className="container">
-    {console.log("PROPS",props)}
-      <div className='primary-title'>Forgot your Password?</div>
+    <div className="sign-in">
+      <div className="sign-in-container">
+        {console.log("PROPS",props)}
+        <div className="sign-in-logo">
+          <Link to="/">
+            <img src={logo} />
+          </Link>
+        </div>
+        <div className='sign-in-title'>Forgot Your Password?</div>
 
-      <div className='primary-container'>
-        <form>
-            <input
-                type="email"
-                name="email"
-                className="primary-form"
-                placeholder="Email"
-            />
-            <button
-                type="submit"
-                className="primary-btn">
-                Send Email
+        <div className='sign-in-form'>
+          <form>
+              <input
+                  type="email"
+                  name="email"
+                  className="sign-in-input"
+                  placeholder="Email"
+              />
+              <button
+                  type="submit"
+                  className="sign-in-btn">
+                  Send Email
+              </button>
+          </form>
+          <p></p>
+          <Link to="/sign-in/">
+            <button className="create-account-btn">
+              Sign In
             </button>
-        </form>
-      </div>
+          </Link>
 
-      <div className='secondary-container'>
-        <button type="submit" className="secondary-btn" onClick={()=>history.push('/signin')}>
-          Sign In
-        </button>
+          <Link to="/create-an-account/">
+            <button className="create-account-btn">
+              Create An Account
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   )};

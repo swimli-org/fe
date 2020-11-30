@@ -1,12 +1,14 @@
 import React, {useEffect} from 'react';
-import {Button} from 'antd'
-import {Link} from 'react-router-dom'
+import {Button} from 'antd';
+import {Link} from 'react-router-dom';
 
-/* Import CSS */
+// CSS
 import '../styles/Cart.css';
 
-/* Import Components */
+// Components
+import NavBar from '../components/Navbar';
 import CartRecommend from '../components/CartRecommend';
+import Footer from '../components/Footer';
 
 export default function Cart() {
 
@@ -16,11 +18,15 @@ export default function Cart() {
   });
 
   return (
-      <div className="container">
-        <div className='cart-title'>Your Cart is Empty.</div>
-        <div className='cart-sub-title'>Find something to put in it.</div>
-        <Button className='checkout-btn'><Link to='/'>Continue Shopping</Link></Button>
+    <div className="container">
+      <NavBar />
+      <div className="content-wrap">
+        <div className="cart-title">Your Cart is Empty.</div>
+        <div className="cart-sub-title">Find something to put in it.</div>
+        <Button className="checkout-btn"><Link to="/">Continue Shopping</Link></Button>
         <CartRecommend />
       </div>
-    )
+      <Footer />
+    </div>
+  )
 }

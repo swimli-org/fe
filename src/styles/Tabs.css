@@ -4,8 +4,9 @@
     height: auto;
     background: #14B297;
     color: #FFFFFF;
-    text-align: center;
     padding: 60px 0;
+    z-index: 98;
+    position: relative;
 }
 .categoryPageHeading .tabContainer h1{
     font-size: 3.5em;
@@ -14,14 +15,19 @@
     padding: 0;
     text-transform: uppercase;
     color: #FFFFFF;
+    text-align: center;
 }
 
 /* CategoryPageContentTab.js */
-.fullContainer{}
+.fullContainer{
+    z-index: 97;
+    position: relative;
+}
 
 .categoryPageFilterContainer{
     margin-bottom: 20px;
     padding: 14px 10px;
+    background: #FFFFFF;
     box-shadow:
         0 0px 1px -4px rgba(0, 0, 0, 0.093),
         0 0px 2.6px -4px rgba(0, 0, 0, 0.133),
@@ -29,6 +35,8 @@
         0 0px 11px -4px rgba(0, 0, 0, 0.207),
         0 0px 30px -4px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    position: sticky;
+    top: 90px;
 }
 .categoryPageFilter{
     width: auto;

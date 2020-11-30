@@ -5,25 +5,25 @@
 
 
 
-.accountTabBarContainer {
+.account-tab-bar-container {
   padding: 2px;
-  margin: 20px 10px;
+  margin: 0px 10px;
+  margin-top: 20px;
   white-space: nowrap;
   background-color: #E6EAF0;
   border-radius: 8px;
-  overflow: hidden;
   }
-.accountTabBar{
+.account-tab-bar{
   padding: 3px;
   border-radius: 8px;
   overflow-x: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
-.accountTabBar::-webkit-scrollbar {
+.account-tab-bar::-webkit-scrollbar {
   display: none;
 }
-.accountTab {
+.account-tab {
   padding: 5px 20px;
   margin: 0 5px 0 0;
   font-weight: bold;
@@ -33,11 +33,11 @@
   text-align: center;
   text-decoration: none;
 }
-.accountTab:hover {
+.account-tab:hover {
   color: #474D5E;
   transition: 0.3s;
 }
-.accountTabActive{
+.account-tab-active{
   padding: 5px 20px;
   margin: 0 5px 0 0;
   font-weight: bold;
@@ -50,22 +50,22 @@
   box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
               0 2px 8px rgba(0,0,0,0.12);
 }
-.accountContainer{
+.account-container{
   margin: 20px 10px;
 }
-.accountTitle{
+.account-title{
   padding: 0 0 14px 10px;
   font-size: 20px;
   font-weight: bold;
   color: #474D5E;
   display: inline-block;
 }
-.accountTitleAction{
+.account-title-action{
   padding: 0 0 10px 0;
   margin-right: 5px;
   float: right;
 }
-.accountTitleActionButton{
+.account-title-action-button{
   padding: 4px 16px;
   margin-left: 10px;
   background: #E6EAF0;
@@ -74,10 +74,7 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.accountTitleActionButton:hover{
-  outline:
-}
-.accountTitleAction select{
+.account-title-action select{
   font-weight: normal;
   padding: 5px;
   background: #E6EAF0;
@@ -86,33 +83,34 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.accountRoundedContainer{
+
+.account-rounded-container{
   margin-bottom: 15px;
   border: 1px solid #e2e2e2;
   border-radius: 8px;
   overflow: hidden;
   background: #FFFFFF;
 }
-.accountRoundedTabHeader{
+.account-rounded-tab-header{
   padding: 10px 20px;
   background: #E6EAF0;
   overflow: hidden;
 }
-.accountRoundedTabHeaderLeft{
+.account-rounded-tab-header-left{
   width: 50%;
   height: 35px;
   line-height: 35px;
   font-weight: bold;
   float: left;
 }
-.accountRoundedTabHeaderRight{
+.account-rounded-tab-header-right{
   width: 50%;
   height: 35px;
   font-weight: bold;
   text-align: right;
   float: left;
 }
-.accountRoundedTabHeaderAction{
+.account-rounded-tab-header-action{
   padding: 4px 16px;
   margin-left: 10px;
   background: #FFFFFF;
@@ -128,25 +126,25 @@
 }
 
 /*  Personal Page CSS  */
-.personalTab{
+.personal-tab{
   padding: 20px;
   border-bottom: 1px solid #e2e2e2;
   overflow: hidden;
 }
-.personalTab:last-child{
+.personal-tab:last-child{
   border-bottom: 0px;
 }
-.personalTabTitle{
+.personal-tab-title{
   height: 100%;
   width: 20%;
   font-weight: bold;
   float: left;
 }
-.personalTabContent{
+.personal-tab-content{
   width: 80%;
   float: left;
 }
-.personalTabContentAction{
+.personal-tab-content-action{
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
@@ -155,7 +153,7 @@
   float: right;
   cursor: pointer;
 }
-.personalTabContentInput{
+.personal-tab-content-input{
   width: 100%;
   padding: 4px 10px;
   margin-top: -6px;
@@ -165,7 +163,7 @@
   border: 1px solid #7183A4;
   border-radius: 4px;
 }
-.personalTabContentInputHalf{
+.personal-tab-content-input-half{
   min-width: 20%;
   width: 49%;
   padding: 4px 10px;
@@ -176,7 +174,7 @@
   border: 1px solid #7183A4;
   border-radius: 4px;
 }
-.personalTabContentInputHalf:last-child{
+.personal-tab-content-input-half:last-child{
   margin-right: 0;
 }
 
@@ -297,8 +295,8 @@
 @media only screen and (max-width: 975px) {
 
   /* Account Pages */
-  .accountTitleAction{}
-  .accountTitleActionButton{
+  .account-title-action{}
+  .account-title-action-button{
     padding: 2px 8px;
     font-size: 0.9em;
   }
@@ -368,18 +366,18 @@
 @media only screen and (max-width: 600px) {
 
   /*  Personal Page CSS  */
-  .personalTab{
+  .personal-tab{
     font-size: 12px;
     padding: 20px 10px;
   }
-  .personalTabTitle{
+  .personal-tab-title{
     width: 26%;
   }
-  .personalTabContent{
+  .personal-tab-content{
     width: 74%;
     text-align: right;
   }
-  .personalTabContent span{
+  .personal-tab-content span{
     font-size: 10px;
   }
 
@@ -463,19 +461,19 @@
 @media only screen and (max-width: 375px) {
 
   /* Account Pages */
-  .accountTitle{
+  .account-title{
     padding: 0 0 7px 10px;
     font-size: 1.2em;
     font-weight: bold;
     color: #474D5E;
     display: inline-block;
   }
-  .accountTitleAction{
+  .account-title-action{
     padding: 0 0 10px 0;
     margin-right: 5px;
     float: right;
   }
-  .accountTitleActionButton{
+  .account-title-action-button{
     padding: 1px 6px;
     font-size: 0.8em;
   }

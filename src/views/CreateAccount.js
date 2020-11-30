@@ -1,51 +1,46 @@
 import React, {useEffect} from 'react';
+import { Link, useHistory, } from "react-router-dom";
 import { Formik } from 'formik';
 import axios from 'axios';
-import { Link, useHistory, } from "react-router-dom";
-  
+
 // Assets
 import logo from '../assets/logoBlue.png';
 
-// CSS
-import '../styles/User.css';
-
-
-export default function Login (props) {
-    const history =useHistory();
+export default function Register(props) {
+    const history = useHistory();
     
     useEffect(() => {
       window.scrollTo(0, 0)
-      document.title = "Sign In | Swimli"
+      document.title = "Register | Swimli"
     });
   
     return (
-    <div className="sign-in">
+      <div className="sign-in">
       <div className="sign-in-container">
-        {console.log("PROPS",props)}
         <div className="sign-in-logo">
           <Link to="/">
             <img src={logo} />
           </Link>
         </div>
-        <div className="sign-in-title">Sign In</div>
+        <div className="sign-in-title">Create an Account</div>
 
-        <div className='sign-in-form'>
+        <div className="sign-in-form">
           <Formik
-            initialValues={{ email: '', password: '' }}
+            initialValues={{ first_name: "", last_name: "", email: "", password: "" }}
             validate={values => {
               const errors = {};
               if (!values.email) {
-                errors.email = 'Required';
+                errors.email = "Required";
               } else if (
                 !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
               ) {
-                errors.email = 'Invalid email address';
+                errors.email = "Invalid email address";
               }
               return errors;
             }}
             onSubmit={(values, { setSubmitting }) => {
           
-              axios.post(`https://swimli.herokuapp.com/users/login`, values)
+              axios.post(`https://swimli.herokuapp.com/users/register`, values)
               .then(res=>{
                 console.log(res)
                 localStorage.swimliFirstName = res.data.first_name
@@ -53,7 +48,7 @@ export default function Login (props) {
                 localStorage.swimliUserId = res.data.id
                 localStorage.swimliToken = res.data.token
                 if(localStorage.swimliToken){
-                history.push('/')
+                props.history.push( "/" )
                 }
                 
               })
@@ -70,6 +65,26 @@ export default function Login (props) {
               /* and other goodies */
             }) => (
               <form onSubmit={handleSubmit}>
+                  <input
+                  type="text"
+                  name="first_name"
+                  className="sign-in-input"
+                  placeholder="First Name"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.first_name}
+                />
+                {errors.first_name && touched.first_name && errors.first_name}
+                <input
+                  type="text"
+                  name="last_name"
+                  className="sign-in-input"
+                  placeholder="Last Name"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.last_name}
+                />
+                {errors.last_name && touched.last_name && errors.last_name}
                 <input
                   type="email"
                   name="email"
@@ -93,23 +108,16 @@ export default function Login (props) {
                 <button
                   type="submit"
                   className="sign-in-btn"
-                  disabled={isSubmitting}>
-                  Sign In
+                  disabled={isSubmitting}
+                >
+                  Create your Swimli account
                 </button>
               </form>
             )}
           </Formik>
-          <Link to="/forgot-password/">
-            <div className="forgot-password">
-              Forgot Password?
-            </div>
-          </Link>
-          <p>New Here?</p>
-          <Link to="/create-an-account/">
-            <button className="create-account-btn">
-              Create An Account
-            </button>
-          </Link>
+          
+          <p>Already Have an Account?</p>
+          <Link to="/sign-in/"><button className="create-account-btn">Sign In</button></Link>
         </div>
       </div>
     </div>

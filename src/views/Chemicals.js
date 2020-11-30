@@ -1,10 +1,12 @@
 import React, {useEffect} from 'react';
 
-/* CSS */
+// CSS
 
-/* Components */
+// Components
+import NavBar from '../components/Navbar';
 import CategoryPageHeadingTab from '../components/CategoryPageHeadingTab';
 import CategoryPageContentTab from '../components/CategoryPageContentTab';
+import Footer from '../components/Footer';
 
 
 export default function Chemicals() {
@@ -23,9 +25,11 @@ export default function Chemicals() {
   }
 
   return (
-    <div className='App'>
-      <CategoryPageHeadingTab style={style} title='Chemicals' />
-      <CategoryPageContentTab category='Chemicals'  />
+    <div className="container">
+      <NavBar />
+      <CategoryPageHeadingTab style={style} title="Chemicals" />
+      <CategoryPageContentTab category="Chemicals" />
+      <Footer />
     </div>
     )
 }

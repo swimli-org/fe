@@ -2,22 +2,20 @@ import React, {useState, useEffect} from 'react';
 import {useSelector} from 'react-redux'
 import {Link, useHistory} from 'react-router-dom'
 
-/* Import CSS */
+// CSS
 import './styles/App.css';
 
-/* Import Components */
-import CarouselSlider from './components/Carousel'
-import categoriesList from './components/categories'
+// Components
+import NavBar from './components/Navbar';
+import CarouselSlider from './components/Carousel';
 import TrendingContentTab from './components/TrendingContentTab';
 import CategoriesTab from './components/CategoriesTab';
+import Footer from './components/Footer';
 
 
 
 
-function App(props) {
-  const[categories]=useState(categoriesList)
-  const auth = useSelector(state=>state.authReducer)
-console.log(auth)
+function App() {
 
 
 useEffect(() => {
@@ -27,16 +25,18 @@ useEffect(() => {
 
 
   return (
-    <div>
-      <CarouselSlider />
-      <div className='container'>
+    <div className="container">
+      <NavBar />
+      <div className="content-wrap">
+        <CarouselSlider />
         <CategoriesTab />
 
-        <TrendingContentTab title='Trending Now' />
-        <TrendingContentTab title='Buy It Today, Get It Tomorrow' />
-        <TrendingContentTab title='Recommended For You' />
-        <TrendingContentTab title='Summer Fun' />
+        <TrendingContentTab title="Trending Now" />
+        <TrendingContentTab title="Buy It Today, Get It Tomorrow" />
+        <TrendingContentTab title="Recommended For You" />
+        <TrendingContentTab title="Summer Fun" />
       </div>
+      <Footer />
     </div>
   );
 }
